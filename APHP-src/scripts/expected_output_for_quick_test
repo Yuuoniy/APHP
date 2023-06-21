@@ -1,0 +1,6 @@
+[Extraction Specification Module]
+extract specification from patch e5548b05631e : {'target_API': 'usb_create_hcd', 'post_operation': 'usb_put_hcd', 'critical variable': 'retval', 'self.pre_condition': 'success', 'post_condition': 'error'}
+[Bug Detection Module]
+Testing specification for function dwc2_hcd_init: {'repo_name': 'kernel', 'target_API': 'usb_create_hcd', 'post_operation': 'usb_put_hcd', 'critical_var_role': 'retval', 'pre_condition': 'success', 'post_condition': 'error'}
+[ASG generation] generating ASG for function dwc2_hcd_init
+[bug report] dwc2_hcd_init may lack post operation ['usb_put_hcd'] for usb_create_hcd

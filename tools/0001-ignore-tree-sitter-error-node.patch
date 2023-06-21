@@ -1,0 +1,31 @@
+From e11207e7783990bad8e0ff42fe9d9b4f012d2230 Mon Sep 17 00:00:00 2001
+From: Miaoqian Lin <linmq006@gmail.com>
+Date: Fri, 16 Jun 2023 19:47:42 +0400
+Subject: [PATCH] ignore tree-sitter error node
+
+---
+ .../gen/treesitter/AbstractTreeSitterGenerator.java       | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/gen.treesitter/src/main/java/com/github/gumtreediff/gen/treesitter/AbstractTreeSitterGenerator.java b/gen.treesitter/src/main/java/com/github/gumtreediff/gen/treesitter/AbstractTreeSitterGenerator.java
+index c0e064567610..06722384ce31 100644
+--- a/gen.treesitter/src/main/java/com/github/gumtreediff/gen/treesitter/AbstractTreeSitterGenerator.java
++++ b/gen.treesitter/src/main/java/com/github/gumtreediff/gen/treesitter/AbstractTreeSitterGenerator.java
+@@ -37,10 +37,10 @@ public abstract class AbstractTreeSitterGenerator extends ExternalProcessTreeGen
+         String output = readStandardOutput(r);
+         TreeContext context = TreeIoUtils.fromXml().generateFrom().string(output);
+ 
+-        for (Tree t : context.getRoot().preOrder())
+-            if (t.getType().name.equals("ERROR"))
+-                throw new SyntaxException(this, r,
+-                        new IllegalArgumentException("Syntax error at pos: " + t.getPos()));
++        // for (Tree t : context.getRoot().preOrder())
++        //     if (t.getType().name.equals("ERROR"))
++        //         throw new SyntaxException(this, r,
++        //                 new IllegalArgumentException("Syntax error at pos: " + t.getPos()));
+ 
+ 
+         return context;
+-- 
+2.25.1
+

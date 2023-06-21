@@ -1,0 +1,51 @@
+hexsha,patch,summary,author
+f40fc799afc5,https://github.com/torvalds/linux/commit/f40fc799afc5,tracing: Fix memory leak in __create_synth_event(),Vamshi K Sthambamkadi
+269effd03f61,https://github.com/torvalds/linux/commit/269effd03f61,pwm: zx: Add missing cleanup in error path,Uwe Kleine-König
+f13570e7e830,https://github.com/torvalds/linux/commit/f13570e7e830,clk: tegra: tegra124-emc: Fix clock imbalance in emc_set_timing(),Yang Yingliang
+b5b78a6c8d8c,https://github.com/torvalds/linux/commit/b5b78a6c8d8c,drm/amd: fix potential memleak in err branch,Bernard Zhao
+1731e14fb302,https://github.com/torvalds/linux/commit/1731e14fb302,clk: imx6sx: fix refcount leak in imx6sx_clocks_init(),Yangtao Li
+5f8c183a996b,https://github.com/torvalds/linux/commit/5f8c183a996b,clk: imx7d: fix refcount leak in imx7d_clocks_init(),Yangtao Li
+aed5029ead26,https://github.com/torvalds/linux/commit/aed5029ead26,drivers/net/can/mscan/mpc5xxx_can.c: Add of_node_put to avoid memory leak,Julia Lawall
+47340e46f34a,https://github.com/torvalds/linux/commit/47340e46f34a,drm/omap: fix possible object reference leak,Wen Yang
+2eb04ae010a8,https://github.com/torvalds/linux/commit/2eb04ae010a8,ARM: mvebu: add missing of_node_put() call in coherency.c,Thomas Petazzoni
+bc29d3a69d4c,https://github.com/torvalds/linux/commit/bc29d3a69d4c,drm/pl111: fix possible object reference leak,Wen Yang
+958a65f205fd,https://github.com/torvalds/linux/commit/958a65f205fd,[POWERPC] Add missing of_node_put in drivers/macintosh/therm_adt746x.c,Julia Lawall
+b1259519e618,https://github.com/torvalds/linux/commit/b1259519e618,MIPS: Octeon: add missing of_node_put(),Nicholas Mc Guire
+0373721b1921,https://github.com/torvalds/linux/commit/0373721b1921,powerpc/powermac/pfunc_core.c: Add of_node_put to avoid memory leak,Julia Lawall
+9430dfa67d76,https://github.com/torvalds/linux/commit/9430dfa67d76,drm/tilcdc: panel: Add missing of_node_put,Ezequiel Garcia
+e2897b8238ab,https://github.com/torvalds/linux/commit/e2897b8238ab,net: netcp: add missing of_node_put() in netcp_probe(),Wei Yongjun
+ff7a5a0a8562,https://github.com/torvalds/linux/commit/ff7a5a0a8562,PCI: mediatek: Fix a leaked reference by adding missing of_node_put(),Wen Yang
+aad8d097c922,https://github.com/torvalds/linux/commit/aad8d097c922,nvmem: add missing of_node_put() in of_nvmem_cell_get(),Masahiro Yamada
+1a21e5b930e8,https://github.com/torvalds/linux/commit/1a21e5b930e8,drm/ingenic: Fix leak of device_node pointer,Paul Cercueil
+28b170e88bc0,https://github.com/torvalds/linux/commit/28b170e88bc0,OF: properties: add missing of_node_put,Julia Lawall
+7e8da343a316,https://github.com/torvalds/linux/commit/7e8da343a316,[media] exynos4-is: Add missing port parent of_node_put on error paths,Krzysztof Kozlowski
+5d950ef3f327,https://github.com/torvalds/linux/commit/5d950ef3f327,gpu: drm: sti_hqvdp: add missing of_node_put after calling of_parse_phandle,Peter Chen
+453cafbce5bd,https://github.com/torvalds/linux/commit/453cafbce5bd,ethernet: hisilicon: hns: hns_dsaf_main: add missing of_node_put after calling of_parse_phandle,Peter Chen
+2ca41c176a5d,https://github.com/torvalds/linux/commit/2ca41c176a5d,drm/msm: add missing of_node_put after calling of_parse_phandle,Peter Chen
+b8161cbe55a1,https://github.com/torvalds/linux/commit/b8161cbe55a1,ASoC: wm8994: Fix PM disable depth imbalance on error,Zhang Qilong
+37f7212148cf,https://github.com/torvalds/linux/commit/37f7212148cf,mtd: rawnand: omap_elm: Fix runtime PM imbalance on error,Dinghao Liu
+e5548b05631e,https://github.com/torvalds/linux/commit/e5548b05631e,usb: oxu210hp-hcd: Fix memory leak in oxu_create,Zhang Qilong
+a2a9b1eceb50,https://github.com/torvalds/linux/commit/a2a9b1eceb50,V4L/DVB (7035): drivers/media/common: Add missing video_device_release,Julia Lawall
+8442da1d9f44,https://github.com/torvalds/linux/commit/8442da1d9f44,perf kmem: Add missing closedir() calls,Namhyung Kim
+2eb5dd418034,https://github.com/torvalds/linux/commit/2eb5dd418034,perf record: Fix memory leak when using '--user-regs=?' to list registers,Zheng Zengkai
+a6f8e68e238a,https://github.com/torvalds/linux/commit/a6f8e68e238a,crypto: ccp - Fix a resource leak in an error handling path,Christophe JAILLET
+e2105ca8beb0,https://github.com/torvalds/linux/commit/e2105ca8beb0,of: platform: fix OF node refcount leak,Sudeep Holla
+1f7aac6eb585,https://github.com/torvalds/linux/commit/1f7aac6eb585,powerpc/via-pmu-led.c: Add of_node_put to avoid memory leak,Julia Lawall
+a9acc26b75f6,https://github.com/torvalds/linux/commit/a9acc26b75f6,cpufreq/pasemi: fix possible object reference leak,Wen Yang
+9867999f3a85,https://github.com/torvalds/linux/commit/9867999f3a85,PM / OPP: add missing of_node_put() for of_get_cpu_node(),Sudeep Holla
+030e4138d11f,https://github.com/torvalds/linux/commit/030e4138d11f,scsi: be2iscsi: Fix an error handling path in beiscsi_dev_probe(),Christophe JAILLET
+5284024b4dac,https://github.com/torvalds/linux/commit/5284024b4dac,mtd: rawnand: plat_nand: Fix the probe error path,Miquel Raynal
+1523508d6321,https://github.com/torvalds/linux/commit/1523508d6321,drivers/pcmcia: add missing pci_dev_get,Julia Lawall
+5d5e100a2034,https://github.com/torvalds/linux/commit/5d5e100a2034,drm/i915/selftests: Fix i915_address_space refcnt leak,Xiyu Yang
+76975f8a3186,https://github.com/torvalds/linux/commit/76975f8a3186,[X25]: Add missing x25_neigh_put,Julia Lawall
+866c0f25d2dc,https://github.com/torvalds/linux/commit/866c0f25d2dc,spi/mpc52xx: Fix error handling in probe function,Guenter Roeck
+48a7c3df14d0,https://github.com/torvalds/linux/commit/48a7c3df14d0,ath9k_hw: Fix memory leak on ath9k_hw_rf_alloc_ext_banks failure,Rajkumar Manoharan
+625fcaf97340,https://github.com/torvalds/linux/commit/625fcaf97340,drivers/video: add missing pci_dev_get,Julia Lawall
+a34a0a632dd9,https://github.com/torvalds/linux/commit/a34a0a632dd9,drm: fix drm_dp_mst_port refcount leaks in drm_dp_mst_allocate_vcpi,Xin Xiong
+f35691062a13,https://github.com/torvalds/linux/commit/f35691062a13,drivers/video/gbefb.c: eliminate memory leak,Julia Lawall
+3c62602434c1,https://github.com/torvalds/linux/commit/3c62602434c1,HID: i2c-hid: fix memory leak during probe,Jiri Kosina
+9c23aa51477a,https://github.com/torvalds/linux/commit/9c23aa51477a,r8152: Fix potential PM refcount imbalance,Takashi Iwai
+90a239ee25fa,https://github.com/torvalds/linux/commit/90a239ee25fa,RDMA/rvt: Fix potential memory leak caused by rvt_alloc_rq,Aditya Pakki
+e2eae09939a8,https://github.com/torvalds/linux/commit/e2eae09939a8,iommu/qcom: add missing put_device() call in qcom_iommu_of_xlate(),Yu Kuai
+86e1d5adcef9,https://github.com/torvalds/linux/commit/86e1d5adcef9,net: ethernet: ti: cpsw: fix mdio device reference leak,Johan Hovold
+946ef2a24523,https://github.com/torvalds/linux/commit/946ef2a24523,perf script: Add missing closedir() calls,Namhyung Kim

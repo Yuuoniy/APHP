@@ -1,0 +1,30 @@
+# Ignore all __pycache__ directories
+APHP-src/**/__pycache__/*
+
+# Ignore all intermediate_data directories
+APHP-src/**/intermediate_data/*
+
+# Ignore all workspace directories
+APHP-src/*/workspace/*
+
+# Ignore specific files
+.vscode/settings.json
+APHP-src/BugDetection/log-false-positve.txt
+APHP-src/SpecificationExtraction/build/my-languages.so
+tools/stanford-corenlp-4.4.0/*
+tools/build/languages.so
+tools/stanford-corenlp-4.4.0.zip
+tools/bin/*
+tools/lib/*
+APHP-src/build/*
+APHP-src/scripts/report_ranker.py
+APHP-src/scripts/pipeline.py
+data/ExtractedSpecification/*
+data/BugReports/*
+APHP-src/scripts/spec_ranker.py
+APHP-src/BugDetection/modules/report_ranker.py
+APHP-src/BugDetection/modules/chk_violation_checker.py
+APHP-src/BugDetection/build/*
+tools/joern-cli.zip
+data/sample_data/remove_empty.py
+tools/joern-install.sh

@@ -1,0 +1,363 @@
+hexsha,patch,summary,author
+66eede4a37c3,https://github.com/git/git/commit/66eede4a37c3,prepare_repo_settings(): plug leak of config values,Jeff King
+25b6a95d03fe,https://github.com/git/git/commit/25b6a95d03fe,submodule--helper: fix a memory leak in print_status(),Ævar Arnfjörð Bjarmason
+623bd7d154da,https://github.com/git/git/commit/623bd7d154da,submodule--helper: fix a leak in module_add(),Ævar Arnfjörð Bjarmason
+ae3ef94d9bc6,https://github.com/git/git/commit/ae3ef94d9bc6,submodule--helper: fix a memory leak in get_default_remote_submodule(),Ævar Arnfjörð Bjarmason
+17af0a844452,https://github.com/git/git/commit/17af0a844452,submodule--helper: fix a leak with repo_clear(),Ævar Arnfjörð Bjarmason
+61adac6c4b58,https://github.com/git/git/commit/61adac6c4b58,"submodule--helper: fix ""errmsg_str"" memory leak",Ævar Arnfjörð Bjarmason
+4b9d12460d18,https://github.com/git/git/commit/4b9d12460d18,"submodule--helper: ""struct pathspec"" memory leak in module_update()",Ævar Arnfjörð Bjarmason
+d76260e60a5c,https://github.com/git/git/commit/d76260e60a5c,submodule--helper: fix trivial get_default_remote_submodule() leak,Ævar Arnfjörð Bjarmason
+96a907376b10,https://github.com/git/git/commit/96a907376b10,"submodule--helper: add missing braces to ""else"" arm",Ævar Arnfjörð Bjarmason
+23578904da8e,https://github.com/git/git/commit/23578904da8e,preload-index: fix memleak,Anthony Delannoy
+c5365e93fd94,https://github.com/git/git/commit/c5365e93fd94,"bisect.c: add missing ""goto"" for release_revisions()",Ævar Arnfjörð Bjarmason
+198551ca54f6,https://github.com/git/git/commit/198551ca54f6,git-p4: fix error handling in P4Unshelve.renameBranch(),Moritz Baumann
+34e691288d4e,https://github.com/git/git/commit/34e691288d4e,test-tool ref-store: fix a memory leak,Ævar Arnfjörð Bjarmason
+55916bba0f48,https://github.com/git/git/commit/55916bba0f48,gc: fix a memory leak,Ævar Arnfjörð Bjarmason
+d90dafbe3180,https://github.com/git/git/commit/d90dafbe3180,cat-file: fix a memory leak in --batch-command mode,Ævar Arnfjörð Bjarmason
+74a06a9f2103,https://github.com/git/git/commit/74a06a9f2103,clone: fix memory leak in wanted_peer_refs(),Ævar Arnfjörð Bjarmason
+652891de4ff1,https://github.com/git/git/commit/652891de4ff1,read_index_from(): avoid memory leak,Johannes Schindelin
+41a86b64c093,https://github.com/git/git/commit/41a86b64c093,submodule--helper: avoid memory leak when fetching submodules,Johannes Schindelin
+f53559227ccb,https://github.com/git/git/commit/f53559227ccb,submodule-config: avoid memory leak,Johannes Schindelin
+5a09991e32f3,https://github.com/git/git/commit/5a09991e32f3,fsmonitor: avoid memory leak in `fsm_settings__get_incompatible_msg()`,Johannes Schindelin
+35919bf1ab9d,https://github.com/git/git/commit/35919bf1ab9d,transport: unify return values and exit point from transport_push(),Frantisek Hrbata
+6a616619679d,https://github.com/git/git/commit/6a616619679d,archive: do not let on-disk mode leak to zip archives,Junio C Hamano
+6dfadc8981a3,https://github.com/git/git/commit/6dfadc8981a3,clone: plug a miniscule leak,Junio C Hamano
+89f45cf4eb03,https://github.com/git/git/commit/89f45cf4eb03,"format-patch: don't leak ""extra_headers"" or ""ref_message_ids""",Ævar Arnfjörð Bjarmason
+b925fcf12951,https://github.com/git/git/commit/b925fcf12951,"t/helper/test-fast-rebase.c: don't leak ""struct strbuf""",Ævar Arnfjörð Bjarmason
+82e69b0cb5ef,https://github.com/git/git/commit/82e69b0cb5ef,"ls-tree: add missing braces to ""else"" arms",Ævar Arnfjörð Bjarmason
+8f79015111f8,https://github.com/git/git/commit/8f79015111f8,submodule--helper: fix trivial leak in module_add(),Ævar Arnfjörð Bjarmason
+8d60e9d2010d,https://github.com/git/git/commit/8d60e9d2010d,merge-ort: fix small memory leak in detect_and_process_renames(),Elijah Newren
+679e3693aba0,https://github.com/git/git/commit/679e3693aba0,branch.c: use 'goto cleanup' in setup_tracking() to fix memory leaks,Glen Choo
+587c3d0da67a,https://github.com/git/git/commit/587c3d0da67a,progress.c test helper: add missing braces,Ævar Arnfjörð Bjarmason
+0f03f04c5c24,https://github.com/git/git/commit/0f03f04c5c24,sparse-checkout: fix a couple minor memory leaks,Elijah Newren
+6046f7a91c3b,https://github.com/git/git/commit/6046f7a91c3b,merge: fix memory leaks in cmd_merge(),Elijah Newren
+a59b8dd94f0e,https://github.com/git/git/commit/a59b8dd94f0e,merge-ort: fix memory leak in merge_ort_internal(),Elijah Newren
+f5f6a6cd4740,https://github.com/git/git/commit/f5f6a6cd4740,reftable: ignore remove() return value in stack_test.c,Han-Wen Nienhuys
+f7445865f260,https://github.com/git/git/commit/f7445865f260,reftable: check reftable_stack_auto_compact() return value,Han-Wen Nienhuys
+27e27ee2249f,https://github.com/git/git/commit/27e27ee2249f,reftable: fix resource leak blocksource.c,Han-Wen Nienhuys
+999bba3e0bbb,https://github.com/git/git/commit/999bba3e0bbb,daemon: plug memory leak on overlong path,René Scharfe
+dee839a26331,https://github.com/git/git/commit/dee839a26331,format-patch: mark rev_info with UNLEAK,Junio C Hamano
+df25a19d7287,https://github.com/git/git/commit/df25a19d7287,test-ref-store: plug memory leak in cmd_delete_refs,Han-Wen Nienhuys
+022815114a8a,https://github.com/git/git/commit/022815114a8a,pack-bitmap.c: don't leak type-level bitmaps,Taylor Blau
+ee4a1d63d7e9,https://github.com/git/git/commit/ee4a1d63d7e9,builtin/multi-pack-index.c: don't leak concatenated options,Taylor Blau
+e6432e0f1f18,https://github.com/git/git/commit/e6432e0f1f18,builtin/repack.c: avoid leaking child arguments,Taylor Blau
+9e39acc94ad4,https://github.com/git/git/commit/9e39acc94ad4,builtin/pack-objects.c: don't leak memory via arguments,Taylor Blau
+492cb394fb2b,https://github.com/git/git/commit/492cb394fb2b,midx.c: don't leak MIDX from verify_midx_file,Taylor Blau
+c270b055d94b,https://github.com/git/git/commit/c270b055d94b,submodule--helper: fix small memory leaks,Ævar Arnfjörð Bjarmason
+27ff1fbc5dd5,https://github.com/git/git/commit/27ff1fbc5dd5,"clone: fix a memory leak of the ""git_dir"" variable",Ævar Arnfjörð Bjarmason
+f3af71c947cd,https://github.com/git/git/commit/f3af71c947cd,gpg-interface: fix leak of strbufs in get_ssh_key_fingerprint(),Jeff King
+78d468f1a9c7,https://github.com/git/git/commit/78d468f1a9c7,"gpg-interface: fix leak of ""line"" in parse_ssh_output()",Jeff King
+6e658547d355,https://github.com/git/git/commit/6e658547d355,sequencer: fix a memory leak in do_reset(),Ævar Arnfjörð Bjarmason
+e861b0963626,https://github.com/git/git/commit/e861b0963626,test-read-midx: fix leak of bitmap_index struct,Jeff King
+35f070b4de8f,https://github.com/git/git/commit/35f070b4de8f,rebase: use our standard error return value,Phillip Wood
+6eccfc3adf70,https://github.com/git/git/commit/6eccfc3adf70,tr2: leave the parent list empty upon failure & don't leak memory,Ævar Arnfjörð Bjarmason
+48f68715b14b,https://github.com/git/git/commit/48f68715b14b,"tr2: stop leaking ""thread_name"" memory",Ævar Arnfjörð Bjarmason
+9bb6c2e54f88,https://github.com/git/git/commit/9bb6c2e54f88,"midx: close linked MIDXs, avoid leaking memory",Taylor Blau
+ccdd5d1eb14a,https://github.com/git/git/commit/ccdd5d1eb14a,"mailmap.c: fix a memory leak in free_mailap_{info,entry}()",Ævar Arnfjörð Bjarmason
+88682b016dcb,https://github.com/git/git/commit/88682b016dcb,protocol-caps.c: fix memory leak in send_info(),Ævar Arnfjörð Bjarmason
+5146c2f148e9,https://github.com/git/git/commit/5146c2f148e9,credential: fix leak in credential_apply_config(),Mike Hommey
+9a863b3358b8,https://github.com/git/git/commit/9a863b3358b8,reset: clear_unpack_trees_porcelain to plug leak,Andrzej Hunt
+ed3c566d97f2,https://github.com/git/git/commit/ed3c566d97f2,builtin/mv: free or UNLEAK multiple pointers at end of cmd_mv,Andrzej Hunt
+675ea4efdbe2,https://github.com/git/git/commit/675ea4efdbe2,convert: release strbuf to avoid leak,Andrzej Hunt
+8d833e933719,https://github.com/git/git/commit/8d833e933719,read-cache: call diff_setup_done to avoid leak,Andrzej Hunt
+d7cf4188e2e8,https://github.com/git/git/commit/d7cf4188e2e8,ref-filter: also free head for ATOM_HEAD to avoid leak,Andrzej Hunt
+4e3250b7fb80,https://github.com/git/git/commit/4e3250b7fb80,diffcore-rename: move old_dir/new_dir definition to plug leak,Andrzej Hunt
+edfc744918fb,https://github.com/git/git/commit/edfc744918fb,builtin/submodule--helper: release unused strbuf to avoid leak,Andrzej Hunt
+14c3dd817dbd,https://github.com/git/git/commit/14c3dd817dbd,environment: move strbuf into block to plug leak,Andrzej Hunt
+9938f30d13d2,https://github.com/git/git/commit/9938f30d13d2,"merge: add missing word ""strategy"" to a message",Philippe Blain
+c5d0b12a4c8a,https://github.com/git/git/commit/c5d0b12a4c8a,maintenance: fix two memory leaks,Lénaïc Huard
+37be11994f95,https://github.com/git/git/commit/37be11994f95,builtin/rm: avoid leaking pathspec and seen,Andrzej Hunt
+a317a553b89d,https://github.com/git/git/commit/a317a553b89d,builtin/for-each-ref: free filter and UNLEAK sorting.,Andrzej Hunt
+4fa268738ca9,https://github.com/git/git/commit/4fa268738ca9,builtin/bugreport: don't leak prefixed filename,Andrzej Hunt
+04fe4d75faa2,https://github.com/git/git/commit/04fe4d75faa2,init-db: silence template_dir leak when converting to absolute path,Andrzej Hunt
+aa1b63971ab4,https://github.com/git/git/commit/aa1b63971ab4,worktree: fix leak in dwim_branch(),Andrzej Hunt
+0c4542738e62,https://github.com/git/git/commit/0c4542738e62,clone: free or UNLEAK further pointers when finished,Andrzej Hunt
+e901de68166a,https://github.com/git/git/commit/e901de68166a,reset: free instead of leaking unneeded ref,Andrzej Hunt
+f63b88867a8f,https://github.com/git/git/commit/f63b88867a8f,symbolic-ref: don't leak shortened refname in check_symref(),Andrzej Hunt
+bf4bb9f9f513,https://github.com/git/git/commit/bf4bb9f9f513,commit-graph: avoid leaking topo_levels slab in write_commit_graph(),Andrzej Hunt
+8c29b497946f,https://github.com/git/git/commit/8c29b497946f,range-diff: avoid leaking memory in two error code paths,Johannes Schindelin
+eaf5341538b4,https://github.com/git/git/commit/eaf5341538b4,stash: add missing space to an error message,Kyle Meyer
+d44e5267eaef,https://github.com/git/git/commit/d44e5267eaef,diff-lib: plug minor memory leaks in do_diff_cache(),René Scharfe
+bda959c4766d,https://github.com/git/git/commit/bda959c4766d,packfile: fix memory leak in add_delta_base_cache(),Matheus Tavares
+5336d5069626,https://github.com/git/git/commit/5336d5069626,ref-filter: plug memory leak in reach_filter(),René Scharfe
+27ed6ccc12a3,https://github.com/git/git/commit/27ed6ccc12a3,worktree: fix leak in check_clean_worktree(),Jeff King
+55fe225dde45,https://github.com/git/git/commit/55fe225dde45,submodule--helper: fix leak of core.worktree value,Jeff King
+1c890016a147,https://github.com/git/git/commit/1c890016a147,config: fix leak in git_config_get_expiry_in_days(),Jeff King
+c514c62a4fd8,https://github.com/git/git/commit/c514c62a4fd8,checkout: fix leak of non-existent branch names,Jeff King
+3e19816dc044,https://github.com/git/git/commit/3e19816dc044,ls-remote: simplify UNLEAK() usage,Jeff King
+398e659e1ec6,https://github.com/git/git/commit/398e659e1ec6,"revision: avoid leak when preparing bloom filter for ""/""",Jeff King
+0c9a4f638a53,https://github.com/git/git/commit/0c9a4f638a53,pull: plug minor memory leak after using is_descendant_of(),René Scharfe
+d546fe2874ce,https://github.com/git/git/commit/d546fe2874ce,commit-reach: plug minor memory leak after using is_descendant_of(),René Scharfe
+65c425a2ec81,https://github.com/git/git/commit/65c425a2ec81,sequencer: stop leaking buf,Denton Liu
+15a4205d9671,https://github.com/git/git/commit/15a4205d9671,name-rev: don't leak path copy in name_ref(),René Scharfe
+43f33e492af6,https://github.com/git/git/commit/43f33e492af6,git-p4: avoid leak of file handle when cloning,Luke Diamand
+f6b9413bafbe,https://github.com/git/git/commit/f6b9413bafbe,sequencer: fix a memory leak in sequencer_continue(),Alban Gruin
+fd99c2dd9b0b,https://github.com/git/git/commit/fd99c2dd9b0b,grep: use return value of strbuf_detach(),René Scharfe
+82f51af3452b,https://github.com/git/git/commit/82f51af3452b,log-tree: always use return value of strbuf_detach(),René Scharfe
+7e927567519a,https://github.com/git/git/commit/7e927567519a,http: don't leak urlmatch_config.vars,Mike Hommey
+779ad6641b9a,https://github.com/git/git/commit/779ad6641b9a,notes: avoid leaking duplicate entries,Mike Hommey
+f836bf393731,https://github.com/git/git/commit/f836bf393731,merge-recursive: future-proof update_file_flags() against memory leaks,Elijah Newren
+14d30cdfc047,https://github.com/git/git/commit/14d30cdfc047,ref-filter: fix memory leak in `free_array_item()`,Martin Ågren
+f463beb80563,https://github.com/git/git/commit/f463beb80563,grep: inline the return value of a function call used only once,Ævar Arnfjörð Bjarmason
+7372eaeb8b47,https://github.com/git/git/commit/7372eaeb8b47,rebase: fix a memory leak,Phillip Wood
+98552f252ad4,https://github.com/git/git/commit/98552f252ad4,commit-graph: fix memory leak,Josh Steadmon
+96b0710ee405,https://github.com/git/git/commit/96b0710ee405,object: fix leak of shallow_stat,Josh Steadmon
+7317aa7153c0,https://github.com/git/git/commit/7317aa7153c0,odb_load_loose_cache: fix strbuf leak,Jeff King
+a71806a74cc1,https://github.com/git/git/commit/a71806a74cc1,read-cache.c: add missing colon separators,Nguyễn Thái Ngọc Duy
+3a457a08f2cb,https://github.com/git/git/commit/3a457a08f2cb,ewok_rlw.h: add missing 'inline' to function definition,Ramsay Jones
+deec6b8e0f85,https://github.com/git/git/commit/deec6b8e0f85,ls-remote: release memory instead of UNLEAK,Olga Telezhnaya
+f4dbdfc4d514,https://github.com/git/git/commit/f4dbdfc4d514,commit-graph: clean up leaked memory during write,Derrick Stolee
+47cb16a26447,https://github.com/git/git/commit/47cb16a26447,diff --color-moved: fix a memory leak,Phillip Wood
+9c1a6c2bf837,https://github.com/git/git/commit/9c1a6c2bf837,diff --color-moved-ws: fix another memory leak,Phillip Wood
+fe4516d103e6,https://github.com/git/git/commit/fe4516d103e6,diff --color-moved-ws: fix a memory leak,Phillip Wood
+6e8fc70fcefd,https://github.com/git/git/commit/6e8fc70fcefd,sequencer: use return value of oidset_insert(),René Scharfe
+4067a64672f9,https://github.com/git/git/commit/4067a64672f9,commit-reach: fix memory and flag leaks,Derrick Stolee
+5697ca9aa562,https://github.com/git/git/commit/5697ca9aa562,unpack-trees: add missing cache invalidation,Nguyễn Thái Ngọc Duy
+883e5c7fe90a,https://github.com/git/git/commit/883e5c7fe90a,commit-graph: UNLEAK before die(),Derrick Stolee
+f40f3c16cd3b,https://github.com/git/git/commit/f40f3c16cd3b,sequencer.c: plug mem leak in git_sequencer_config,Stefan Beller
+19517fb964f8,https://github.com/git/git/commit/19517fb964f8,sequencer.c: plug leaks in do_pick_commit,Stefan Beller
+e6be8e2f9f87,https://github.com/git/git/commit/e6be8e2f9f87,submodule--helper: plug mem leak in print_default_remote,Stefan Beller
+0210231b0803,https://github.com/git/git/commit/0210231b0803,git_setup_gettext: plug memory leak,Johannes Schindelin
+ba3a08ca0ec0,https://github.com/git/git/commit/ba3a08ca0ec0,fsck: fix leak when traversing trees,Eric Wong
+03e7833f3ab2,https://github.com/git/git/commit/03e7833f3ab2,oidset: don't return value from oidset_init,Thomas Gummerer
+176cb979fe7c,https://github.com/git/git/commit/176cb979fe7c,transport-helper: plug strbuf and string_list leaks,René Scharfe
+addcf6cfdeb2,https://github.com/git/git/commit/addcf6cfdeb2,fmt-merge-msg: avoid leaking strbuf in shortlog(),René Scharfe
+782c030ea21f,https://github.com/git/git/commit/782c030ea21f,config: flip return value of write_section(),René Scharfe
+b0ca411051d8,https://github.com/git/git/commit/b0ca411051d8,files_transaction_prepare(): don't leak flags to packed transaction,Michael Haggerty
+f4e45cb3eb6f,https://github.com/git/git/commit/f4e45cb3eb6f,bisect: fix memory leak when returning best element,Martin Ågren
+fc5c40bb2bb1,https://github.com/git/git/commit/fc5c40bb2bb1,bisect: fix memory leak in `find_bisection()`,Martin Ågren
+9360ec000236,https://github.com/git/git/commit/9360ec000236,sequencer.c: check return value of close() in rewrite_file(),Simon Ruderich
+10e0ca843dea,https://github.com/git/git/commit/10e0ca843dea,diff: fix lstat() error handling in diff_populate_filespec(),Andrey Okoshkin
+b2401586fc51,https://github.com/git/git/commit/b2401586fc51,write_entry: fix leak when retrying delayed filter,Jeff King
+cb7b29eb6777,https://github.com/git/git/commit/cb7b29eb6777,commit: fix memory leak in `reduce_heads()`,Martin Ågren
+dd1055ed594f,https://github.com/git/git/commit/dd1055ed594f,builtin/commit: fix memory leak in `prepare_index()`,Martin Ågren
+634eb82b1aa1,https://github.com/git/git/commit/634eb82b1aa1,notes-merge: use ssize_t for write_in_full() return value,Jeff King
+3f5ef95b5e0c,https://github.com/git/git/commit/3f5ef95b5e0c,refs/files-backend: correct return value in lock_ref_for_update,Martin Ågren
+6c6b08d26999,https://github.com/git/git/commit/6c6b08d26999,config: plug user_config leak,Jeff King
+baddc96b2cbf,https://github.com/git/git/commit/baddc96b2cbf,update-index: fix cache entry leak in add_one_file(),Jeff King
+fe6a01af8aa9,https://github.com/git/git/commit/fe6a01af8aa9,add: free leaked pathspec after add_files_to_cache(),Jeff King
+ef9c4dc3b6a4,https://github.com/git/git/commit/ef9c4dc3b6a4,merge-recursive: remove return value from get_files_dirs,Kevin Willford
+e336bdc5b9bc,https://github.com/git/git/commit/e336bdc5b9bc,merge-recursive: fix memory leak,Kevin Willford
+b50386c7c038,https://github.com/git/git/commit/b50386c7c038,read-cache: fix memory leak in do_write_index,Kevin Willford
+149d8cbb2ebd,https://github.com/git/git/commit/149d8cbb2ebd,win32: plug memory leak on realloc() failure in syslog(),René Scharfe
+ef4fe5617ead,https://github.com/git/git/commit/ef4fe5617ead,connect.c: fix leak in parse_one_symref_info(),Jeff King
+15d980a785f8,https://github.com/git/git/commit/15d980a785f8,log: fix memory leak in open_next_file(),Nguyễn Thái Ngọc Duy
+d096d7f1ef81,https://github.com/git/git/commit/d096d7f1ef81,rebase -i: add missing newline to end of message,Phillip Wood
+443a12f37be1,https://github.com/git/git/commit/443a12f37be1,checkout: fix memory leak,Junio C Hamano
+d32de66a07c6,https://github.com/git/git/commit/d32de66a07c6,submodule_uses_worktrees(): plug memory leak,Johannes Schindelin
+2e11f58fa6a0,https://github.com/git/git/commit/2e11f58fa6a0,show_worktree(): plug memory leak,Johannes Schindelin
+5308224633cf,https://github.com/git/git/commit/5308224633cf,name-rev: avoid leaking memory in the `deref` case,Johannes Schindelin
+3dc7ea91dab9,https://github.com/git/git/commit/3dc7ea91dab9,remote: plug memory leak in match_explicit(),Johannes Schindelin
+7c565a6b2d8b,https://github.com/git/git/commit/7c565a6b2d8b,shallow: avoid memory leak,Johannes Schindelin
+6cf034e7ed3e,https://github.com/git/git/commit/6cf034e7ed3e,line-log: avoid memory leak,Johannes Schindelin
+bda6e82801e3,https://github.com/git/git/commit/bda6e82801e3,receive-pack: plug memory leak in update(),Johannes Schindelin
+1efb1e9a21d1,https://github.com/git/git/commit/1efb1e9a21d1,fast-export: avoid leaking memory in handle_tag(),Johannes Schindelin
+43e61e715283,https://github.com/git/git/commit/43e61e715283,mktree: plug memory leaks reported by Coverity,Johannes Schindelin
+077a34e0b940,https://github.com/git/git/commit/077a34e0b940,pack-redundant: plug memory leak,Johannes Schindelin
+2d4dcf210e15,https://github.com/git/git/commit/2d4dcf210e15,setup_discovered_git_dir(): plug memory leak,Johannes Schindelin
+514e80394445,https://github.com/git/git/commit/514e80394445,checkout: fix memory leak,Johannes Schindelin
+05c2b7ba49e3,https://github.com/git/git/commit/05c2b7ba49e3,cat-file: fix memory leak,Johannes Schindelin
+5b34ba414d10,https://github.com/git/git/commit/5b34ba414d10,get_mail_commit_oid(): avoid resource leak,Johannes Schindelin
+4db7dbdb4ae5,https://github.com/git/git/commit/4db7dbdb4ae5,git_config_rename_section_in_file(): avoid resource leak,Johannes Schindelin
+1a845a2c88e5,https://github.com/git/git/commit/1a845a2c88e5,mingw: avoid memory leak when splitting PATH,Johannes Schindelin
+57e0ef0e0e90,https://github.com/git/git/commit/57e0ef0e0e90,am: check return value of resolve_refdup before using hash,René Scharfe
+79e913c24aa3,https://github.com/git/git/commit/79e913c24aa3,checkout: check return value of resolve_refdup before using hash,René Scharfe
+f131db9e3166,https://github.com/git/git/commit/f131db9e3166,am: fix commit buffer leak in get_commit_info(),Jeff King
+5d2993b6eabb,https://github.com/git/git/commit/5d2993b6eabb,connect.c: fix leak in handle_ssh_variant,Jeff King
+372b050b6bd4,https://github.com/git/git/commit/372b050b6bd4,replace: plug a memory leak,Junio C Hamano
+7861fa07c38d,https://github.com/git/git/commit/7861fa07c38d,grep: plug a trivial memory leak,Ævar Arnfjörð Bjarmason
+35ad44cbd813,https://github.com/git/git/commit/35ad44cbd813,submodule.c: add missing ' in error messages,Ralf Thielow
+c105f563d1b8,https://github.com/git/git/commit/c105f563d1b8,update-index: fix xgetcwd() related memory leak,Christian Couder
+a42e1b4194b0,https://github.com/git/git/commit/a42e1b4194b0,sequencer: fix missing newline,Brandon Williams
+e94eac49e6ed,https://github.com/git/git/commit/e94eac49e6ed,http-push: don't check return value of lookup_unknown_object(),René Scharfe
+62af89697940,https://github.com/git/git/commit/62af89697940,attr.c: plug small leak in parse_attr_line(),Junio C Hamano
+7c4be458b1c7,https://github.com/git/git/commit/7c4be458b1c7,worktree: initialize return value for submodule_uses_worktrees,Stefan Beller
+b84be553548b,https://github.com/git/git/commit/b84be553548b,convert: make apply_filter() adhere to standard Git error handling,Lars Schneider
+5caeeb83bcb8,https://github.com/git/git/commit/5caeeb83bcb8,archive-tar: drop return value,Jeff King
+6eb6078bf5fd,https://github.com/git/git/commit/6eb6078bf5fd,abbrev_sha1_in_line: don't leak memory,Stefan Beller
+344b548475b8,https://github.com/git/git/commit/344b548475b8,notes: don't leak memory in git_config_get_notes_strategy,Stefan Beller
+87f16258367a,https://github.com/git/git/commit/87f16258367a,xdiff/xprepare: fix a memory leak,Ramsay Jones
+4867f1184c94,https://github.com/git/git/commit/4867f1184c94,xdiff/xmerge: fix memory leak in xdl_merge,Patrick Steinhardt
+8c24d832cdcc,https://github.com/git/git/commit/8c24d832cdcc,verify_pack: do not ignore return value of verification function,David Turner
+b1b49ff8d42a,https://github.com/git/git/commit/b1b49ff8d42a,daemon: plug memory leak,René Scharfe
+0fb19906b5eb,https://github.com/git/git/commit/0fb19906b5eb,read_branches_file: plug a FILE* leak,Johannes Sixt
+12d19e80b049,https://github.com/git/git/commit/12d19e80b049,mailinfo: plug strbuf leak during continuation line handling,Junio C Hamano
+d270d7b7a2d6,https://github.com/git/git/commit/d270d7b7a2d6,mailsplit: fix FILE* leak in split_maildir,Jeff King
+99885bc0ef00,https://github.com/git/git/commit/99885bc0ef00,reflog: add missing single quote to error message,Alex Henrie
+2c3aed1381f2,https://github.com/git/git/commit/2c3aed1381f2,pseudoref: check return values from read_ref(),David Turner
+7d4053b69b37,https://github.com/git/git/commit/7d4053b69b37,rerere: do not leak mmfile[] for a path with multiple stage #1 entries,Junio C Hamano
+8d9b5a4ada8b,https://github.com/git/git/commit/8d9b5a4ada8b,rerere: plug conflict ID leaks,Junio C Hamano
+124b51909dab,https://github.com/git/git/commit/124b51909dab,"pager: do not leak ""GIT_PAGER_IN_USE"" to the pager",Junio C Hamano
+3a1b3126ed5a,https://github.com/git/git/commit/3a1b3126ed5a,config.c: fix mmap leak when writing config,Jeff King
+599dc766e89f,https://github.com/git/git/commit/599dc766e89f,"pack-bitmaps: plug memory leak, fix allocation size for recent_bitmaps",René Scharfe
+1016658de3fe,https://github.com/git/git/commit/1016658de3fe,merge: small leakfix and code simplification,Junio C Hamano
+f86a3747abc7,https://github.com/git/git/commit/f86a3747abc7,pack-bitmap.c: fix a memleak,Stefan Beller
+9ce4ad3e0eac,https://github.com/git/git/commit/9ce4ad3e0eac,streaming.c: fix a memleak,John Keeping
+0e32d4b31f35,https://github.com/git/git/commit/0e32d4b31f35,wt-status.c: fix a memleak,Stefan Beller
+05bfc7dcaa0e,https://github.com/git/git/commit/05bfc7dcaa0e,line-log.c: fix a memleak,Stefan Beller
+915e44c6357f,https://github.com/git/git/commit/915e44c6357f,read-cache: fix memleak,Stefan Beller
+5d0b9bf86d98,https://github.com/git/git/commit/5d0b9bf86d98,commit.c: fix a memory leak,Stefan Beller
+473091e21ef2,https://github.com/git/git/commit/473091e21ef2,merge-recursive: fix memleaks,Stefan Beller
+d687839c2962,https://github.com/git/git/commit/d687839c2962,merge-blobs.c: fix a memleak,Stefan Beller
+f0b1f1ece71a,https://github.com/git/git/commit/f0b1f1ece71a,builtin/apply.c: fix a memleak,Stefan Beller
+1b7cb8969cb2,https://github.com/git/git/commit/1b7cb8969cb2,update-index: fix a memleak,Stefan Beller
+fd2014d42b3a,https://github.com/git/git/commit/fd2014d42b3a,builtin/help.c: fix memory leak,Stefan Beller
+c8a571d8bcef,https://github.com/git/git/commit/c8a571d8bcef,bundle.c: fix memory leak,Stefan Beller
+04f20c04c6e5,https://github.com/git/git/commit/04f20c04c6e5,"connect.c: do not leak ""conn"" after showing diagnosis",Stefan Beller
+33adc83ddb31,https://github.com/git/git/commit/33adc83ddb31,refs: plug strbuf leak in lock_ref_sha1_basic(),René Scharfe
+a16cc8b24710,https://github.com/git/git/commit/a16cc8b24710,unpack_trees: plug leakage of o->result,Junio C Hamano
+5d222c099e38,https://github.com/git/git/commit/5d222c099e38,receive-pack: avoid minor leak in case start_async() fails,René Scharfe
+dc76c7f78369,https://github.com/git/git/commit/dc76c7f78369,transport: free leaking head in transport_print_push_status(),Stefan Beller
+64a7e92f28e9,https://github.com/git/git/commit/64a7e92f28e9,receive-pack: plug minor memory leak in unpack(),René Scharfe
+64045940af05,https://github.com/git/git/commit/64045940af05,bundle: plug minor memory leak in is_tag_in_date_range(),René Scharfe
+35ff08be099b,https://github.com/git/git/commit/35ff08be099b,prepare_index(): declare return value to be (const char *),Michael Haggerty
+1cc2c772dd4d,https://github.com/git/git/commit/1cc2c772dd4d,prune-packed: fix minor memory leak,Jeff King
+6876618ceaaf,https://github.com/git/git/commit/6876618ceaaf,record_author_date(): fix memory leak on malformed commit,Jeff King
+50b677328750,https://github.com/git/git/commit/50b677328750,clone.c: don't leak memory in cmd_clone,Stefan Beller
+2f50babef18d,https://github.com/git/git/commit/2f50babef18d,remote.c: don't leak the base branch name in format_tracking_info,Stefan Beller
+94204bf505c2,https://github.com/git/git/commit/94204bf505c2,builtin/log.c: fix minor memory leak,Matthieu Moy
+649409b7bccd,https://github.com/git/git/commit/649409b7bccd,fix memory leak parsing core.commentchar,Jeff King
+def0697167d0,https://github.com/git/git/commit/def0697167d0,transport: fix leaks in refs_from_alternate_cb,Jeff King
+f33206992de9,https://github.com/git/git/commit/f33206992de9,walker_fetch: fix minor memory leak,Jeff King
+019d1e65f5bc,https://github.com/git/git/commit/019d1e65f5bc,sha1_file: fix delta_stack memory leak in unpack_entry,Nguyễn Thái Ngọc Duy
+648027c4c85b,https://github.com/git/git/commit/648027c4c85b,cat-file: fix a minor memory leak in batch_objects,Jeff King
+07e238394594,https://github.com/git/git/commit/07e238394594,cat-file: refactor error handling of batch_objects,Jeff King
+e31a17f7416a,https://github.com/git/git/commit/e31a17f7416a,get_expanded_map(): avoid memory leak,Michael Haggerty
+ffc9329f48cb,https://github.com/git/git/commit/ffc9329f48cb,repack: retain the return value of pack-objects,Stefan Beller
+e28f7641592c,https://github.com/git/git/commit/e28f7641592c,unpack-trees: plug a memory leak,Felipe Contreras
+a04f8196a8f0,https://github.com/git/git/commit/a04f8196a8f0,traverse_trees(): clarify return value of the callback,Stefan Beller
+70a0cc9e5c62,https://github.com/git/git/commit/70a0cc9e5c62,commit: Fix a memory leak in determine_author_info,Stefan Beller
+a2cb86c1524b,https://github.com/git/git/commit/a2cb86c1524b,git_mkstemps: correctly test return value of open(),Dale R. Worley
+2c4842023205,https://github.com/git/git/commit/2c4842023205,builtin/checkout.c: don't leak memory in check_tracking_name,Brandon Casey
+706728a37c53,https://github.com/git/git/commit/706728a37c53,sequencer: avoid leaking message buffer when refusing to create an empty commit,Felipe Contreras
+88ff684dd54f,https://github.com/git/git/commit/88ff684dd54f,"diffcore-pickaxe: fix leaks in ""log -S<block>"" and ""log -G<pattern>""",Junio C Hamano
+f54fac537868,https://github.com/git/git/commit/f54fac537868,check_sha1_signature: check return value from read_istream,Jeff King
+e4ca819abff4,https://github.com/git/git/commit/e4ca819abff4,refs.c: fix fread error handling,John Keeping
+35998c89381a,https://github.com/git/git/commit/35998c89381a,git-config: remove memory leak of key regexp,Jeff King
+66a51a9aaec3,https://github.com/git/git/commit/66a51a9aaec3,path.c: Don't discard the return value of vsnpath(),Ramsay Jones
+6a17f583f4db,https://github.com/git/git/commit/6a17f583f4db,help.c::exclude_cmds(): plug a leak,Junio C Hamano
+4a15758f2ef9,https://github.com/git/git/commit/4a15758f2ef9,help.c::uniq: plug a leak,Jeff King
+ec83061156e1,https://github.com/git/git/commit/ec83061156e1,grep: stop leaking line strings with -f,René Scharfe
+176a33542edd,https://github.com/git/git/commit/176a33542edd,diff --no-index: don't leak buffers in queue_diff,Bobby Powers
+aa0834a04e1d,https://github.com/git/git/commit/aa0834a04e1d,http: clean up leak in init_curl_http_auth,Jeff King
+c27e559da5b2,https://github.com/git/git/commit/c27e559da5b2,fast-import: leakfix for 'ls' of dirty trees,Jonathan Nieder
+839de2527258,https://github.com/git/git/commit/839de2527258,config: copy the return value of prefix_filename,Jeff King
+37475f97d1fb,https://github.com/git/git/commit/37475f97d1fb,attr: fix leak in free_attr_elem,Jeff King
+6c597aeba1e0,https://github.com/git/git/commit/6c597aeba1e0,imap-send: don't check return value of git_getpass,Jeff King
+cd9519bd2c5c,https://github.com/git/git/commit/cd9519bd2c5c,mktree: fix a memory leak in write_tree(),Liu Yuan
+9cd7a92b97d0,https://github.com/git/git/commit/9cd7a92b97d0,pretty.c: free get_header() return value,Nguyễn Thái Ngọc Duy
+17d68a54def6,https://github.com/git/git/commit/17d68a54def6,refs.c: free duplicate entries in the ref array instead of leaking them,Brandon Casey
+9516a598e3ec,https://github.com/git/git/commit/9516a598e3ec,fetch: plug two leaks on error exit in store_updated_refs,Tay Ray Chuan
+8e854b00d860,https://github.com/git/git/commit/8e854b00d860,pickaxe: plug regex/kws leak,René Scharfe
+2b5f07f16c9e,https://github.com/git/git/commit/2b5f07f16c9e,pickaxe: plug regex leak,René Scharfe
+05ac978495e8,https://github.com/git/git/commit/05ac978495e8,pickaxe: plug diff filespec leak with empty needle,René Scharfe
+0d0ff65cea54,https://github.com/git/git/commit/0d0ff65cea54,builtin/mv.c: plug miniscule memory leak,Brandon Casey
+5be785996258,https://github.com/git/git/commit/5be785996258,bundle: use leak_pending flag,René Scharfe
+353f5657a826,https://github.com/git/git/commit/353f5657a826,bisect: use leak_pending flag,René Scharfe
+10b98fa5b3fa,https://github.com/git/git/commit/10b98fa5b3fa,merge: use return value of resolve_ref() to determine if HEAD is invalid,Nguyễn Thái Ngọc Duy
+2faa15274d7b,https://github.com/git/git/commit/2faa15274d7b,transport-helper: fix minor leak in push_refs_with_export,Jeff King
+daab4eeafa0d,https://github.com/git/git/commit/daab4eeafa0d,builtin/gc.c: add missing newline in message,Andreas Schwab
+d8ead1596389,https://github.com/git/git/commit/d8ead1596389,fetch: do not leak a refspec,Jim Meyering
+a9930e359c45,https://github.com/git/git/commit/a9930e359c45,plug a DIR buffer leak in rerere.c,Jim Meyering
+2d9932cf67a8,https://github.com/git/git/commit/2d9932cf67a8,shell: add missing initialization of argv0_path,Dima Sharov
+8cc299daf29c,https://github.com/git/git/commit/8cc299daf29c,vcs-svn: add missing cast to printf argument,Jonathan Nieder
+41e6b91f01bc,https://github.com/git/git/commit/41e6b91f01bc,vcs-svn: add missing cast to printf argument,Jonathan Nieder
+b3c0494aa9b3,https://github.com/git/git/commit/b3c0494aa9b3,checkout: add missing const to describe_detached_head,Jonathan Nieder
+b822423ed20d,https://github.com/git/git/commit/b822423ed20d,"wt-status.c: don't leak directory entries when processing untracked,ignored",Brandon Casey
+e92fa514a9ad,https://github.com/git/git/commit/e92fa514a9ad,cache_tree_free: Fix small memory leak,Elijah Newren
+4a5e74feb1a7,https://github.com/git/git/commit/4a5e74feb1a7,tree_entry_interesting(): Make return value more specific,Elijah Newren
+b6b56aceb85f,https://github.com/git/git/commit/b6b56aceb85f,write-tree: Avoid leak when index refers to an invalid object,Jonathan Nieder
+1ce584b05843,https://github.com/git/git/commit/1ce584b05843,read-tree: stop leaking tree objects,Jonathan Nieder
+59efba64ac14,https://github.com/git/git/commit/59efba64ac14,core: Stop leaking ondisk_cache_entrys,Jonathan Nieder
+4e1f87959c76,https://github.com/git/git/commit/4e1f87959c76,test get_git_work_tree() return value for NULL,Clemens Buchacher
+f5b26b1d14d3,https://github.com/git/git/commit/f5b26b1d14d3,wt-status: plug memory leak while collecting untracked files,Junio C Hamano
+b76c056b95cc,https://github.com/git/git/commit/b76c056b95cc,fix textconv leak in emit_rewrite_diff,Jeff King
+730b02003070,https://github.com/git/git/commit/730b02003070,fetch: Fix minor memory leak,Andreas Gruenbacher
+1f80c2afb0d8,https://github.com/git/git/commit/1f80c2afb0d8,Fix gitmkdtemp: correct test for mktemp() return value,Filippo Negroni
+689b8c290db9,https://github.com/git/git/commit/689b8c290db9,rerere: fix memory leak if rerere images can't be read,Bert Wesarg
+ef0065034a68,https://github.com/git/git/commit/ef0065034a68,fix minor memory leak in get_tree_entry(),René Scharfe
+de7a79608c94,https://github.com/git/git/commit/de7a79608c94,Fix memory leak in submodule.c,Jens Lehmann
+bfac23d9534e,https://github.com/git/git/commit/bfac23d9534e,grep: Fix two memory leaks,Dan McGee
+70d7099916c9,https://github.com/git/git/commit/70d7099916c9,textconv: stop leaking file descriptors,Jeff King
+b962dbdc8065,https://github.com/git/git/commit/b962dbdc8065,Fix various memory leaks in transport-helper.c,Sverre Rabbelier
+f2a37151d462,https://github.com/git/git/commit/f2a37151d462,Fix memory leak in helper method for disconnect,Daniel Barkalow
+f01d74960363,https://github.com/git/git/commit/f01d74960363,http-fetch: add missing initialization of argv0_path,Jonathan Nieder
+c6dfb399448f,https://github.com/git/git/commit/c6dfb399448f,remote-curl: add missing initialization of argv0_path,Johannes Sixt
+0c4f21e452dc,https://github.com/git/git/commit/0c4f21e452dc,Check return value of ftruncate call in http.c,Jeff Lasslett
+96d69b554325,https://github.com/git/git/commit/96d69b554325,Fix export_marks() error handling.,Matthias Andree
+b99d5f40d6a5,https://github.com/git/git/commit/b99d5f40d6a5,run_command: encode deadly signal number in the return value,Johannes Sixt
+d4c985653a58,https://github.com/git/git/commit/d4c985653a58,attr: plug minor memory leak,René Scharfe
+345a38039414,https://github.com/git/git/commit/345a38039414,git-remote: fix missing .uploadpack usage for show command,Chris Frey
+802f9c9cb213,https://github.com/git/git/commit/802f9c9cb213,diff.c: plug a memory leak in an error path,Johannes Sixt
+df005219dd4a,https://github.com/git/git/commit/df005219dd4a,transport.c::get_refs_via_curl(): do not leak refs_url,Mike Hommey
+68862a315269,https://github.com/git/git/commit/68862a315269,"http-push: fix missing ""#ifdef USE_CURL_MULTI"" around ""is_running_queue""",Tay Ray Chuan
+e02f1762b257,https://github.com/git/git/commit/e02f1762b257,builtin-remote: make rm() use properly named variable to hold return value,Jay Soffian
+39765e5941d3,https://github.com/git/git/commit/39765e5941d3,interpret_nth_last_branch(): plug small memleak,Junio C Hamano
+f755bb996ba0,https://github.com/git/git/commit/f755bb996ba0,Fix handle leak in sha1_file/unpack_objects if there were damaged object data,Alex Riesen
+83b767360a18,https://github.com/git/git/commit/83b767360a18,builtin-remote.c: plug a small memory leak in get_one_remote_for_updates(),Junio C Hamano
+59dd9ed18398,https://github.com/git/git/commit/59dd9ed18398,pack-objects: don't leak pack window reference when splitting packs,Nicolas Pitre
+72cf48414071,https://github.com/git/git/commit/72cf48414071,diff: add missing static declaration,Jeff King
+9ed19614d4af,https://github.com/git/git/commit/9ed19614d4af,index-pack: don't leak leaf delta result,Nicolas Pitre
+1fb23e65503b,https://github.com/git/git/commit/1fb23e65503b,force_object_loose: Fix memory leak,Björn Steinbrink
+ffa9fd957039,https://github.com/git/git/commit/ffa9fd957039,Fix commit_tree() buffer leak,Stephan Beyer
+5d2299de2d9f,https://github.com/git/git/commit/5d2299de2d9f,builtin-merge: add missing structure initialization,Pierre Habouzit
+eac12e2d4d7f,https://github.com/git/git/commit/eac12e2d4d7f,Correct pack memory leak causing git gc to try to exceed ulimit,Shawn O. Pearce
+5b8a94b1db4b,https://github.com/git/git/commit/5b8a94b1db4b,git cat-file: Fix memory leak in batch mode,Björn Steinbrink
+1a8fb155cff5,https://github.com/git/git/commit/1a8fb155cff5,builtin-rerere: fix a small leak,Junio C Hamano
+1caeacc1f297,https://github.com/git/git/commit/1caeacc1f297,unpack_trees(): minor memory leak fix in unused destination index,Linus Torvalds
+283cdbcf4940,https://github.com/git/git/commit/283cdbcf4940,get_sha1_oneline: check return value of parse_object,Martin Koegler
+e8b32e061006,https://github.com/git/git/commit/e8b32e061006,fast-import: check return value from unpack_entry(),Shawn O. Pearce
+9116de595742,https://github.com/git/git/commit/9116de595742,http-push: fix webdav lock leak.,Grégoire Barbier
+68e6a4f80d4b,https://github.com/git/git/commit/68e6a4f80d4b,Plug a resource leak in threaded pack-objects code.,Johannes Sixt
+6ba78238a824,https://github.com/git/git/commit/6ba78238a824,Fix a memory leak,李鸿
+295dd2ad201c,https://github.com/git/git/commit/295dd2ad201c,Fix memory leak in traverse_commit_list,Shawn O. Pearce
+1e8a1954519a,https://github.com/git/git/commit/1e8a1954519a,Add missing inside_work_tree setting in setup_git_directory_gently,Nguyễn Thái Ngọc Duy
+399f0a8eedee,https://github.com/git/git/commit/399f0a8eedee,Fix a small memory leak in builtin-add,Benoit Sigoure
+c85228ed8f31,https://github.com/git/git/commit/c85228ed8f31,fix for more minor memory leaks,Nicolas Pitre
+18184f79dbf7,https://github.com/git/git/commit/18184f79dbf7,Fix 'push --all branch...' error handling,Shawn O. Pearce
+ca0328354afb,https://github.com/git/git/commit/ca0328354afb,builtin-apply.c: fix a tiny leak introduced during xmemdupz() conversion.,Junio C Hamano
+20fbfd869fe8,https://github.com/git/git/commit/20fbfd869fe8,archive - leakfix for format_subst(),Junio C Hamano
+2e3404c3245e,https://github.com/git/git/commit/2e3404c3245e,pack-objects: check return value from read_sha1_file(),Junio C Hamano
+cbbb218f8bd2,https://github.com/git/git/commit/cbbb218f8bd2,"Fix filehandle leak in ""git branch -D""",Alex Riesen
+86d14e1b1d10,https://github.com/git/git/commit/86d14e1b1d10,decode_85(): fix missing return.,Jerald Fitzjerald
+0b1f113075aa,https://github.com/git/git/commit/0b1f113075aa,fix memory leak in parse_object when check_sha1_signature fails,Carlos Rica
+2924415f4fb0,https://github.com/git/git/commit/2924415f4fb0,Fix signedness on return value from xread(),Johan Herland
+c21aa54e190e,https://github.com/git/git/commit/c21aa54e190e,Fix handle leak in write_tree,Alex Riesen
+bbf4b41baff1,https://github.com/git/git/commit/bbf4b41baff1,Plug memory leak in index-pack collision checking codepath.,Nicolas Pitre
+ac54c277f05c,https://github.com/git/git/commit/ac54c277f05c,Be more careful about zlib return values,Linus Torvalds
+6c912f5b04e3,https://github.com/git/git/commit/6c912f5b04e3,"Fix botched ""leak fix""",Junio C Hamano
+20276889d661,https://github.com/git/git/commit/20276889d661,git-daemon: Avoid leaking the listening sockets into child processes.,Alexandre Julliard
+2266bf27b354,https://github.com/git/git/commit/2266bf27b354,for_each_reflog_ent: do not leak FILE *,Junio C Hamano
+2cdf9509df66,https://github.com/git/git/commit/2cdf9509df66,write-cache: do not leak the serialized cache-tree data.,Linus Torvalds
+1295228d1fdd,https://github.com/git/git/commit/1295228d1fdd,merge-base: do not leak commit list,Junio C Hamano
+e90068a9046c,https://github.com/git/git/commit/e90068a9046c,i18n: do not leak 'encoding' header even when we cheat the conversion.,Junio C Hamano
+5fe5c8300da6,https://github.com/git/git/commit/5fe5c8300da6,Cleanup read_cache_from error handling.,Shawn O. Pearce
+53a7085a1049,https://github.com/git/git/commit/53a7085a1049,xmerge: make return value from xdl_merge() more usable.,Junio C Hamano
+d64d6c9fc712,https://github.com/git/git/commit/d64d6c9fc712,get_shallow_commits: Avoid memory leak if a commit has been reached already.,Alexandre Julliard
+057bc808b4aa,https://github.com/git/git/commit/057bc808b4aa,path-list: fix path-list-insert return value,Junio C Hamano
+9edd7e4652e0,https://github.com/git/git/commit/9edd7e4652e0,receive-pack: plug memory leak in fast-forward checking code.,Johannes Schindelin
+0caea90be0e5,https://github.com/git/git/commit/0caea90be0e5,Fix memory leak in prepend_to_path (git.c).,Christian Couder
+7e18e56920bd,https://github.com/git/git/commit/7e18e56920bd,git-tar-tree: fix minor memory leak,Rene Scharfe
+91b452cba9ff,https://github.com/git/git/commit/91b452cba9ff,"Fix memory leak in ""git rev-list --objects""",Linus Torvalds
+7561d9f54412,https://github.com/git/git/commit/7561d9f54412,commit-tree: check return value from write_sha1_file(),Junio C Hamano
+09a5d72d8e83,https://github.com/git/git/commit/09a5d72d8e83,diffcore-rename: plug memory leak.,Junio C Hamano
+e974c9ab03c3,https://github.com/git/git/commit/e974c9ab03c3,Use symbolic name SHORT_NAME_AMBIGUOUS as error return value,Uwe Zeisberger
+d28c8af623b0,https://github.com/git/git/commit/d28c8af623b0,diffcore-break.c: check diff_delta() return value.,Junio C Hamano
+54a9ba0d44c3,https://github.com/git/git/commit/54a9ba0d44c3,Fix fd leak in http-fetch,Nick Hengeveld
+e6c64fc1e9b3,https://github.com/git/git/commit/e6c64fc1e9b3,copy.c::copy_fd() - do not leak file descriptor on error return.,Junio C Hamano
+8be707de55e4,https://github.com/git/git/commit/8be707de55e4,[PATCH] git-local-fetch: Fix error checking and leak in setup_indices(),Sergey Vlasov
+d35bbe0b2e37,https://github.com/git/git/commit/d35bbe0b2e37,[PATCH] fetch.c: Plug memory leak in process_tree(),Sergey Vlasov
+bb97a2a804e0,https://github.com/git/git/commit/bb97a2a804e0,Plug leak in Daniel's read-tree.,Junio C Hamano
+90a734dc7f37,https://github.com/git/git/commit/90a734dc7f37,[PATCH] possible memory leak in diff.c::diff_free_filepair(),Yasushi SHOJI
+adee7bdf5041,https://github.com/git/git/commit/adee7bdf5041,[PATCH] Plug memory leak in git-pack-objects,Sergey Vlasov
+7bf058f0082d,https://github.com/git/git/commit/7bf058f0082d,[PATCH] Plug memory leak in sha1close(),Sergey Vlasov
+1cf58e72225f,https://github.com/git/git/commit/1cf58e72225f,[PATCH] Plug memory leak in read_object_with_reference(),Sergey Vlasov
+ee639140c9d3,https://github.com/git/git/commit/ee639140c9d3,[PATCH] Plug memory leaks in git-unpack-objects,Sergey Vlasov
+5b35bcd53a1c,https://github.com/git/git/commit/5b35bcd53a1c,[PATCH] sha1_file.c;prepare_packed_git_one() - fix DIR leak,Junio C Hamano
+2700628e6493,https://github.com/git/git/commit/2700628e6493,csum-file: fix missing buf pointer update,Linus Torvalds
+84fb9a4dca7e,https://github.com/git/git/commit/84fb9a4dca7e,git-apply: fix error handling for nonexistent files,Linus Torvalds
+14242464811b,https://github.com/git/git/commit/14242464811b,Fixed a leak in read-tree,Petr Baudis
+aceedfe32e76,https://github.com/git/git/commit/aceedfe32e76,[patch] git: fix memory leak #2 in checkout-cache.c,Ingo Molnar
+1c9da46da4fe,https://github.com/git/git/commit/1c9da46da4fe,[PATCH] read_tree_recursive(): Fix leaks,Jonas Fonseca
+fa9e9c7bc4d6,https://github.com/git/git/commit/fa9e9c7bc4d6,Fix missing '\n' at end of git-cat-file -t output.,Linus Torvalds
+7223a88ce779,https://github.com/git/git/commit/7223a88ce779,[PATCH] fix for memory leak in write-tree.c,Brad Roberts

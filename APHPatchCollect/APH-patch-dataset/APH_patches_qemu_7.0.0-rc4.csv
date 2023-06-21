@@ -1,0 +1,1095 @@
+hexsha,patch,summary,author
+5242ef887dd0,https://github.com/qemu/qemu/commit/5242ef887dd0,"target/riscv: Avoid leaking ""no translation"" TLB entries",Palmer Dabbelt
+c7ca3ad5e756,https://github.com/qemu/qemu/commit/c7ca3ad5e756,hw/intc/arm_gicv3_its: Add missing newlines to process_mapc() logging,Peter Maydell
+879667433a2c,https://github.com/qemu/qemu/commit/879667433a2c,linux-user: Fix missing space in error message,Fergus Henderson
+75f7ba165cea,https://github.com/qemu/qemu/commit/75f7ba165cea,hw/misc/npcm7xx_clk: Don't leak string in npcm7xx_clk_sel_init(),Peter Maydell
+abe300d9d894,https://github.com/qemu/qemu/commit/abe300d9d894,virtio-net: fix map leaking on error during receive,Jason Wang
+8fe496adacc0,https://github.com/qemu/qemu/commit/8fe496adacc0,ui/shader: fix potential leak of shader on error,Marc-André Lureau
+05e6e40a869c,https://github.com/qemu/qemu/commit/05e6e40a869c,aspeed: Fix a potential memory leak bug in write_boot_rom(),Wentao_Liang
+a105813ac09f,https://github.com/qemu/qemu/commit/a105813ac09f,pci-bridge/xio3130_downstream: Fix error handling,Jonathan Cameron
+16ddcbd36c7c,https://github.com/qemu/qemu/commit/16ddcbd36c7c,pci-bridge/xio3130_upstream: Fix error handling,Jonathan Cameron
+e609301b458b,https://github.com/qemu/qemu/commit/e609301b458b,hw/pci-bridge/pxb: Fix missing swizzle,Jonathan Cameron
+98f7607ecda0,https://github.com/qemu/qemu/commit/98f7607ecda0,hw/virtio: vdpa: Fix leak of host-notifier memory-region,Laurent Vivier
+a9eb50376ffb,https://github.com/qemu/qemu/commit/a9eb50376ffb,target/ppc: Add missing helper_reset_fpstatus to helper_XVCVSPBF16,Víctor Colombo
+6cdcf8810744,https://github.com/qemu/qemu/commit/6cdcf8810744,ui/console: fix texture leak when calling surface_gl_create_texture(),Marc-André Lureau
+cc3b66ac949e,https://github.com/qemu/qemu/commit/cc3b66ac949e,mps3-an547: Add missing user ahb interfaces,Jimmy Brisson
+ca511604925e,https://github.com/qemu/qemu/commit/ca511604925e,ui/cocoa: Fix the leak of qemu_console_get_label,Akihiko Odaki
+ba6112e40c03,https://github.com/qemu/qemu/commit/ba6112e40c03,tests/9pfs: Fix leak of local_test_path,Greg Kurz
+dd4fc6058557,https://github.com/qemu/qemu/commit/dd4fc6058557,util/oslib-posix: Fix missing unlock in the error path of os_mem_prealloc(),David Hildenbrand
+301e5d48b15d,https://github.com/qemu/qemu/commit/301e5d48b15d,target/ppc: 405: Add missing MSR_ME bit,Fabiano Rosas
+7d62b2dcdb04,https://github.com/qemu/qemu/commit/7d62b2dcdb04,hw/intc/arm_gicv3_its: Fix handling of process_its_cmd() return value,Peter Maydell
+1c6c0b9ec1c0,https://github.com/qemu/qemu/commit/1c6c0b9ec1c0,uas: add missing return,Gerd Hoffmann
+b259772afc29,https://github.com/qemu/qemu/commit/b259772afc29,hw/scsi/vhost-scsi: don't leak vqs on error,Daniil Tatianin
+44bff3767ced,https://github.com/qemu/qemu/commit/44bff3767ced,hw/i386/pc: Add missing property descriptions,Thomas Huth
+252f40913a87,https://github.com/qemu/qemu/commit/252f40913a87,job.c: add missing notifier initialization,Emanuele Giuseppe Esposito
+b9e5628ca5d4,https://github.com/qemu/qemu/commit/b9e5628ca5d4,microvm: check g_file_set_contents() return value,Gerd Hoffmann
+1b38ccc9a1fa,https://github.com/qemu/qemu/commit/1b38ccc9a1fa,microvm: add missing g_free() call,Gerd Hoffmann
+f3bc3a73c908,https://github.com/qemu/qemu/commit/f3bc3a73c908,vfio: Fix memory leak of hostwin,Peng Liang
+cd523a4181b1,https://github.com/qemu/qemu/commit/cd523a4181b1,net/vhost-vdpa: fix memory leak in vhost_vdpa_get_max_queue_pairs(),Stefano Garzarella
+5db83c7e90ec,https://github.com/qemu/qemu/commit/5db83c7e90ec,macfb: fix a memory leak (CID 1465231),Laurent Vivier
+13a028336f2c,https://github.com/qemu/qemu/commit/13a028336f2c,block/file-posix: Fix return value translation for AIO discards,Ari Sundholm
+c4e4d0d92b37,https://github.com/qemu/qemu/commit/c4e4d0d92b37,hw/nvram: Fix Memory Leak in Xilinx eFuse QOM,Tong Ho
+26778ac3da79,https://github.com/qemu/qemu/commit/26778ac3da79,bsd-user/mmap.c: check pread's return value to fix warnings with _FORTIFY_SOURCE,Mikaël Urankar
+f053b7e8005d,https://github.com/qemu/qemu/commit/f053b7e8005d,block: bdrv_insert_node(): fix and improve error handling,Vladimir Sementsov-Ogievskiy
+68b88468f6a4,https://github.com/qemu/qemu/commit/68b88468f6a4,migration: add missing qemu_mutex_lock_iothread in migration_completion,Emanuele Giuseppe Esposito
+3c158eba1e11,https://github.com/qemu/qemu/commit/3c158eba1e11,migration: block-dirty-bitmap: add missing qemu_mutex_lock_iothread,Emanuele Giuseppe Esposito
+75b98cb9f645,https://github.com/qemu/qemu/commit/75b98cb9f645,virtio-mem-pci: Fix memory leak when creating MEMORY_DEVICE_SIZE_CHANGE event,David Hildenbrand
+523a3d9524d5,https://github.com/qemu/qemu/commit/523a3d9524d5,target/i386: Fix memory leak in sev_read_file_base64(),Peter Maydell
+4ff2a971f4dd,https://github.com/qemu/qemu/commit/4ff2a971f4dd,host-utils: fix missing zero-extension in divs128,Luis Pires
+ab36edcfeaa2,https://github.com/qemu/qemu/commit/ab36edcfeaa2,vhost-vdpa: fix leaking of vhost_net in vhost_vdpa_add(),Jason Wang
+edb40732bfb2,https://github.com/qemu/qemu/commit/edb40732bfb2,vhost-user: add missing space in error message,Alyssa Ross
+1f89d3b91e3e,https://github.com/qemu/qemu/commit/1f89d3b91e3e,hw/virtio: Fix leak of host-notifier memory-region,Yajun Wu
+8efdb7ba1b2a,https://github.com/qemu/qemu/commit/8efdb7ba1b2a,softmmu/physmem.c: Check return value from realpath(),Peter Maydell
+0d9a6654512a,https://github.com/qemu/qemu/commit/0d9a6654512a,microvm: Drop dead error handling in microvm_machine_state_init(),Markus Armbruster
+aa6f7448ebef,https://github.com/qemu/qemu/commit/aa6f7448ebef,vhost-scsi: Plug memory leak on migrate_add_blocker() failure,Markus Armbruster
+96ac9719331c,https://github.com/qemu/qemu/commit/96ac9719331c,multi-process: Fix pci_proxy_dev_realize() error handling,Markus Armbruster
+e2ef4fc7aeb7,https://github.com/qemu/qemu/commit/e2ef4fc7aeb7,spapr: Plug memory leak when we can't add a migration blocker,Markus Armbruster
+0b46318170bf,https://github.com/qemu/qemu/commit/0b46318170bf,hw/core: Add missing return on error,Philippe Mathieu-Daudé
+a7686d5d8528,https://github.com/qemu/qemu/commit/a7686d5d8528,Hexagon (disas/hexagon.c) fix memory leak for early exit cases,Taylor Simpson
+6ff5b5d6d521,https://github.com/qemu/qemu/commit/6ff5b5d6d521,ui/sdl2: Check return value from g_setenv(),Peter Maydell
+057489dd1586,https://github.com/qemu/qemu/commit/057489dd1586,qga: fix leak of base64 decoded data on command error,Daniel P. Berrangé
+5f4884c44123,https://github.com/qemu/qemu/commit/5f4884c44123,hw/nvme: fix missing variable initializers,Klaus Jensen
+87ab88025247,https://github.com/qemu/qemu/commit/87ab88025247,block: Fix in_flight leak in request padding error path,Kevin Wolf
+ce72f11274f6,https://github.com/qemu/qemu/commit/ce72f11274f6,qga-win: Fix handle leak in ga_get_win_product_name(),Basil Salman
+0c317eb3dd40,https://github.com/qemu/qemu/commit/0c317eb3dd40,target/arm: Add missing 'return's after calling v7m_exception_taken(),Peter Maydell
+461fea9bf1db,https://github.com/qemu/qemu/commit/461fea9bf1db,qemu-config: fix memory leak on ferror(),Paolo Bonzini
+e72f9524febb,https://github.com/qemu/qemu/commit/e72f9524febb,"qemu-config: never call the callback after an error, fix leak",Paolo Bonzini
+7ef2408a96c4,https://github.com/qemu/qemu/commit/7ef2408a96c4,virtiofsd: Add missing newline in error message,Hubert Jasudowicz
+34f5e75a9427,https://github.com/qemu/qemu/commit/34f5e75a9427,target/mips: Fix missing else in gen_goto_tb,Richard Henderson
+838e37007cae,https://github.com/qemu/qemu/commit/838e37007cae,vl: fix leak of qdict_crumple return value,Paolo Bonzini
+2b02aabc9d02,https://github.com/qemu/qemu/commit/2b02aabc9d02,hw/nvme: fix missing check for PMR capability,Klaus Jensen
+6eb223104c4e,https://github.com/qemu/qemu/commit/6eb223104c4e,target/mips: Fix more TCG temporary leaks in gen_pool32a5_nanomips_insn,Philippe Mathieu-Daudé
+96342d53a881,https://github.com/qemu/qemu/commit/96342d53a881,target/mips: Fix TCG temporary leaks in gen_pool32a5_nanomips_insn(),Philippe Mathieu-Daudé
+2a25def4be09,https://github.com/qemu/qemu/commit/2a25def4be09,block/nbd: nbd_client_handshake(): fix leak of s->ioc,Vladimir Sementsov-Ogievskiy
+3687ad49038e,https://github.com/qemu/qemu/commit/3687ad49038e,block/nbd: fix channel object leak,Roman Kagan
+38f71349c7c4,https://github.com/qemu/qemu/commit/38f71349c7c4,vl: Fix an assert failure in error path,Zhenzhong Duan
+2c398ee5e3a4,https://github.com/qemu/qemu/commit/2c398ee5e3a4,tests/qtest/hd-geo-test: Fix checks on mkstemp() return value,Peter Maydell
+6e0c60a2be30,https://github.com/qemu/qemu/commit/6e0c60a2be30,target/arm: fix missing exception class,Jamie Iles
+300137965dba,https://github.com/qemu/qemu/commit/300137965dba,target/arm: Fix return values in fp_sysreg_checks(),Peter Maydell
+63736af5a657,https://github.com/qemu/qemu/commit/63736af5a657,vhost-user-gpu: fix memory leak in 'virgl_resource_attach_backing' (CVE-2021-3544),Li Qiang
+f6091d86ba9e,https://github.com/qemu/qemu/commit/f6091d86ba9e,vhost-user-gpu: fix memory leak in 'virgl_cmd_resource_unref' (CVE-2021-3544),Li Qiang
+b7afebcf9e6e,https://github.com/qemu/qemu/commit/b7afebcf9e6e,vhost-user-gpu: fix memory leak while calling 'vg_resource_unref' (CVE-2021-3544),Li Qiang
+b9f79858a614,https://github.com/qemu/qemu/commit/b9f79858a614,vhost-user-gpu: fix memory leak in vg_resource_attach_backing (CVE-2021-3544),Li Qiang
+86dd8fac2acc,https://github.com/qemu/qemu/commit/86dd8fac2acc,vhost-user-gpu: fix resource leak in 'vg_resource_create_2d' (CVE-2021-3544),Li Qiang
+f53b450ada3b,https://github.com/qemu/qemu/commit/f53b450ada3b,migration/rdma: Fix rdma_addrinfo res leaks,Li Zhijian
+4e812d2338ac,https://github.com/qemu/qemu/commit/4e812d2338ac,migration/rdma: cleanup rdma in rdma_start_incoming_migration error path,Li Zhijian
+e3fc91aaaacb,https://github.com/qemu/qemu/commit/e3fc91aaaacb,block: Fix Transaction leak in bdrv_reopen_multiple(),Kevin Wolf
+e878bb1293d2,https://github.com/qemu/qemu/commit/e878bb1293d2,block: Fix Transaction leak in bdrv_root_attach_child(),Kevin Wolf
+ec6b219a4e25,https://github.com/qemu/qemu/commit/ec6b219a4e25,tests/tcg: fix missing return,Alex Bennée
+b6d003dbee81,https://github.com/qemu/qemu/commit/b6d003dbee81,cutils: fix memory leak in get_relocated_path(),Stefano Garzarella
+4962b312cd2a,https://github.com/qemu/qemu/commit/4962b312cd2a,virtiofsd: Fix check of chown()'s return value,Greg Kurz
+7c06a34c8c4f,https://github.com/qemu/qemu/commit/7c06a34c8c4f,ui: Fix memory leak in qemu_xkeymap_mapping_table(),Philippe Mathieu-Daudé
+298d43c96b0f,https://github.com/qemu/qemu/commit/298d43c96b0f,target/mips: Add missing CP0 check to nanoMIPS RDPGPR / WRPGPR opcodes,Philippe Mathieu-Daudé
+f4349ba966ab,https://github.com/qemu/qemu/commit/f4349ba966ab,target/mips: Fix TCG temporary leak in gen_cache_operation(),Philippe Mathieu-Daudé
+b084b420d9d6,https://github.com/qemu/qemu/commit/b084b420d9d6,block/rbd: fix memory leak in qemu_rbd_co_create_opts(),Stefano Garzarella
+c1c1f6cf5114,https://github.com/qemu/qemu/commit/c1c1f6cf5114,block/rbd: fix memory leak in qemu_rbd_connect(),Stefano Garzarella
+349bf41d592c,https://github.com/qemu/qemu/commit/349bf41d592c,hw/block/nvme: fix missing string representation for ns attachment,Klaus Jensen
+ecb23efea089,https://github.com/qemu/qemu/commit/ecb23efea089,migration: Fix missing qemu_fflush() on buffer file in bg_migration_thread,Andrey Gruzdev
+574b8304cfcc,https://github.com/qemu/qemu/commit/574b8304cfcc,"block/vdi: When writing new bmap entry fails, don't leak the buffer",David Edmondson
+093256789aae,https://github.com/qemu/qemu/commit/093256789aae,hw/ppc: e500: Add missing #address-cells and #size-cells in the eTSEC node,Bin Meng
+9561353ddc35,https://github.com/qemu/qemu/commit/9561353ddc35,hw/block/nvme: fix resource leak in nvme_dif_rw,Klaus Jensen
+9e06080bed29,https://github.com/qemu/qemu/commit/9e06080bed29,vhost-user: Fix double-close on slave_read() error path,Greg Kurz
+9162ed664926,https://github.com/qemu/qemu/commit/9162ed664926,net/colo-compare.c: Fix memory leak for non-tcp packet,Lukas Straub
+fca676429ca7,https://github.com/qemu/qemu/commit/fca676429ca7,migration/tls: add error handling in multifd_tls_handshake_thread,Hao Wang
+5793f5aafb05,https://github.com/qemu/qemu/commit/5793f5aafb05,s390x/pci: Add missing initialization for g_autofree variables,Miroslav Rezanina
+e5943b00d35e,https://github.com/qemu/qemu/commit/e5943b00d35e,hw/ppc: e500: Add missing <ranges> in the eTSEC node,Bin Meng
+166a1cf404cd,https://github.com/qemu/qemu/commit/166a1cf404cd,backends/dbus-vmstate: Fix short read error handling,Markus Armbruster
+1184b411016b,https://github.com/qemu/qemu/commit/1184b411016b,block/qcow2: refactor qcow2_update_options_prepare error paths,Vladimir Sementsov-Ogievskiy
+2526e69efd8e,https://github.com/qemu/qemu/commit/2526e69efd8e,target/hexagon/opcodes: Add missing varargs cleanup,Philippe Mathieu-Daudé
+b52fa0ea45be,https://github.com/qemu/qemu/commit/b52fa0ea45be,hw/pci: Have safer pcie_bus_realize() by checking error path,Philippe Mathieu-Daudé
+00e7b1299599,https://github.com/qemu/qemu/commit/00e7b1299599,virtio-net: add missing object_unref(),Laurent Vivier
+dcb6699512b6,https://github.com/qemu/qemu/commit/dcb6699512b6,crypto: luks: Fix tiny memory leak,Maxim Levitsky
+832a59e43b5d,https://github.com/qemu/qemu/commit/832a59e43b5d,hw/block/nvme: fix error handling in nvme_ns_realize,Klaus Jensen
+cd42771a3344,https://github.com/qemu/qemu/commit/cd42771a3344,hw/block/nvme: add missing string representations for commands,Klaus Jensen
+f2c0fb93a449,https://github.com/qemu/qemu/commit/f2c0fb93a449,hw/char/exynos4210_uart: Fix missing call to report ready for input,Iris Johnson
+acef3f8b4706,https://github.com/qemu/qemu/commit/acef3f8b4706,9pfs/proxy: Check return value of proxy_marshal(),Greg Kurz
+992809bf8bfa,https://github.com/qemu/qemu/commit/992809bf8bfa,qemu-nbd: Fix a memleak in qemu_nbd_client_list(),Alex Chen
+22db12138999,https://github.com/qemu/qemu/commit/22db12138999,linux-user: add missing IPv6 get/setsockopt option,Shu-Chun Weng
+f8e3df09d2a1,https://github.com/qemu/qemu/commit/f8e3df09d2a1,tests: Fix memory leak in tpm-util.c,Stefan Berger
+3e829c046896,https://github.com/qemu/qemu/commit/3e829c046896,qtest/npcm7xx_pwm-test: Fix memleak in pwm_qom_get,Gan Qixin
+73624e04a538,https://github.com/qemu/qemu/commit/73624e04a538,npcm7xx_adc-test: Fix memleak in adc_qom_set,Gan Qixin
+3d64fdde67f5,https://github.com/qemu/qemu/commit/3d64fdde67f5,misc/mos6522: Use timer_free() in the finalize function to avoid memleak,Gan Qixin
+b026d4a6e609,https://github.com/qemu/qemu/commit/b026d4a6e609,pl031: Use timer_free() in the finalize function to avoid memleaks,Gan Qixin
+5f8679fe46d7,https://github.com/qemu/qemu/commit/5f8679fe46d7,vnc: Fix a memleak in vnc_display_connect(),Alex Chen
+3fabd5199456,https://github.com/qemu/qemu/commit/3fabd5199456,exynos4210_rtc: Use ptimer_free() in the finalize function to avoid memleaks,Gan Qixin
+ea492b124586,https://github.com/qemu/qemu/commit/ea492b124586,digic-timer: Use ptimer_free() in the finalize function to avoid memleaks,Gan Qixin
+61e21b05de63,https://github.com/qemu/qemu/commit/61e21b05de63,hw/rtc/twl92230: Add missing 'break',Philippe Mathieu-Daudé
+51c915674d8c,https://github.com/qemu/qemu/commit/51c915674d8c,target/unicore32/translate: Add missing fallthrough annotations,Thomas Huth
+ef0efa1a0456,https://github.com/qemu/qemu/commit/ef0efa1a0456,ppc/e500: Free irqs array to avoid memleak,Gan Qixin
+94237657af9a,https://github.com/qemu/qemu/commit/94237657af9a,blockdev: Fix a memleak in drive_backup_prepare(),Pan Nengyuan
+0c4c8671d790,https://github.com/qemu/qemu/commit/0c4c8671d790,elf2dmp/pdb: Plug memleak in pdb_init_from_file,Pan Nengyuan
+514284d73d09,https://github.com/qemu/qemu/commit/514284d73d09,elf2dmp/qemu_elf: Plug memleak in QEMU_Elf_init,Pan Nengyuan
+d9dbf25f9624,https://github.com/qemu/qemu/commit/d9dbf25f9624,block: Simplify qmp_block_resize() error paths,Kevin Wolf
+c7454f051714,https://github.com/qemu/qemu/commit/c7454f051714,s390x/cpu: Use timer_free() in the finalize function to avoid memleaks,Gan Qixin
+947191b4312a,https://github.com/qemu/qemu/commit/947191b4312a,ui/vnc: Add missing lock for send_color_map,Peng Liang
+b0bed2c91628,https://github.com/qemu/qemu/commit/b0bed2c91628,hw/m68k/mcf5206: Don't leak IRQs in mcf5206_mbar_realize(),Peter Maydell
+43d1da7cb99e,https://github.com/qemu/qemu/commit/43d1da7cb99e,test-qga: fix a resource leak in test_qga_guest_get_osinfo(),Alex Chen
+7b3dc2f8c0b8,https://github.com/qemu/qemu/commit/7b3dc2f8c0b8,failover: Remove memory leak,Juan Quintela
+81ee17aa461d,https://github.com/qemu/qemu/commit/81ee17aa461d,vhost-user-scsi: Fix memleaks in vus_proc_req(),Alex Chen
+f012bec89098,https://github.com/qemu/qemu/commit/f012bec89098,tap: fix a memory leak,yuanjungong
+7aed584ca6a1,https://github.com/qemu/qemu/commit/7aed584ca6a1,tests/qtest: fix memleak in npcm7xx_watchdog_timer-test,Chen Qun
+2b37e9f84372,https://github.com/qemu/qemu/commit/2b37e9f84372,authz-list-file: Fix file read error handling,Markus Armbruster
+42ccce19818e,https://github.com/qemu/qemu/commit/42ccce19818e,target/i386: avoid theoretical leak on MCE injection,Paolo Bonzini
+9cd7dde0730e,https://github.com/qemu/qemu/commit/9cd7dde0730e,plugins: Fix two resource leaks in setup_socket(),Alex Chen
+dbb864ba4f7b,https://github.com/qemu/qemu/commit/dbb864ba4f7b,plugins: Fix resource leak in connect_socket(),Alex Chen
+9e8424088c56,https://github.com/qemu/qemu/commit/9e8424088c56,multifd/tls: fix memoryleak of the QIOChannelSocket object when cancelling migration,Chuan Zheng
+862ee1e07e9d,https://github.com/qemu/qemu/commit/862ee1e07e9d,colo-compare: fix missing compare_seq initialization,Li Zhijian
+b1b9ab1c04d5,https://github.com/qemu/qemu/commit/b1b9ab1c04d5,qga: fix missing closedir() in qmp_guest_get_disks(),Michael Roth
+60f6de8fbafa,https://github.com/qemu/qemu/commit/60f6de8fbafa,hw/rx/rx-gdbsim: Fix memory leak (CID 1432307),Philippe Mathieu-Daudé
+bf4ee88ab63f,https://github.com/qemu/qemu/commit/bf4ee88ab63f,hw/mips/boston: Fix memory leak in boston_fdt_filter() error-handling paths,Peter Maydell
+022625a8ade3,https://github.com/qemu/qemu/commit/022625a8ade3,linux-user: Check copy_from_user() return value in vma_dump_size(),Peter Maydell
+e4ce178b6153,https://github.com/qemu/qemu/commit/e4ce178b6153,linux-user/syscall: Fix missing target_to_host_timespec64() check,Alistair Francis
+9f6df01d0e12,https://github.com/qemu/qemu/commit/9f6df01d0e12,contrib/vhost-user-blk: fix get_config() information leak,Stefan Hajnoczi
+f8ffcb2bda22,https://github.com/qemu/qemu/commit/f8ffcb2bda22,block/export: fix vhost-user-blk get_config() information leak,Stefan Hajnoczi
+9ce22da0d834,https://github.com/qemu/qemu/commit/9ce22da0d834,test-util-sockets: Plug file descriptor leak,Markus Armbruster
+8055d2fb7f47,https://github.com/qemu/qemu/commit/8055d2fb7f47,hw/smbios: Fix leaked fd in save_opt_one() error path,Philippe Mathieu-Daudé
+2693026042d2,https://github.com/qemu/qemu/commit/2693026042d2,tools/virtiofsd: Check vu_init() return value (CID 1435958),Philippe Mathieu-Daudé
+885538fdc9e2,https://github.com/qemu/qemu/commit/885538fdc9e2,elf2dmp: Fix memory leak on main() error paths,AlexChen
+2b323087b546,https://github.com/qemu/qemu/commit/2b323087b546,linux-user/elfload: Avoid leaking interp_name using GLib memory API,Philippe Mathieu-Daudé
+c6056bd1ce63,https://github.com/qemu/qemu/commit/c6056bd1ce63,hw/block/nvme: commonize nvme_rw error handling,Klaus Jensen
+195cc354696d,https://github.com/qemu/qemu/commit/195cc354696d,pci: pass along the return value of dma_memory_rw,Klaus Jensen
+d232b87ec6e3,https://github.com/qemu/qemu/commit/d232b87ec6e3,libqtest: fix memory leak in the qtest_qmp_event_ref,Maxim Levitsky
+5b4c95d0a377,https://github.com/qemu/qemu/commit/5b4c95d0a377,block/blkdebug: fix memory leak,Elena Afanasova
+a5af92e2e937,https://github.com/qemu/qemu/commit/a5af92e2e937,spapr: Simplify error handling in spapr_cpu_core_realize(),Greg Kurz
+ebd226d221c4,https://github.com/qemu/qemu/commit/ebd226d221c4,spapr: Simplify error handling in prop_get_fdt(),Greg Kurz
+a9c2cdace0a9,https://github.com/qemu/qemu/commit/a9c2cdace0a9,spapr: Simplify error handling in spapr_vio_busdev_realize(),Greg Kurz
+7e92da81be37,https://github.com/qemu/qemu/commit/7e92da81be37,spapr: Simplify error handling in do_client_architecture_support(),Greg Kurz
+a3114923d4c5,https://github.com/qemu/qemu/commit/a3114923d4c5,spapr: Simplify error handling in callers of ppc_set_compat(),Greg Kurz
+899134eb495f,https://github.com/qemu/qemu/commit/899134eb495f,ppc: Fix return value in cpu_post_load() error path,Greg Kurz
+9c4d1497e8d4,https://github.com/qemu/qemu/commit/9c4d1497e8d4,spapr: Fix error leak in spapr_realize_vcpu(),Greg Kurz
+c8726f7b24be,https://github.com/qemu/qemu/commit/c8726f7b24be,vfio-ccw: plug memory leak while getting region info,Cornelia Huck
+8821e2141446,https://github.com/qemu/qemu/commit/8821e2141446,target/i386/kvm: Add missing fallthrough comment,Thomas Huth
+5ace4cc0e8d8,https://github.com/qemu/qemu/commit/5ace4cc0e8d8,hw/arm/pxa2xx: Add missing fallthrough comment,Thomas Huth
+b9be6faed1a0,https://github.com/qemu/qemu/commit/b9be6faed1a0,"block/qcow2-cluster: Add missing ""fallthrough"" annotation",Thomas Huth
+c8edbfb2cc44,https://github.com/qemu/qemu/commit/c8edbfb2cc44,block/nvme: Use common error path in nvme_add_io_queue(),Philippe Mathieu-Daudé
+7791acaf3d18,https://github.com/qemu/qemu/commit/7791acaf3d18,vnc-auth-sasl: Plug memleak in vnc_socket_ip_addr_string,Pan Nengyuan
+df1a312fea58,https://github.com/qemu/qemu/commit/df1a312fea58,tests/qtest/ahci: Improve error handling (NEGATIVE_RETURNS),Philippe Mathieu-Daudé
+efacd5b89643,https://github.com/qemu/qemu/commit/efacd5b89643,target/i386/sev: Plug memleak in sev_read_file_base64,Pan Nengyuan
+3aa8203e5ef4,https://github.com/qemu/qemu/commit/3aa8203e5ef4,target/i386/cpu: Fix memleak in x86_cpu_class_check_missing_features,Pan Nengyuan
+a70174ef2e6c,https://github.com/qemu/qemu/commit/a70174ef2e6c,hw/block/nvme: fix missing endian conversion,Klaus Jensen
+bd7b4e1fe675,https://github.com/qemu/qemu/commit/bd7b4e1fe675,hw/net/can: Add missing fallthrough statements,Thomas Huth
+2fdb42d84040,https://github.com/qemu/qemu/commit/2fdb42d84040,hw: ehci: check return value of 'usb_packet_map',Li Qiang
+dd8525472a17,https://github.com/qemu/qemu/commit/dd8525472a17,hw: ehci: destroy sglist in error path,Li Qiang
+21bc31524e8c,https://github.com/qemu/qemu/commit/21bc31524e8c,hw: xhci: check return value of 'usb_packet_map',Li Qiang
+a9e80a5f0cdd,https://github.com/qemu/qemu/commit/a9e80a5f0cdd,migration: tls: fix memory leak in migration_tls_get_creds,Zhenyu Ye
+0216b18b79c4,https://github.com/qemu/qemu/commit/0216b18b79c4,hw/vfio/ap: Plug memleak in vfio_ap_get_group(),Pan Nengyuan
+61203f2b356f,https://github.com/qemu/qemu/commit/61203f2b356f,ppc/xive: Simplify error handling in xive_tctx_realize(),Greg Kurz
+2a8100cb6195,https://github.com/qemu/qemu/commit/2a8100cb6195,ppc/xive: Fix error handling in vmstate_xive_tctx_*() callbacks,Greg Kurz
+42a92d925d03,https://github.com/qemu/qemu/commit/42a92d925d03,spapr/kvm: Fix error handling in kvmppc_xive_pre_save(),Greg Kurz
+d53482a73bba,https://github.com/qemu/qemu/commit/d53482a73bba,spapr/xive: Rework error handling in kvmppc_xive_get_queues(),Greg Kurz
+46407a2531da,https://github.com/qemu/qemu/commit/46407a2531da,spapr/xive: Rework error handling of kvmppc_xive_source_reset(),Greg Kurz
+4a6891b838e4,https://github.com/qemu/qemu/commit/4a6891b838e4,spapr: Simplify error handling in spapr_phb_realize(),Greg Kurz
+6d592c557e2d,https://github.com/qemu/qemu/commit/6d592c557e2d,target/ppc: Fix TCG leak with the evmwsmiaa instruction,Matthieu Bucchianeri
+bae127d4dcf6,https://github.com/qemu/qemu/commit/bae127d4dcf6,file-posix: Handle `EINVAL` fallocate return value,Antoine Damhet
+5e29521a82e5,https://github.com/qemu/qemu/commit/5e29521a82e5,hw/avr/boot: Fix memory leak in avr_load_firmware(),Philippe Mathieu-Daudé
+bcbad8b05c7f,https://github.com/qemu/qemu/commit/bcbad8b05c7f,fuzz: Fix leak when assembling datadir path string,Alexander Bulekov
+a8c5cf27c945,https://github.com/qemu/qemu/commit/a8c5cf27c945,file-posix: Fix leaked fd in raw_open_common() error path,Kevin Wolf
+ab2d185d6b1d,https://github.com/qemu/qemu/commit/ab2d185d6b1d,"qom: Plug memory leak in ""info qom-tree""",Markus Armbruster
+82e258db15dc,https://github.com/qemu/qemu/commit/82e258db15dc,qtest: bios-tables-test: fix a memory leak,Li Qiang
+a69f97c11102,https://github.com/qemu/qemu/commit/a69f97c11102,target/riscv: fix return value of do_opivx_widen(),Frank Chang
+9728ebfb77f0,https://github.com/qemu/qemu/commit/9728ebfb77f0,migration: fix memory leak in qmp_migrate_set_parameters,Zheng Chuan
+ccb237090fda,https://github.com/qemu/qemu/commit/ccb237090fda,disas/sh4: Add missing fallthrough annotations,Thomas Huth
+2c65fefa054f,https://github.com/qemu/qemu/commit/2c65fefa054f,tests/qtest/fuzz: Add missing spaces in description,Thomas Huth
+0b33521ea164,https://github.com/qemu/qemu/commit/0b33521ea164,pc: fix leak in pc_system_flash_cleanup_unused,Alexander Bulekov
+a43770df5dbb,https://github.com/qemu/qemu/commit/a43770df5dbb,hmp: Ignore Error objects where the return value suffices,Markus Armbruster
+2d226cf6d18c,https://github.com/qemu/qemu/commit/2d226cf6d18c,qdev: Ignore Error objects where the return value suffices,Markus Armbruster
+0a15a73236cb,https://github.com/qemu/qemu/commit/0a15a73236cb,macio: Tidy up error handling in macio_newworld_realize(),Markus Armbruster
+f10802d2c9fd,https://github.com/qemu/qemu/commit/f10802d2c9fd,qemu-storage-daemon: add missing cleanup calls,Stefan Hajnoczi
+9cde9caa04be,https://github.com/qemu/qemu/commit/9cde9caa04be,migration/rdma: Plug memory leaks in qemu_rdma_registration_stop(),Markus Armbruster
+18d588fe1e17,https://github.com/qemu/qemu/commit/18d588fe1e17,x86: Fix x86_cpu_new() error handling,Markus Armbruster
+b94b3c02df87,https://github.com/qemu/qemu/commit/b94b3c02df87,vnc: Plug minor memory leak in vnc_display_open(),Markus Armbruster
+05584d12ae0c,https://github.com/qemu/qemu/commit/05584d12ae0c,test-util-filemonitor: Plug unlikely memory leak,Markus Armbruster
+b98e8d1230ff,https://github.com/qemu/qemu/commit/b98e8d1230ff,sd/milkymist-memcard: Plug minor memory leak in realize,Markus Armbruster
+b368123dd997,https://github.com/qemu/qemu/commit/b368123dd997,qga: Plug unlikely memory leak in guest-set-memory-blocks,Markus Armbruster
+14963c34b990,https://github.com/qemu/qemu/commit/14963c34b990,spapr: Plug minor memory leak in spapr_machine_init(),Markus Armbruster
+246da7db3cc1,https://github.com/qemu/qemu/commit/246da7db3cc1,qom-hmp-cmds: fix a memleak in hmp_qom_get,Pan Nengyuan
+a4f67e180def,https://github.com/qemu/qemu/commit/a4f67e180def,target/arm: Add missing TCG temp free in do_2shift_env_64(),Peter Maydell
+9593a3988c3e,https://github.com/qemu/qemu/commit/9593a3988c3e,target/arm: Fix missing temp frees in do_vshll_2sh,Peter Maydell
+4a39181db284,https://github.com/qemu/qemu/commit/4a39181db284,qom/object: Fix object_child_foreach_recursive() return value,Cédric Le Goater
+2f0c285aaac5,https://github.com/qemu/qemu/commit/2f0c285aaac5,migration/rdma: cleanup rdma context before g_free to avoid memleaks,Pan Nengyuan
+3e1df4cc4667,https://github.com/qemu/qemu/commit/3e1df4cc4667,mips/boston: Plug memory leak in boston_mach_init(),Markus Armbruster
+932d3a65c8bf,https://github.com/qemu/qemu/commit/932d3a65c8bf,mips/boston: Fix boston_mach_init() error handling,Markus Armbruster
+a729f9bc843a,https://github.com/qemu/qemu/commit/a729f9bc843a,mips/malta: Fix create_cps() error handling,Markus Armbruster
+75de4efa00d2,https://github.com/qemu/qemu/commit/75de4efa00d2,nvdimm: Plug memory leak in uuid property setter,Markus Armbruster
+b577031cf21e,https://github.com/qemu/qemu/commit/b577031cf21e,target/ppc: Add missing braces in ppc_radix64_partition_scoped_xlate(),Greg Kurz
+73ee6da45d22,https://github.com/qemu/qemu/commit/73ee6da45d22,tests/fuzz: Add missing space in test description,Philippe Mathieu-Daudé
+ad31b8af73b8,https://github.com/qemu/qemu/commit/ad31b8af73b8,migration/multifd: fix memleaks in multifd_new_send_channel_async,Pan Nengyuan
+59c59c67ee6b,https://github.com/qemu/qemu/commit/59c59c67ee6b,migration/rdma: fix a memleak on error path in rdma_start_incoming_migration,Pan Nengyuan
+58602676dfd0,https://github.com/qemu/qemu/commit/58602676dfd0,migration/colo: Add missing error-propagation code,Philippe Mathieu-Daudé
+4155c998b6f7,https://github.com/qemu/qemu/commit/4155c998b6f7,qga: Fix qmp_guest_get_memory_blocks() error handling,Markus Armbruster
+735527e17907,https://github.com/qemu/qemu/commit/735527e17907,migration/colo: Fix qmp_xen_colo_do_checkpoint() error handling,Markus Armbruster
+fdceb4ab4d7b,https://github.com/qemu/qemu/commit/fdceb4ab4d7b,io: Fix qio_channel_socket_close() error handling,Markus Armbruster
+ee29f6e92d98,https://github.com/qemu/qemu/commit/ee29f6e92d98,bochs-display: Fix vgamem=SIZE error handling,Markus Armbruster
+07a978ef376c,https://github.com/qemu/qemu/commit/07a978ef376c,fdc: Fix fallback=auto error handling,Markus Armbruster
+77ed971b9d96,https://github.com/qemu/qemu/commit/77ed971b9d96,block/file-posix: Fix check_cache_dropped() error handling,Markus Armbruster
+3119154db048,https://github.com/qemu/qemu/commit/3119154db048,target/ppc: Fix TCG temporary leaks in gen_slbia(),Philippe Mathieu-Daudé
+40bd0502dbee,https://github.com/qemu/qemu/commit/40bd0502dbee,target/rx/translate: Add missing fall through comment,Philippe Mathieu-Daudé
+1f089c6705fd,https://github.com/qemu/qemu/commit/1f089c6705fd,target/xtensa: add FIXME for translation memory leak,Alex Bennée
+7f5d9b206d1e,https://github.com/qemu/qemu/commit/7f5d9b206d1e,object-add: don't create return value if failed,Paolo Bonzini
+b3fbb3281235,https://github.com/qemu/qemu/commit/b3fbb3281235,qmp: fix leak on callbacks that return both value and error,Marc-André Lureau
+9cbc36497c9c,https://github.com/qemu/qemu/commit/9cbc36497c9c,migration: fix cleanup_bh leak on resume,Marc-André Lureau
+e82cdba39453,https://github.com/qemu/qemu/commit/e82cdba39453,vhost-vsock: fix double close() in the realize() error path,Stefano Garzarella
+63fef6287e55,https://github.com/qemu/qemu/commit/63fef6287e55,hw/arm/xlnx-zynqmp.c: Avoid memory leak in error-return path,Peter Maydell
+de38ed300764,https://github.com/qemu/qemu/commit/de38ed300764,virtio-iommu: avoid memleak in the unrealize,Pan Nengyuan
+cfaf757edd77,https://github.com/qemu/qemu/commit/cfaf757edd77,virtio-blk: delete vqs on the error path in realize(),Pan Nengyuan
+0d930b870a87,https://github.com/qemu/qemu/commit/0d930b870a87,virtio-serial-bus: Plug memory leak on realize() error paths,Pan Nengyuan
+1656324ec0d1,https://github.com/qemu/qemu/commit/1656324ec0d1,qemu-img: Fix check's leak/corruption fix report,Max Reitz
+d4ff109373ce,https://github.com/qemu/qemu/commit/d4ff109373ce,hmp/vnc: Fix info vnc list leak,Dr. David Alan Gilbert
+71eaec2e8c7c,https://github.com/qemu/qemu/commit/71eaec2e8c7c,block: Avoid memleak on qcow2 image info failure,Eric Blake
+ce05fa0fcc9e,https://github.com/qemu/qemu/commit/ce05fa0fcc9e,spapr: Fix memory leak in h_client_architecture_support(),Greg Kurz
+d6f33c557ce9,https://github.com/qemu/qemu/commit/d6f33c557ce9,hw/arm/cubieboard: make sure SOC object isn't leaked,Igor Mammedov
+9b6abdcfae44,https://github.com/qemu/qemu/commit/9b6abdcfae44,qom-qmp-cmds: fix two memleaks in qmp_object_add,Pan Nengyuan
+2244f2335ea8,https://github.com/qemu/qemu/commit/2244f2335ea8,core/qdev: fix memleak in qdev_get_gpio_out_connector(),Pan Nengyuan
+d1eddab86f92,https://github.com/qemu/qemu/commit/d1eddab86f92,qga: Fix a memory leak,Philippe Mathieu-Daudé
+eeea1faa099f,https://github.com/qemu/qemu/commit/eeea1faa099f,block: Fix leak in bdrv_create_file_fallback(),Max Reitz
+a6fbd637557a,https://github.com/qemu/qemu/commit/a6fbd637557a,test-vmstate: Fix memleaks in test_load_qlist,Chen Qun
+8198cf5ef0ef,https://github.com/qemu/qemu/commit/8198cf5ef0ef,block/nbd: fix memory leak in nbd_open(),Pan Nengyuan
+dcc474c69e6a,https://github.com/qemu/qemu/commit/dcc474c69e6a,plugins/core: add missing break in cb_to_tcg_flags,Emilio G. Cota
+13e546812711,https://github.com/qemu/qemu/commit/13e546812711,vhost-user-blk: delete virtioqueues in unrealize to fix memleaks,Pan Nengyuan
+438bafcac553,https://github.com/qemu/qemu/commit/438bafcac553,hw/ppc/virtex_ml507:fix leak of fdevice tree blob,Chen Qun
+e8ead7d57964,https://github.com/qemu/qemu/commit/e8ead7d57964,pnv/phb3: Add missing break statement,Greg Kurz
+7cfb999fe9c8,https://github.com/qemu/qemu/commit/7cfb999fe9c8,pnv/phb4: Fix error path in pnv_pec_realize(),Greg Kurz
+d1cb67841ca2,https://github.com/qemu/qemu/commit/d1cb67841ca2,hw/xtensa/xtfpga:fix leak of fdevice tree blob,Chen Qun
+757ca9b81a5d,https://github.com/qemu/qemu/commit/757ca9b81a5d,hw/nios2:fix leak of fdevice tree blob,Chen Qun
+8bbc394c552c,https://github.com/qemu/qemu/commit/8bbc394c552c,hw/char/exynos4210_uart: Fix memleaks in exynos4210_uart_init,Chen Qun
+2a1bc8bde7cc,https://github.com/qemu/qemu/commit/2a1bc8bde7cc,migration/rdma: rdma_accept_incoming_migration fix error handling,Dr. David Alan Gilbert
+6fa249027f97,https://github.com/qemu/qemu/commit/6fa249027f97,virtiofsd: fv_create_listen_socket error path socket leak,Dr. David Alan Gilbert
+cb8956144cca,https://github.com/qemu/qemu/commit/cb8956144cca,block: fix memleaks in bdrv_refresh_filename,Pan Nengyuan
+a661614de18c,https://github.com/qemu/qemu/commit/a661614de18c,monitor: fix memory leak in monitor_fdset_dup_fd_find_remove,Chen Qun
+aeab8e5eb220,https://github.com/qemu/qemu/commit/aeab8e5eb220,target/arm: fix TCG leak for fcvt half->double,Alex Bennée
+fa7c8e92cb9b,https://github.com/qemu/qemu/commit/fa7c8e92cb9b,hw/arm/virt: Add missing 5.0 options call to 4.2 options,Andrew Jones
+fb574de81bfd,https://github.com/qemu/qemu/commit/fb574de81bfd,block/backup: fix memory leak in bdrv_backup_top_append(),Eiichi Tsukata
+c9c0ed697698,https://github.com/qemu/qemu/commit/c9c0ed697698,virtio-scsi: delete vqs in unrealize to avoid memleaks,Pan Nengyuan
+ada44065167b,https://github.com/qemu/qemu/commit/ada44065167b,hw/display/tcx: Add missing fall through comments,Philippe Mathieu-Daudé
+f7621fd1aaba,https://github.com/qemu/qemu/commit/f7621fd1aaba,audio/audio: Add missing fall through comment,Philippe Mathieu-Daudé
+740b0b700a63,https://github.com/qemu/qemu/commit/740b0b700a63,Virtiofsd: fix memory leak on fuse queueinfo,Liu Bo
+fc3f0041b43b,https://github.com/qemu/qemu/commit/fc3f0041b43b,virtiofsd: fix incorrect error handling in lo_do_lookup,Eric Ren
+eb68a33b5fc5,https://github.com/qemu/qemu/commit/eb68a33b5fc5,virtiofsd: fix memory leak on lo.source,Liu Bo
+c6de804670f2,https://github.com/qemu/qemu/commit/c6de804670f2,virtiofsd: fix error handling in main(),Liu Bo
+dd958f9ef44e,https://github.com/qemu/qemu/commit/dd958f9ef44e,virtio-scsi: delete vqs in unrealize to avoid memleaks,Pan Nengyuan
+9580d60e66d1,https://github.com/qemu/qemu/commit/9580d60e66d1,virtio-9p-device: fix memleak in virtio_9p_device_unrealize,Pan Nengyuan
+841b8d099c46,https://github.com/qemu/qemu/commit/841b8d099c46,9pfs: local: Fix possible memory leak in local_link(),Jiajun Chen
+bb8136df698b,https://github.com/qemu/qemu/commit/bb8136df698b,riscv/sifive_u: fix a memory leak in soc_realize(),Pan Nengyuan
+99fd3178a0d6,https://github.com/qemu/qemu/commit/99fd3178a0d6,tests/qtest/vhost-user-test: Fix memory leaks,Thomas Huth
+34b9d6a1f8df,https://github.com/qemu/qemu/commit/34b9d6a1f8df,xhci: Fix memory leak in xhci_kick_epctx when poweroff GuestOS,Chen Qun
+6ec0a0636625,https://github.com/qemu/qemu/commit/6ec0a0636625,hw/i386/x86-iommu: Add missing stubs,Philippe Mathieu-Daudé
+adb464ff671d,https://github.com/qemu/qemu/commit/adb464ff671d,vl: fix memory leak in configure_accelerators,Chen Qun
+638be47830ec,https://github.com/qemu/qemu/commit/638be47830ec,util/module: fix a memory leak,Pan Nengyuan
+3a688294e2c3,https://github.com/qemu/qemu/commit/3a688294e2c3,ppc/pnv: check return value of blk_pwrite(),Cédric Le Goater
+218fc2b5c839,https://github.com/qemu/qemu/commit/218fc2b5c839,hw/i386/x86-iommu: Add missing stubs,Philippe Mathieu-Daudé
+88be15a9e19c,https://github.com/qemu/qemu/commit/88be15a9e19c,throttle-groups: fix memory leak in throttle_group_set_limit:,PanNengyuan
+e615c157f3d2,https://github.com/qemu/qemu/commit/e615c157f3d2,virtio-serial-bus: fix memory leak while attach virtio-serial-bus,Pan Nengyuan
+3627842855a2,https://github.com/qemu/qemu/commit/3627842855a2,virtio-balloon: fix memory leak while attach virtio-balloon device,Pan Nengyuan
+0d82411d0e38,https://github.com/qemu/qemu/commit/0d82411d0e38,display/bochs-display: fix memory leak,Cameron Esfahani
+d402c98396b6,https://github.com/qemu/qemu/commit/d402c98396b6,hw/intc/s390: Simplify error handling in kvm_s390_flic_realize(),Markus Armbruster
+8cb846db9e02,https://github.com/qemu/qemu/commit/8cb846db9e02,crypto: Fix certificate file error handling crash bug,Markus Armbruster
+15cea92d9e8a,https://github.com/qemu/qemu/commit/15cea92d9e8a,gpio: fix memory leak in aspeed_gpio_init(),PanNengyuan
+cb09104ea841,https://github.com/qemu/qemu/commit/cb09104ea841,block/file-posix: Fix laio_init() error handling crash bug,Markus Armbruster
+509ec36c1e4c,https://github.com/qemu/qemu/commit/509ec36c1e4c,virtio-input: fix memory leak on unrealize,Marc-André Lureau
+c3157b74c47f,https://github.com/qemu/qemu/commit/c3157b74c47f,microvm: fix memory leak in microvm_fix_kernel_cmdline,Sergio Lopez
+ed92369a5725,https://github.com/qemu/qemu/commit/ed92369a5725,vfio: don't ignore return value of migrate_add_blocker,Jens Freimann
+c0cb880153dd,https://github.com/qemu/qemu/commit/c0cb880153dd,linux-user: fix missing break,Laurent Vivier
+c49a41b0b9e6,https://github.com/qemu/qemu/commit/c49a41b0b9e6,target/microblaze: Plug temp leak around eval_cond_jmp(),Edgar E. Iglesias
+88ed5db16c9b,https://github.com/qemu/qemu/commit/88ed5db16c9b,numa: Add missing \n to error message,Greg Kurz
+741309136e54,https://github.com/qemu/qemu/commit/741309136e54,cpu-plug-test: fix leaks,Marc-André Lureau
+36524a1a3dd2,https://github.com/qemu/qemu/commit/36524a1a3dd2,qtest: fix qtest_qmp_device_add leak,Marc-André Lureau
+5849dfe410b3,https://github.com/qemu/qemu/commit/5849dfe410b3,linux-user/alpha: Set r20 secondary return value,Richard Henderson
+3aa9004f09c8,https://github.com/qemu/qemu/commit/3aa9004f09c8,riscv/boot: Fix possible memory leak,Alistair Francis
+560895657508,https://github.com/qemu/qemu/commit/560895657508,audio: fix missing break,Paolo Bonzini
+c5bd6d02e6eb,https://github.com/qemu/qemu/commit/c5bd6d02e6eb,libqos: add missing virtio-9p feature negotiation,Stefan Hajnoczi
+e73255be96bf,https://github.com/qemu/qemu/commit/e73255be96bf,virtio-scsi-test: add missing feature negotiation,Stefan Hajnoczi
+be39110d4cbf,https://github.com/qemu/qemu/commit/be39110d4cbf,s390x/cpumodel: Add missing visit_free,Andrew Jones
+67c1ea9940af,https://github.com/qemu/qemu/commit/67c1ea9940af,mcf5208: fix leak from qemu_allocate_irqs,Paolo Bonzini
+100781a8cd61,https://github.com/qemu/qemu/commit/100781a8cd61,microblaze: fix leak of fdevice tree blob,Paolo Bonzini
+f5f72e8f31f2,https://github.com/qemu/qemu/commit/f5f72e8f31f2,ide: fix leak from qemu_allocate_irqs,Paolo Bonzini
+0a3fd3df6f6a,https://github.com/qemu/qemu/commit/0a3fd3df6f6a,spapr: Add return value to spapr_irq_check(),David Gibson
+f767b1ac5766,https://github.com/qemu/qemu/commit/f767b1ac5766,spapr: Fixes a leak in CAS,Alexey Kardashevskiy
+d959f6cf502f,https://github.com/qemu/qemu/commit/d959f6cf502f,s390x: sclp: fix error handling for oversize control blocks,Janosch Frank
+09be82ce53e8,https://github.com/qemu/qemu/commit/09be82ce53e8,pc-bios/s390-ccw/net: fix a possible memory leak in get_uuid(),Yifan Luo
+c8e68b43e11b,https://github.com/qemu/qemu/commit/c8e68b43e11b,qemu-io: Don't leak pattern file in error path,Kevin Wolf
+7cec2ed9d7ae,https://github.com/qemu/qemu/commit/7cec2ed9d7ae,xhci: Fix memory leak in xhci_kick_epctx,fangying
+c9e385926232,https://github.com/qemu/qemu/commit/c9e385926232,xhci: Fix memory leak in xhci_address_slot,Ying Fang
+b65cb867cc13,https://github.com/qemu/qemu/commit/b65cb867cc13,main-loop: Fix GSource leak in qio_task_thread_worker(),Alberto Garcia
+68097ed5e5bd,https://github.com/qemu/qemu/commit/68097ed5e5bd,curses: assert get_wch return value is okay,Paolo Bonzini
+00005f222973,https://github.com/qemu/qemu/commit/00005f222973,ppc: fix leak in h_client_architecture_support,Shivaprasad G Bhat
+dbd26f2f7f58,https://github.com/qemu/qemu/commit/dbd26f2f7f58,ppc: fix memory leak in spapr_dt_drc(),Shivaprasad G Bhat
+d75888058632,https://github.com/qemu/qemu/commit/d75888058632,ppc: fix memory leak in spapr_caps_add_properties,Shivaprasad G Bhat
+e76ba19a1f13,https://github.com/qemu/qemu/commit/e76ba19a1f13,audio: fix memory leak reported by ASAN,"Kővágó, Zoltán"
+e46349414570,https://github.com/qemu/qemu/commit/e46349414570,audio: Add missing fall through comments,Stefan Weil
+245429e4a0e0,https://github.com/qemu/qemu/commit/245429e4a0e0,replay: add missing fix for internal function,Pavel Dovgalyuk
+9bbb4ef991fa,https://github.com/qemu/qemu/commit/9bbb4ef991fa,target/arm: Add missing break statement for Hypervisor Trap Exception,Philippe Mathieu-Daudé
+17a7c39248fc,https://github.com/qemu/qemu/commit/17a7c39248fc,block/stream: Fix error path,Max Reitz
+f5cf94cdabd3,https://github.com/qemu/qemu/commit/f5cf94cdabd3,vfio-ccw: Test vfio_set_irq_signaling() return value,Alex Williamson
+a7f85e03b94f,https://github.com/qemu/qemu/commit/a7f85e03b94f,virtio-gpu: fix unmap in error path,Gerd Hoffmann
+29df47a5cc41,https://github.com/qemu/qemu/commit/29df47a5cc41,sunhme: fix return values from sunhme_receive() during receive packet processing,Mark Cave-Ayland
+be32fd9ee1d8,https://github.com/qemu/qemu/commit/be32fd9ee1d8,vhost-user-input: check ioctl(EVIOCGNAME) return value,Marc-André Lureau
+f22356d95524,https://github.com/qemu/qemu/commit/f22356d95524,qemu-img: Fix options leakage in img_rebase(),Max Reitz
+386cff49ebd1,https://github.com/qemu/qemu/commit/386cff49ebd1,vhost: fix memory leak in vhost_user_scsi_realize,Jie Wang
+a57f00910807,https://github.com/qemu/qemu/commit/a57f00910807,vhost-user-blk: Add return value for vhost_user_blk_start(),Xie Yongji
+3b9c59daf9ef,https://github.com/qemu/qemu/commit/3b9c59daf9ef,hvf: Add missing break statement,Chen Zhang
+44c64e90950a,https://github.com/qemu/qemu/commit/44c64e90950a,target/m68k: Fix a tcg_temp leak,Philippe Mathieu-Daudé
+e1f4a37a49eb,https://github.com/qemu/qemu/commit/e1f4a37a49eb,qcow2: Fix error handling in the compression code,Alberto Garcia
+9acc95cdd309,https://github.com/qemu/qemu/commit/9acc95cdd309,target/ppc: Fix TCG temporary leaks in gen_bcond(),Greg Kurz
+413aeacd4b33,https://github.com/qemu/qemu/commit/413aeacd4b33,qapi/qmp-dispatch: fix return value in do_qmp_dispatch,Vladimir Sementsov-Ogievskiy
+a9fda2474732,https://github.com/qemu/qemu/commit/a9fda2474732,curses ui: add missing iconv_close calls,Samuel Thibault
+1e25879e6f83,https://github.com/qemu/qemu/commit/1e25879e6f83,test-migration: fix memory leak,Paolo Bonzini
+5e78bc6a47dd,https://github.com/qemu/qemu/commit/5e78bc6a47dd,migration: fix memory leak,Paolo Bonzini
+1afee8c3da14,https://github.com/qemu/qemu/commit/1afee8c3da14,test-bdrv-graph-mod: fix Error leak,Paolo Bonzini
+944b96c61072,https://github.com/qemu/qemu/commit/944b96c61072,tests: test-qgraph: fix a memory leak,Li Qiang
+5411f3d0a25f,https://github.com/qemu/qemu/commit/5411f3d0a25f,vhost-user-test: fix leaks,Marc-André Lureau
+156ac94463b4,https://github.com/qemu/qemu/commit/156ac94463b4,xen-block: stop leaking memory in xen_block_drive_create(),Paul Durrant
+763e10f7bb64,https://github.com/qemu/qemu/commit/763e10f7bb64,hw/arm/armsse: Fix memory leak in error-exit path,Peter Maydell
+925969c3e286,https://github.com/qemu/qemu/commit/925969c3e286,spapr_pci: Fix interrupt leak in rtas_ibm_change_msi() error path,Greg Kurz
+8e207c327cf8,https://github.com/qemu/qemu/commit/8e207c327cf8,net/slirp: fix leaks on forwarding rule registration error,Marc-André Lureau
+9d0bd0cdd011,https://github.com/qemu/qemu/commit/9d0bd0cdd011,linux-user: Check sscanf return value in open_net_route(),Peter Maydell
+78fc3b3a26c1,https://github.com/qemu/qemu/commit/78fc3b3a26c1,block: Fix invalidate_cache error path for parent activation,Kevin Wolf
+2920bd644e8c,https://github.com/qemu/qemu/commit/2920bd644e8c,numa: Fixed the memory leak of numa error message,Zhang Yi
+da93b82079dc,https://github.com/qemu/qemu/commit/da93b82079dc,"util: check the return value of fcntl in qemu_set_{block, nonblock}",Li Qiang
+8e3759ef04db,https://github.com/qemu/qemu/commit/8e3759ef04db,usb: dev-mtp: fix memory leak in error path,Li Qiang
+aee63b07fd1c,https://github.com/qemu/qemu/commit/aee63b07fd1c,hw/arm: versal: Plug memory leaks,Edgar E. Iglesias
+dee2e53c86de,https://github.com/qemu/qemu/commit/dee2e53c86de,hw/pvrdma: Check the correct return value,Yuval Shaia
+c0983085d127,https://github.com/qemu/qemu/commit/c0983085d127,hw/sd/sdhci: Don't leak memory region in sdhci_sysbus_realize(),Peter Maydell
+b640adca9f6a,https://github.com/qemu/qemu/commit/b640adca9f6a,crypto/block-luks: fix memory leak in qcrypto_block_luks_create,Vladimir Sementsov-Ogievskiy
+3ecd5a4f19fd,https://github.com/qemu/qemu/commit/3ecd5a4f19fd,qemu-img: Fix leak,Max Reitz
+443ba6befa2f,https://github.com/qemu/qemu/commit/443ba6befa2f,vvfat: Fix memory leak,Kevin Wolf
+f898ee0f9951,https://github.com/qemu/qemu/commit/f898ee0f9951,qga-win: fix leaks of build_guest_disk_info(),Marc-André Lureau
+00a014ac01fe,https://github.com/qemu/qemu/commit/00a014ac01fe,riscv: spike: Fix memory leak in the board init,Alistair Francis
+bce410a33b9e,https://github.com/qemu/qemu/commit/bce410a33b9e,ivshmem: fix memory backend leak,Igor Mammedov
+a51b9c4862c2,https://github.com/qemu/qemu/commit/a51b9c4862c2,rbd: Close image in qemu_rbd_open() error path,Kevin Wolf
+c317b646d752,https://github.com/qemu/qemu/commit/c317b646d752,vpc: Don't leak opts in vpc_open(),Kevin Wolf
+ad824bdc63d9,https://github.com/qemu/qemu/commit/ad824bdc63d9,websock: fix handshake leak,Marc-André Lureau
+a1f3bb1845e2,https://github.com/qemu/qemu/commit/a1f3bb1845e2,hostmem-file: fixed the memory leak while get pmem path.,Zhang Yi
+a22528b918c7,https://github.com/qemu/qemu/commit/a22528b918c7,numa: Fix QMP command set-numa-node error handling,Markus Armbruster
+8c42dbe3956a,https://github.com/qemu/qemu/commit/8c42dbe3956a,net/socket: Fix invalid socket type error handling,Markus Armbruster
+4dd32b3dda3e,https://github.com/qemu/qemu/commit/4dd32b3dda3e,migration: Fix !replay_can_snapshot() error handling,Markus Armbruster
+11ab69d6e7a8,https://github.com/qemu/qemu/commit/11ab69d6e7a8,ioapic: Fix error handling in realize(),Markus Armbruster
+d319e05d6f24,https://github.com/qemu/qemu/commit/d319e05d6f24,pc: Fix machine property nvdimm-persistence error handling,Markus Armbruster
+b6aa6cedf481,https://github.com/qemu/qemu/commit/b6aa6cedf481,RISC-V: Add missing free for plic_hart_config,Michael Clark
+2f99f80c5dbb,https://github.com/qemu/qemu/commit/2f99f80c5dbb,qxl: check qxl_phys2virt return value,Gerd Hoffmann
+c4f753859ae6,https://github.com/qemu/qemu/commit/c4f753859ae6,vhost-user: Fix userfaultfd leak,Ilya Maximets
+8b8fa995b924,https://github.com/qemu/qemu/commit/8b8fa995b924,tests/check-qjson: fix a leak,Marc-André Lureau
+1926ab273b37,https://github.com/qemu/qemu/commit/1926ab273b37,cpus: fix TCG kick timer leak,Alex Bennée
+0284a2a81c60,https://github.com/qemu/qemu/commit/0284a2a81c60,migration: fix QEMUFile leak,Marc-André Lureau
+096c83b7219c,https://github.com/qemu/qemu/commit/096c83b7219c,migration: cleanup in error paths in loadvm,Dr. David Alan Gilbert
+3e1dd459cbd9,https://github.com/qemu/qemu/commit/3e1dd459cbd9,hw/timer/cmsdk-apb-dualtimer: Add missing 'break' statements,Peter Maydell
+d1756c780b78,https://github.com/qemu/qemu/commit/d1756c780b78,job: Fix missing locking due to mismerge,Kevin Wolf
+d34a10afa811,https://github.com/qemu/qemu/commit/d34a10afa811,hmp: fix migrate status timer leak,Marc-André Lureau
+7b43db3cd08f,https://github.com/qemu/qemu/commit/7b43db3cd08f,tests: fix bdrv-drain leak,Marc-André Lureau
+eceba3477e7f,https://github.com/qemu/qemu/commit/eceba3477e7f,spapr: fix leak of rev array,Emilio G. Cota
+0ae0b069aa8f,https://github.com/qemu/qemu/commit/0ae0b069aa8f,"vnc: fix memleak of the ""vnc-worker-output"" name",Peter Wu
+e38bf612477f,https://github.com/qemu/qemu/commit/e38bf612477f,i386: Fix arch_query_cpu_model_expansion() leak,Eduardo Habkost
+48285ba2d69e,https://github.com/qemu/qemu/commit/48285ba2d69e,megasas: fix sglist leak,Marc-André Lureau
+64d450a0eaad,https://github.com/qemu/qemu/commit/64d450a0eaad,softfloat: Fix missing inexact for floating-point add,Richard Henderson
+f62492bb8d1e,https://github.com/qemu/qemu/commit/f62492bb8d1e,block/qapi: Fix memory leak in qmp_query_blockstats(),Kevin Wolf
+cb9ec42f33c0,https://github.com/qemu/qemu/commit/cb9ec42f33c0,monitor: fix oob command leak,Marc-André Lureau
+42478dacc82f,https://github.com/qemu/qemu/commit/42478dacc82f,tests: fix crumple/recursive leak,Marc-André Lureau
+41b6513436d2,https://github.com/qemu/qemu/commit/41b6513436d2,qcow: fix a reference leak,KONRAD Frederic
+323e7c117754,https://github.com/qemu/qemu/commit/323e7c117754,tap: fix memory leak on success to create a tap device,Yunjian Wang
+d9c745c17687,https://github.com/qemu/qemu/commit/d9c745c17687,qga: fix file descriptor leak,Paolo Bonzini
+bb23a7362a79,https://github.com/qemu/qemu/commit/bb23a7362a79,qga: fix 'driver' leak in guest-get-fsinfo,Marc-André Lureau
+ea3d77c889cf,https://github.com/qemu/qemu/commit/ea3d77c889cf,pr-manager-helper: fix memory leak on event,Paolo Bonzini
+0b68589d17ef,https://github.com/qemu/qemu/commit/0b68589d17ef,block/crypto: Fix memory leak in create error path,Kevin Wolf
+56f68439213f,https://github.com/qemu/qemu/commit/56f68439213f,ppc/pnv: fix pnv_core_realize() error handling,Cédric Le Goater
+9c8c334b0637,https://github.com/qemu/qemu/commit/9c8c334b0637,cpu: Assert asidx_from_attrs return value in range,Richard Henderson
+ae5475e82fd1,https://github.com/qemu/qemu/commit/ae5475e82fd1,qcow2: Fix qcow2_truncate() error return value,Kevin Wolf
+9986ddec4ccd,https://github.com/qemu/qemu/commit/9986ddec4ccd,spapr_cpu_core: add missing rollback on realization path,Greg Kurz
+27607c1cdc0d,https://github.com/qemu/qemu/commit/27607c1cdc0d,spapr_cpu_core: fix potential leak in spapr_cpu_core_realize(),Greg Kurz
+937c2146a669,https://github.com/qemu/qemu/commit/937c2146a669,pnv: Fix some error handling cpu realize(),David Gibson
+2c9dfdacc5a9,https://github.com/qemu/qemu/commit/2c9dfdacc5a9,spapr: fix leak in h_client_architecture_support(),Greg Kurz
+410a096adf99,https://github.com/qemu/qemu/commit/410a096adf99,usb-ccid: fix bus leak,Marc-André Lureau
+2306271c381b,https://github.com/qemu/qemu/commit/2306271c381b,9p: local: Properly set errp in fstatfs error path,Keno Fischer
+bc820db06470,https://github.com/qemu/qemu/commit/bc820db06470,bochs-display: add missing break,Gerd Hoffmann
+ead75d84cb07,https://github.com/qemu/qemu/commit/ead75d84cb07,gdbstub: Prevent fd leakage,Philippe Mathieu-Daudé
+4a5f2779bad7,https://github.com/qemu/qemu/commit/4a5f2779bad7,vhdx: Fix vhdx_co_create() return value,Kevin Wolf
+53618dd83885,https://github.com/qemu/qemu/commit/53618dd83885,vdi: Fix vdi_co_do_create() return value,Kevin Wolf
+05a9a6519c91,https://github.com/qemu/qemu/commit/05a9a6519c91,target-microblaze: dec_msr: Plug a temp leak,Edgar E. Iglesias
+54b7af4369a3,https://github.com/qemu/qemu/commit/54b7af4369a3,nfs: Fix error path in nfs_options_qdict_to_qapi(),Kevin Wolf
+9d94619189d8,https://github.com/qemu/qemu/commit/9d94619189d8,net: Fix memory leak in net_param_nic(),Thomas Huth
+7a35383afd66,https://github.com/qemu/qemu/commit/7a35383afd66,hw/arm/iotkit.c: fix minor memory leak,Peter Maydell
+a2cb9239b761,https://github.com/qemu/qemu/commit/a2cb9239b761,sheepdog: Fix sd_co_create_opts() memory leaks,Kevin Wolf
+1dc34be1c90b,https://github.com/qemu/qemu/commit/1dc34be1c90b,RISC-V: Fix missing break statement in disassembler,Michael Clark
+16a2227893dc,https://github.com/qemu/qemu/commit/16a2227893dc,migration/block-dirty-bitmap: fix memory leak in dirty_bitmap_load_bits,Vladimir Sementsov-Ogievskiy
+e0014d4b3a95,https://github.com/qemu/qemu/commit/e0014d4b3a95,Add missing bit for SSE instr in VEX decoding,Eugene Minibaev
+be4d026f645e,https://github.com/qemu/qemu/commit/be4d026f645e,vfio-ccw: fix memory leaks in vfio_ccw_realize(),Greg Kurz
+d9b06db81327,https://github.com/qemu/qemu/commit/d9b06db81327,hw/s390x: fix memory leak in s390_init_ipl_dev(),Greg Kurz
+5d7bc72a4336,https://github.com/qemu/qemu/commit/5d7bc72a4336,sev/i386: fix memory leak in sev_guest_init(),Greg Kurz
+72a841d2a403,https://github.com/qemu/qemu/commit/72a841d2a403,exec: fix memory leak in find_max_supported_pagesize(),Greg Kurz
+fc6008f37a6f,https://github.com/qemu/qemu/commit/fc6008f37a6f,migration: fix pfd leak,Marc-André Lureau
+fa15cf8b5c77,https://github.com/qemu/qemu/commit/fa15cf8b5c77,qmp-test: fix response leak,Marc-André Lureau
+2c860e797ab2,https://github.com/qemu/qemu/commit/2c860e797ab2,block: Fix leak of ignore_children in error path,Fam Zheng
+72d75bb31660,https://github.com/qemu/qemu/commit/72d75bb31660,linux-user: fix target_mprotect/target_munmap error return values,Max Filippov
+78cf339039c3,https://github.com/qemu/qemu/commit/78cf339039c3,linux-user: fix target_mprotect/target_munmap error return values,Max Filippov
+ab105cc13815,https://github.com/qemu/qemu/commit/ab105cc13815,migration: fix minor finalize leak,Marc-André Lureau
+36f876cea494,https://github.com/qemu/qemu/commit/36f876cea494,arm: fix load ELF error leak,Marc-André Lureau
+b39b61e41002,https://github.com/qemu/qemu/commit/b39b61e41002,memory: fix flatview_access_valid RCU read lock/unlock imbalance,Paolo Bonzini
+71c87815f9e0,https://github.com/qemu/qemu/commit/71c87815f9e0,rbd: Fix use after free in qemu_rbd_set_keypairs() error path,Kevin Wolf
+2bf3e74de4e5,https://github.com/qemu/qemu/commit/2bf3e74de4e5,Fix WHPX issue leaking tpr values,Justin Terry (VM) via Qemu-devel
+8b2ec54ff39c,https://github.com/qemu/qemu/commit/8b2ec54ff39c,chardev: fix leak in tcp_chr_telnet_init_io(),Peter Xu
+26b97f2664a0,https://github.com/qemu/qemu/commit/26b97f2664a0,sdhci-test: fix leaks,Marc-André Lureau
+0fd76bc51b55,https://github.com/qemu/qemu/commit/0fd76bc51b55,ahci-test: fix opts leak of skip tests,Marc-André Lureau
+723250d674a1,https://github.com/qemu/qemu/commit/723250d674a1,g364fb: fix DirtyBitmapSnapshot leak,Paolo Bonzini
+b1a568c1c219,https://github.com/qemu/qemu/commit/b1a568c1c219,spapr: fix missing CPU core nodes in DT when running with TCG,Greg Kurz
+768055980b5f,https://github.com/qemu/qemu/commit/768055980b5f,decodetree: Propagate return value from translate subroutines,Richard Henderson
+a38a498dc1dc,https://github.com/qemu/qemu/commit/a38a498dc1dc,vhost-user: fix memory leak,linzhecheng
+6ce7177ae2e5,https://github.com/qemu/qemu/commit/6ce7177ae2e5,9p: fix leak in synth_name_to_path(),Marc-André Lureau
+28bb0a59f84c,https://github.com/qemu/qemu/commit/28bb0a59f84c,io: fix QIONetListener memory leak,Paolo Bonzini
+96994fd1e4e0,https://github.com/qemu/qemu/commit/96994fd1e4e0,migration/xen: Check return value of qemu_fclose,Ross Lagerwall
+fa86f5923491,https://github.com/qemu/qemu/commit/fa86f5923491,spapr: add missing break in h_get_cpu_characteristics(),Greg Kurz
+384c6c03fb68,https://github.com/qemu/qemu/commit/384c6c03fb68,target/arm/translate.c: Fix missing 'break' for TT insns,Peter Maydell
+3260cdfffbf0,https://github.com/qemu/qemu/commit/3260cdfffbf0,hbitmap: fix missing restore count when finish deserialization,Liang Li
+032b79f71730,https://github.com/qemu/qemu/commit/032b79f71730,migration: Don't leak IO channels,Ross Lagerwall
+c6caae553c65,https://github.com/qemu/qemu/commit/c6caae553c65,scsi-generic: Simplify error handling code,Fam Zheng
+e537112b4183,https://github.com/qemu/qemu/commit/e537112b4183,s390x/sclp: fix missing be conversion,David Hildenbrand
+cf4969ec35c3,https://github.com/qemu/qemu/commit/cf4969ec35c3,sm501: Add missing break to case,BALATON Zoltan
+58346214d03f,https://github.com/qemu/qemu/commit/58346214d03f,qdev_monitor: Simplify error handling in qdev_device_add(),Thomas Huth
+01960e6d21dc,https://github.com/qemu/qemu/commit/01960e6d21dc,irq: fix memory leak,linzhecheng
+6b2fef739127,https://github.com/qemu/qemu/commit/6b2fef739127,tests: fix coroutine leak in /basic/entered,Marc-André Lureau
+e313d5cec564,https://github.com/qemu/qemu/commit/e313d5cec564,tests: fix qmp-test leak,Marc-André Lureau
+b11e20fb6c65,https://github.com/qemu/qemu/commit/b11e20fb6c65,qemu-config: fix leak in query-command-line-options,Marc-André Lureau
+890241ab6942,https://github.com/qemu/qemu/commit/890241ab6942,tests: fix migration-test leak,Marc-André Lureau
+354711279fcc,https://github.com/qemu/qemu/commit/354711279fcc,vl: fix direct firmware directories leak,Marc-André Lureau
+87c258cd1e1c,https://github.com/qemu/qemu/commit/87c258cd1e1c,tests: fix check-qobject leak,Marc-André Lureau
+fca4774a9684,https://github.com/qemu/qemu/commit/fca4774a9684,input: fix memory leak,linzhecheng
+d1471233bb07,https://github.com/qemu/qemu/commit/d1471233bb07,9pfs: fix error path in pdu_submit(),Greg Kurz
+6d56fc6cc372,https://github.com/qemu/qemu/commit/6d56fc6cc372,target/sh4: fix TCG leak during gusa sequence,Alex Bennée
+e691e0ed135a,https://github.com/qemu/qemu/commit/e691e0ed135a,target/sh4: add missing tcg_temp_free() in _decode_opc(),Philippe Mathieu-Daudé
+996922de4529,https://github.com/qemu/qemu/commit/996922de4529,block/curl: fix minor memory leaks,Jeff Cody
+871bec7c44a4,https://github.com/qemu/qemu/commit/871bec7c44a4,target/arm: Add missing M profile case to regime_is_user(),Peter Maydell
+6473069416dd,https://github.com/qemu/qemu/commit/6473069416dd,block: Fix error path in bdrv_backing_update_filename(),Kevin Wolf
+267fcadf325e,https://github.com/qemu/qemu/commit/267fcadf325e,9pfs: fix v9fs_mark_fids_unreclaim() return value,Greg Kurz
+7cdcca725b6b,https://github.com/qemu/qemu/commit/7cdcca725b6b,xen: Log errno rather than return value,Ross Lagerwall
+ac7e4cbbabae,https://github.com/qemu/qemu/commit/ac7e4cbbabae,s390x: fix cpu object referrence leak in s390x_new_cpu(),Igor Mammedov
+52aa5644e8e8,https://github.com/qemu/qemu/commit/52aa5644e8e8,io: Add missing GCC_FMT_ATTR (fix -Werror=suggest-attribute=format),Stefan Weil
+7fc3fcefe2fc,https://github.com/qemu/qemu/commit/7fc3fcefe2fc,io: fix mem leak in websock error path,Daniel P. Berrange
+a94bb9cd586c,https://github.com/qemu/qemu/commit/a94bb9cd586c,nvic: Add missing 'break',Peter Maydell
+04829ce334be,https://github.com/qemu/qemu/commit/04829ce334be,nvic: Add missing code for writing SHCSR.HARDFAULTPENDED bit,Peter Maydell
+ce4a4453885f,https://github.com/qemu/qemu/commit/ce4a4453885f,s390x/css: remove unused error handling branch,Halil Pasic
+a1a6bbde4f6a,https://github.com/qemu/qemu/commit/a1a6bbde4f6a,xics: fix several error leaks,Greg Kurz
+1343a107e46f,https://github.com/qemu/qemu/commit/1343a107e46f,net/rocker: Plug memory leak in pci_rocker_init(),Mao Zhongyi
+3c08f4a4335c,https://github.com/qemu/qemu/commit/3c08f4a4335c,fsdev: fix memory leak in main(),ZhiPeng Lu
+b91bf5e488b4,https://github.com/qemu/qemu/commit/b91bf5e488b4,migration: fix small leaks,Marc-André Lureau
+08b9e0ba623c,https://github.com/qemu/qemu/commit/08b9e0ba623c,vhost: fix a memory leak,Peng Hao
+dfaea0c1a848,https://github.com/qemu/qemu/commit/dfaea0c1a848,hw/scsi/vmw_pvscsi: Remove the dead error handling,Mao Zhongyi
+b2caa3b82edc,https://github.com/qemu/qemu/commit/b2caa3b82edc,net/eth: fix incorrect check of iov_to_buf() return value,Philippe Mathieu-Daudé
+b7b1e9dd6d56,https://github.com/qemu/qemu/commit/b7b1e9dd6d56,ivshmem: fix incorrect error handling in ivshmem_recv_msg(),Philippe Mathieu-Daudé
+2a4e2e4919d1,https://github.com/qemu/qemu/commit/2a4e2e4919d1,loader: check get_image_size() return value,Philippe Mathieu-Daudé
+80792eb92575,https://github.com/qemu/qemu/commit/80792eb92575,tests: check-qom-proplist: fix leak,Marc-André Lureau
+158b9aa568ea,https://github.com/qemu/qemu/commit/158b9aa568ea,nbd: fix memory leak in nbd_opt_go(),Philippe Mathieu-Daudé
+e4256c3cbf7e,https://github.com/qemu/qemu/commit/e4256c3cbf7e,target/arm: fix TCG temp leak in aarch64 rev16,Emilio G. Cota
+8aa5c65fd3d4,https://github.com/qemu/qemu/commit/8aa5c65fd3d4,target/alpha: Log temp leaks,Richard Henderson
+6a9b110d54b8,https://github.com/qemu/qemu/commit/6a9b110d54b8,target/alpha: Fix temp leak in gen_fbcond,Richard Henderson
+a4535b8e3ef2,https://github.com/qemu/qemu/commit/a4535b8e3ef2,target/alpha: Fix temp leak in gen_mtpr,Richard Henderson
+22d716c28e95,https://github.com/qemu/qemu/commit/22d716c28e95,target/alpha: Fix temp leak in gen_bcond,Richard Henderson
+61dedf2af79f,https://github.com/qemu/qemu/commit/61dedf2af79f,target/sh4: Add missing FPSCR.PR == 0 checks,Richard Henderson
+0b3c15f09715,https://github.com/qemu/qemu/commit/0b3c15f09715,migration/rdma: fix qemu_rdma_block_for_wrid error paths,Dr. David Alan Gilbert
+df8658de43db,https://github.com/qemu/qemu/commit/df8658de43db,spapr: fix memory leak in spapr_core_pre_plug(),Greg Kurz
+e49c63d5b323,https://github.com/qemu/qemu/commit/e49c63d5b323,spapr: fix potential memory leak in spapr_core_plug(),Greg Kurz
+9bd8e9330ade,https://github.com/qemu/qemu/commit/9bd8e9330ade,qga-win32: Fix memory leak of device information set,Li Ping
+32fb354b086e,https://github.com/qemu/qemu/commit/32fb354b086e,hw/core: fix missing return value in load_image_targphys_as(),Philippe Mathieu-Daudé
+be59df797c6f,https://github.com/qemu/qemu/commit/be59df797c6f,tests/test-char.c: Don't use main_loop_wait()'s return value,Peter Maydell
+5c8f44b7dbde,https://github.com/qemu/qemu/commit/5c8f44b7dbde,target-microblaze: dec_barrel: Plug TCG temp leak,Edgar E. Iglesias
+ae06cb46b2d3,https://github.com/qemu/qemu/commit/ae06cb46b2d3,gen-icount: add missing inline to gen_tb_end,Emilio G. Cota
+35068bd15eec,https://github.com/qemu/qemu/commit/35068bd15eec,target/ppc: Fix return value in tcg radix mmu fault handler,Suraj Jitindar Singh
+7f3cf2d6e7d1,https://github.com/qemu/qemu/commit/7f3cf2d6e7d1,hw/i386: fix nvdimm check error path,Stefan Hajnoczi
+7798d3aab981,https://github.com/qemu/qemu/commit/7798d3aab981,nbd/server: nbd_negotiate: fix error path,Vladimir Sementsov-Ogievskiy
+272545cf215f,https://github.com/qemu/qemu/commit/272545cf215f,block/qcow.c: Fix memory leak in qcow_create(),Peter Maydell
+8a9e0e7b890b,https://github.com/qemu/qemu/commit/8a9e0e7b890b,spapr: fix memory leak in spapr_memory_pre_plug(),Greg Kurz
+2d3e302ec224,https://github.com/qemu/qemu/commit/2d3e302ec224,target/ppc: fix memory leak in kvmppc_is_mem_backend_page_size_ok(),Greg Kurz
+c25a67f0c3d0,https://github.com/qemu/qemu/commit/c25a67f0c3d0,edu: fix memory leak on msi_broken platforms,Paolo Bonzini
+7e6478e7d4f2,https://github.com/qemu/qemu/commit/7e6478e7d4f2,Check the return value of fcntl in qemu_set_cloexec,Stefano Stabellini
+7032d92ac83c,https://github.com/qemu/qemu/commit/7032d92ac83c,ppc/pnv: check the return value of fdt_setprop(),Cédric Le Goater
+052495178821,https://github.com/qemu/qemu/commit/052495178821,spapr_nvram: Check return value from blk_getlength(),Peter Maydell
+22c3aea8dbaa,https://github.com/qemu/qemu/commit/22c3aea8dbaa,dump: fix memory_mapping_filter leak,Marc-André Lureau
+3975bb56a7d3,https://github.com/qemu/qemu/commit/3975bb56a7d3,scsi/lsi53c895a: Remove unused lsi_mem_*() return value,Mao Zhongyi
+3482655bbc21,https://github.com/qemu/qemu/commit/3482655bbc21,migration: fix leak of src file on dst,Peter Xu
+adb998c12aa7,https://github.com/qemu/qemu/commit/adb998c12aa7,qemu-img: Fix leakage of options on error,Fam Zheng
+7d8246960e03,https://github.com/qemu/qemu/commit/7d8246960e03,slirp: fix leak,Marc-André Lureau
+fc0f005958ac,https://github.com/qemu/qemu/commit/fc0f005958ac,sockets: Plug memory leak in socket_address_flatten(),Markus Armbruster
+c0c24b95542b,https://github.com/qemu/qemu/commit/c0c24b95542b,"xen/9pfs: fix two resource leaks on error paths, discovered by Coverity",Stefano Stabellini
+1e8e69f08b05,https://github.com/qemu/qemu/commit/1e8e69f08b05,target/s390x: fix SIGNAL PROCESSOR return value,Aurelien Jarno
+321d1dba8bef,https://github.com/qemu/qemu/commit/321d1dba8bef,aio: add missing aio_notify() to aio_enable_external(),Stefan Hajnoczi
+151c8e608efc,https://github.com/qemu/qemu/commit/151c8e608efc,egl-helpers: add missing error check,Gerd Hoffmann
+cb69166bb8de,https://github.com/qemu/qemu/commit/cb69166bb8de,test-keyval: fix leaks,Marc-André Lureau
+de4598f0c5a7,https://github.com/qemu/qemu/commit/de4598f0c5a7,tests/check-qdict: Fix missing brackets,Dr. David Alan Gilbert
+f8df5f922152,https://github.com/qemu/qemu/commit/f8df5f922152,container: don't leak container reference,Marc-André Lureau
+7bdfd907e707,https://github.com/qemu/qemu/commit/7bdfd907e707,audio: fix WAVState leak,Marc-André Lureau
+79b1af906245,https://github.com/qemu/qemu/commit/79b1af906245,tcg: Initialize return value after exit_atomic,Richard Henderson
+536eeea86905,https://github.com/qemu/qemu/commit/536eeea86905,util/error: Fix leak in error_vprepend(),Max Reitz
+4ffcdef4277a,https://github.com/qemu/qemu/commit/4ffcdef4277a,9pfs: xattr: fix memory leak in v9fs_list_xattr,Li Qiang
+cc1e13913916,https://github.com/qemu/qemu/commit/cc1e13913916,nbd: fix memory leak on socket_connect failed,yaolujing
+c53598ed18e4,https://github.com/qemu/qemu/commit/c53598ed18e4,pci: Add missing drop of bus master AS reference,Alexey Kardashevskiy
+d63fb193e716,https://github.com/qemu/qemu/commit/d63fb193e716,9pfs: fix file descriptor leak,Li Qiang
+7bc4f0846f5e,https://github.com/qemu/qemu/commit/7bc4f0846f5e,vnc: fix a qio-channel leak,Marc-André Lureau
+b7a745dc33a1,https://github.com/qemu/qemu/commit/b7a745dc33a1,thread-pool: add missing qemu_bh_cancel in completion function,Peter Lieven
+fed414df9dc9,https://github.com/qemu/qemu/commit/fed414df9dc9,file-posix: Don't leak fd in hdev_get_max_segments,Fam Zheng
+48d7c4af0639,https://github.com/qemu/qemu/commit/48d7c4af0639,sheepdog: Fix error handling sd_create(),Markus Armbruster
+cbc488ee2aaa,https://github.com/qemu/qemu/commit/cbc488ee2aaa,sheepdog: Defuse time bomb in sd_open() error handling,Markus Armbruster
+067acf28d1d7,https://github.com/qemu/qemu/commit/067acf28d1d7,block: Fix blockdev-snapshot error handling,Kevin Wolf
+88f9d1b3d2fa,https://github.com/qemu/qemu/commit/88f9d1b3d2fa,mirror: Fix error path for dirty bitmap creation,Kevin Wolf
+b247767aacdc,https://github.com/qemu/qemu/commit/b247767aacdc,commit: Fix error handling,Kevin Wolf
+faab207f115c,https://github.com/qemu/qemu/commit/faab207f115c,9pfs: fix fd leak in local_opendir(),Greg Kurz
+2b880bcdbeb8,https://github.com/qemu/qemu/commit/2b880bcdbeb8,tests: fix virtio-9p-test leaks,Marc-André Lureau
+3caab54d081b,https://github.com/qemu/qemu/commit/3caab54d081b,tests: fix virtio-scsi-test leak,Marc-André Lureau
+448fe3c1349b,https://github.com/qemu/qemu/commit/448fe3c1349b,tests: fix e1000e leaks,Marc-André Lureau
+1bab33ab4ab4,https://github.com/qemu/qemu/commit/1bab33ab4ab4,tests: fix i440fx-test leaks,Marc-André Lureau
+8829e16f5ef7,https://github.com/qemu/qemu/commit/8829e16f5ef7,tests: fix e1000-test leak,Marc-André Lureau
+6afff1ffa369,https://github.com/qemu/qemu/commit/6afff1ffa369,tests: fix eepro100-test leak,Marc-André Lureau
+2607b660e9b9,https://github.com/qemu/qemu/commit/2607b660e9b9,tests: fix ipmi-bt-test leak,Marc-André Lureau
+3f5f5d04cdc8,https://github.com/qemu/qemu/commit/3f5f5d04cdc8,tests: fix ipmi-kcs-test leak,Marc-André Lureau
+f11dc27bcc03,https://github.com/qemu/qemu/commit/f11dc27bcc03,tests: fix bios-tables-test leak,Marc-André Lureau
+fb6faea888c1,https://github.com/qemu/qemu/commit/fb6faea888c1,tests: fix q35-test leaks,Marc-André Lureau
+f3f8e8115095,https://github.com/qemu/qemu/commit/f3f8e8115095,tests: fix endianness-test leaks,Marc-André Lureau
+14324f585d76,https://github.com/qemu/qemu/commit/14324f585d76,tests: fix leaks in test-io-channel-command,Marc-André Lureau
+fc34059f0806,https://github.com/qemu/qemu/commit/fc34059f0806,qtest: fix a memory leak,Marc-André Lureau
+dbb74759fae6,https://github.com/qemu/qemu/commit/dbb74759fae6,hw/arm/virt: fix cpu object reference leak,Igor Mammedov
+128e4e108949,https://github.com/qemu/qemu/commit/128e4e108949,migration: fix id leak regression,Marc-André Lureau
+e3d90312b374,https://github.com/qemu/qemu/commit/e3d90312b374,tests: fix leaks in test-io-channel-command,Marc-André Lureau
+0072d2a9fce4,https://github.com/qemu/qemu/commit/0072d2a9fce4,crypto: fix leak in ivgen essiv init,Li Qiang
+4577b09a278f,https://github.com/qemu/qemu/commit/4577b09a278f,slirp: Check qemu_socket() return value in udp_listen(),Peter Maydell
+4ec667042d9a,https://github.com/qemu/qemu/commit/4ec667042d9a,mttcg: Add missing tb_lock/unlock() in cpu_exec_step(),Pranith Kumar
+5e8e3c4c75c1,https://github.com/qemu/qemu/commit/5e8e3c4c75c1,virtio-gpu: fix resource leak in virgl_cmd_resource_unref,Gerd Hoffmann
+dd248ed7e204,https://github.com/qemu/qemu/commit/dd248ed7e204,virtio-gpu: fix memory leak in set scanout,Li Qiang
+67980031d234,https://github.com/qemu/qemu/commit/67980031d234,vmstate registration: check return values,Dr. David Alan Gilbert
+6514532f7381,https://github.com/qemu/qemu/commit/6514532f7381,qapi: add missing trace_visit_type_enum() call,Stefan Hajnoczi
+a1bf8b7414a3,https://github.com/qemu/qemu/commit/a1bf8b7414a3,9pfs: add missing coroutine_fn annotations,Greg Kurz
+fac7d7b1cdb2,https://github.com/qemu/qemu/commit/fac7d7b1cdb2,tap: fix memory leak on failure in net_init_tap(),Peter Maydell
+5ad4a2b75f85,https://github.com/qemu/qemu/commit/5ad4a2b75f85,exec: Add missing rcu_read_unlock,Roman Kapl
+8409dc884a20,https://github.com/qemu/qemu/commit/8409dc884a20,serial: fix memory leak in serial exit,Li Qiang
+765a707000e8,https://github.com/qemu/qemu/commit/765a707000e8,megasas: fix guest-triggered memory leak,Paolo Bonzini
+85d9d044471f,https://github.com/qemu/qemu/commit/85d9d044471f,virtio-gpu: fix information leak in capset get dispatch,Li Qiang
+204f01b30975,https://github.com/qemu/qemu/commit/204f01b30975,virtio-gpu: fix memory leak in resource attach backing,Li Qiang
+33243031dad0,https://github.com/qemu/qemu/commit/33243031dad0,virtio-gpu-3d: fix memory leak in resource attach backing,Li Qiang
+d4c64800bbe1,https://github.com/qemu/qemu/commit/d4c64800bbe1,cipher: fix leak on initialization error,Marc-André Lureau
+2d1cd6c7a91a,https://github.com/qemu/qemu/commit/2d1cd6c7a91a,virtio-gpu: fix memory leak in update_cursor_data_virgl,Li Qiang
+42a8dadc74f8,https://github.com/qemu/qemu/commit/42a8dadc74f8,virtio-gpu: fix information leak in getting capset info dispatch,Li Qiang
+baf905e580ab,https://github.com/qemu/qemu/commit/baf905e580ab,test-replication: fix leaks,Marc-André Lureau
+4e7676571bcc,https://github.com/qemu/qemu/commit/4e7676571bcc,block/curl: Fix return value from curl_read_cb,Max Reitz
+07555ba6f303,https://github.com/qemu/qemu/commit/07555ba6f303,nfs: Fix memory leak in nfs_file_create(),Kevin Wolf
+a1d4e38a8b01,https://github.com/qemu/qemu/commit/a1d4e38a8b01,block/nbd: Fix the leaked visitor,Ashijeet Acharya
+d9c05e507f7a,https://github.com/qemu/qemu/commit/d9c05e507f7a,test-uuid: fix leak,Marc-André Lureau
+791f97758e22,https://github.com/qemu/qemu/commit/791f97758e22,usb: ehci: fix memory leak in ehci_init_transfer,Li Qiang
+f62e0bbb39ee,https://github.com/qemu/qemu/commit/f62e0bbb39ee,tests: fix memory leak in virtio-scsi-test,Laurent Vivier
+cb3a0522b694,https://github.com/qemu/qemu/commit/cb3a0522b694,virtio-gpu: fix memory leak in virtio_gpu_resource_create_2d,Li Qiang
+2634ab7fe29b,https://github.com/qemu/qemu/commit/2634ab7fe29b,net: eepro100: fix memory leak in device uninit,Li Qiang
+3ac2f2f765a0,https://github.com/qemu/qemu/commit/3ac2f2f765a0,qapi: fix memory leak in bdrv_image_info_specific_dump,Pino Toscano
+ebf4c54d4b24,https://github.com/qemu/qemu/commit/ebf4c54d4b24,char: use common error path in qmp_chardev_add,Marc-André Lureau
+5c936a83c330,https://github.com/qemu/qemu/commit/5c936a83c330,ringbuf: fix chr_write return value,Marc-André Lureau
+fdfcc9aeea14,https://github.com/qemu/qemu/commit/fdfcc9aeea14,9pfs: fix memory leak in v9fs_write,Li Qiang
+4c1586787ff4,https://github.com/qemu/qemu/commit/4c1586787ff4,9pfs: fix memory leak in v9fs_link,Li Qiang
+ff55e94d23ae,https://github.com/qemu/qemu/commit/ff55e94d23ae,9pfs: fix memory leak in v9fs_xattrcreate,Li Qiang
+eb687602853b,https://github.com/qemu/qemu/commit/eb687602853b,9pfs: fix information leak in xattr read,Li Qiang
+e95c9a493a5a,https://github.com/qemu/qemu/commit/e95c9a493a5a,9pfs: fix potential host memory leak in v9fs_read,Li Qiang
+97b93c8ad224,https://github.com/qemu/qemu/commit/97b93c8ad224,virtio-blk: add missing virtio_detach_element() call,Stefan Hajnoczi
+660a2d83e026,https://github.com/qemu/qemu/commit/660a2d83e026,char: fix missing return in error path for chardev TLS init,Daniel P. Berrange
+b16c129daf0f,https://github.com/qemu/qemu/commit/b16c129daf0f,usb: ehci: fix memory leak in ehci_process_itd,Li Qiang
+24df38b00e23,https://github.com/qemu/qemu/commit/24df38b00e23,block: Fix error path in qmp_blockdev_change_medium(),Kevin Wolf
+e5a869ed569a,https://github.com/qemu/qemu/commit/e5a869ed569a,linux-user: Fix error handling in flatload.c target_pread(),Peter Maydell
+3211215e741f,https://github.com/qemu/qemu/commit/3211215e741f,linux-user: Check lock_user() return value for NULL,Peter Maydell
+b53dd4495ced,https://github.com/qemu/qemu/commit/b53dd4495ced,usb:xhci:fix memory leak in usb_xhci_exit,Li Qiang
+5b1ded224f46,https://github.com/qemu/qemu/commit/5b1ded224f46,tests: fix rsp leak in postcopy-test,Marc-André Lureau
+ff1685a33380,https://github.com/qemu/qemu/commit/ff1685a33380,tests: fix qom-test leaks,Marc-André Lureau
+354fb471bd5f,https://github.com/qemu/qemu/commit/354fb471bd5f,acpi-build: fix array leak,Marc-André Lureau
+ac64c5fdf8c1,https://github.com/qemu/qemu/commit/ac64c5fdf8c1,pc: don't leak a20_line,Marc-André Lureau
+bd794065ffff,https://github.com/qemu/qemu/commit/bd794065ffff,tests: fix leak in test-string-input-visitor,Marc-André Lureau
+265804b5d755,https://github.com/qemu/qemu/commit/265804b5d755,tests: fix check-qom-interface leaks,Marc-André Lureau
+d55f295b2b54,https://github.com/qemu/qemu/commit/d55f295b2b54,tests: fix test-iov leaks,Marc-André Lureau
+4ae3c0e27fff,https://github.com/qemu/qemu/commit/4ae3c0e27fff,tests: fix test-vmstate leaks,Marc-André Lureau
+1e2713384c58,https://github.com/qemu/qemu/commit/1e2713384c58,tests: fix test-qga leaks,Marc-André Lureau
+9ef617246b62,https://github.com/qemu/qemu/commit/9ef617246b62,usb: free leaking path,Marc-André Lureau
+157e94e8a2f7,https://github.com/qemu/qemu/commit/157e94e8a2f7,numa: do not leak NumaOptions,Marc-André Lureau
+0d4104e57602,https://github.com/qemu/qemu/commit/0d4104e57602,qdev: Fix use after free in qdev_init_nofail error path,Fam Zheng
+f9dbc19e8bf5,https://github.com/qemu/qemu/commit/f9dbc19e8bf5,qdist: fix memory leak during binning,Emilio G. Cota
+69179fe2fc0b,https://github.com/qemu/qemu/commit/69179fe2fc0b,tests: fix vhost-user-test leak,Marc-André Lureau
+1ec3b71cde69,https://github.com/qemu/qemu/commit/1ec3b71cde69,tests: plug some leaks in virtio-net-test,Marc-André Lureau
+6fab2f3f6064,https://github.com/qemu/qemu/commit/6fab2f3f6064,vhost-user: check qemu_chr_fe_set_msgfds() return value,Marc-André Lureau
+69382d8b3e86,https://github.com/qemu/qemu/commit/69382d8b3e86,qdev: Fix object reference leak in case device.realize() fails,Igor Mammedov
+cdcab9d94101,https://github.com/qemu/qemu/commit/cdcab9d94101,nvdimm: fix memory leak in error code path,Stefan Hajnoczi
+67e55caa6dcb,https://github.com/qemu/qemu/commit/67e55caa6dcb,target-i386: Fix apic object leak when CPU is deleted,Igor Mammedov
+1e8fb7f1ee1b,https://github.com/qemu/qemu/commit/1e8fb7f1ee1b,commit: Fix use of error handling policy,Kevin Wolf
+28ba61e7ff2a,https://github.com/qemu/qemu/commit/28ba61e7ff2a,main-loop: check return value before using pointer,Cao jin
+eef9f19eea26,https://github.com/qemu/qemu/commit/eef9f19eea26,hw/block/m25p80: fix resource leak,Shannon Zhao
+ba4dba54347d,https://github.com/qemu/qemu/commit/ba4dba54347d,json-streamer: Don't leak tokens on incomplete parse,Eric Blake
+92b30c2f7d78,https://github.com/qemu/qemu/commit/92b30c2f7d78,hw/intc/arm_gicv3: Add missing break,Shannon Zhao
+84f34b00c8cc,https://github.com/qemu/qemu/commit/84f34b00c8cc,linux-user: add missing return in netlink switch statement,Laurent Vivier
+2ec62faea274,https://github.com/qemu/qemu/commit/2ec62faea274,log: Plug memory leak on multiple -dfilter,Markus Armbruster
+2cbb1a6826ee,https://github.com/qemu/qemu/commit/2cbb1a6826ee,msi_init: change return value to 0 on success,Cao jin
+9e19036e5a3c,https://github.com/qemu/qemu/commit/9e19036e5a3c,m25p80: fix test on blk_pread() return value,Cédric Le Goater
+2a9170bcd498,https://github.com/qemu/qemu/commit/2a9170bcd498,block: Fix bdrv_all_delete_snapshot() error handling,Kevin Wolf
+ed45cae39117,https://github.com/qemu/qemu/commit/ed45cae39117,scsi-disk: add missing break,Paolo Bonzini
+91ab68837933,https://github.com/qemu/qemu/commit/91ab68837933,backup: Don't leak BackupBlockJob in error path,Kevin Wolf
+ed2f3bc1fad3,https://github.com/qemu/qemu/commit/ed2f3bc1fad3,loader: fix potential memory leak,Cao jin
+8bdf49978231,https://github.com/qemu/qemu/commit/8bdf49978231,translate-all: add missing munmap of the code_gen guard page for MIPS,Emilio G. Cota
+f454f49c42d4,https://github.com/qemu/qemu/commit/f454f49c42d4,egl-helpers: fix possible resource leak,Gonglei
+0e01b76e7cc4,https://github.com/qemu/qemu/commit/0e01b76e7cc4,qemu-io: Fix memory leak in 'aio_write -z',Kevin Wolf
+bc78a01319b6,https://github.com/qemu/qemu/commit/bc78a01319b6,hostmem-file: plug a small leak,Marc-André Lureau
+2b1c2e8e5f19,https://github.com/qemu/qemu/commit/2b1c2e8e5f19,pc: acpi: tpm: add missing MMIO resource to PCI0._CRS,Igor Mammedov
+40a99aace3f9,https://github.com/qemu/qemu/commit/40a99aace3f9,vpc: fix return value check for blk_pwrite,Paolo Bonzini
+7e6bd36d6112,https://github.com/qemu/qemu/commit/7e6bd36d6112,translate-all: add missing fold of tb_ctx into tcg_ctx,Emilio G. Cota
+696b55017d90,https://github.com/qemu/qemu/commit/696b55017d90,hostmem-file: fix memory leak,Gonglei
+2e4278b53499,https://github.com/qemu/qemu/commit/2e4278b53499,hw/pci-bridge: Add missing unref in case register-bus fails,Wei Jiangang
+3005c2c2fa28,https://github.com/qemu/qemu/commit/3005c2c2fa28,qga: fix fd leak with guest-exec i/o channels,Yuriy Pudgorodskiy
+044d65525f6a,https://github.com/qemu/qemu/commit/044d65525f6a,net: fix OptsVisitor memory leak,Paolo Bonzini
+95c3df5a24e2,https://github.com/qemu/qemu/commit/95c3df5a24e2,crypto: Avoid memory leak on failure,Eric Blake
+1f75cba8f8e0,https://github.com/qemu/qemu/commit/1f75cba8f8e0,target-tricore: add missing break in insn decode switch stmt,Bastian Koppelmann
+99787f69cdd8,https://github.com/qemu/qemu/commit/99787f69cdd8,slirp: Fix memory leak on small incoming ipv4 packet,Samuel Thibault
+5c3ece79cd0b,https://github.com/qemu/qemu/commit/5c3ece79cd0b,exec: fix error handling in file_ram_alloc,Paolo Bonzini
+97553976dde2,https://github.com/qemu/qemu/commit/97553976dde2,ivshmem: Add missing newlines to debug printfs,Markus Armbruster
+f8746fb804da,https://github.com/qemu/qemu/commit/f8746fb804da,block: Fix memory leak in hmp_drive_add_node(),Kevin Wolf
+396374caeadf,https://github.com/qemu/qemu/commit/396374caeadf,qemu-img: eliminate memory leak,Paolo Bonzini
+c9f4b77ad578,https://github.com/qemu/qemu/commit/c9f4b77ad578,pc-dimm: fix error handling in pc_dimm_check_memdev_is_busy(),Igor Mammedov
+ce266b75febd,https://github.com/qemu/qemu/commit/ce266b75febd,"spapr_pci: fix irq leak in RTAS ibm,change-msi",Greg Kurz
+6771197dffb2,https://github.com/qemu/qemu/commit/6771197dffb2,qga: use size_t for wcslen() return value,Marc-André Lureau
+18557e646b9d,https://github.com/qemu/qemu/commit/18557e646b9d,mptsas: fix memory leak,Paolo Bonzini
+b44bbeb44bba,https://github.com/qemu/qemu/commit/b44bbeb44bba,mptsas: add missing va_end,Paolo Bonzini
+58c652c08aca,https://github.com/qemu/qemu/commit/58c652c08aca,qemu-sockets: simplify error handling,Paolo Bonzini
+9dcf8ecd9e74,https://github.com/qemu/qemu/commit/9dcf8ecd9e74,block: add missing call to bdrv_drain_recurse,Paolo Bonzini
+8d94c1ca53c6,https://github.com/qemu/qemu/commit/8d94c1ca53c6,virtio-gpu: fix memory leak in error path,Gerd Hoffmann
+ea53854a54bc,https://github.com/qemu/qemu/commit/ea53854a54bc,libqos: remove some leaks,Marc-André Lureau
+adf9ac50dbb1,https://github.com/qemu/qemu/commit/adf9ac50dbb1,pseries: Clean up error handling in spapr_rtas_register(),David Gibson
+27ef9cb0e77e,https://github.com/qemu/qemu/commit/27ef9cb0e77e,qemu-char: avoid leak in qemu_chr_open_pp_fd,Paolo Bonzini
+23c88b24721e,https://github.com/qemu/qemu/commit/23c88b24721e,block: Fix error path in bdrv_invalidate_cache(),Kevin Wolf
+fefd749ce298,https://github.com/qemu/qemu/commit/fefd749ce298,qemu-char: do not leak QemuMutex when freeing a character device,Paolo Bonzini
+acef5c02e54e,https://github.com/qemu/qemu/commit/acef5c02e54e,xen-hvm: Mark inappropriate error handling FIXME,Markus Armbruster
+7b55044f9d96,https://github.com/qemu/qemu/commit/7b55044f9d96,"hw/arm/virt: Fix property ""gic-version"" error handling",Markus Armbruster
+248de4a89915,https://github.com/qemu/qemu/commit/248de4a89915,ahci-test: fix memory leak,John Snow
+87bbdd9cafe5,https://github.com/qemu/qemu/commit/87bbdd9cafe5,hw/ppc/spapr: fix spapr->kvm_type leak,David Gibson
+671f66f87fbf,https://github.com/qemu/qemu/commit/671f66f87fbf,net/filter: fix nf->netdev_id leak,Li Zhijian
+b50c7d452f5a,https://github.com/qemu/qemu/commit/b50c7d452f5a,net/dump: fix nfds->filename leak,Li Zhijian
+3a81a10179b7,https://github.com/qemu/qemu/commit/3a81a10179b7,monitor: Plug memory leak on QMP error,Markus Armbruster
+903c341d5742,https://github.com/qemu/qemu/commit/903c341d5742,block/qapi: Plug memory leak on query-block error path,Markus Armbruster
+0702d3d88c20,https://github.com/qemu/qemu/commit/0702d3d88c20,blockdev: Add missing bdrv_unref() in drive-backup,Max Reitz
+7b35030eedc2,https://github.com/qemu/qemu/commit/7b35030eedc2,crypto: fix leaks in TLS x509 helper functions,Daniel P. Berrange
+61b9251a3aaa,https://github.com/qemu/qemu/commit/61b9251a3aaa,crypto: fix leak of gnutls_dh_params_t data on credential unload,Daniel P. Berrange
+9d4ec9370a36,https://github.com/qemu/qemu/commit/9d4ec9370a36,mmap-alloc: fix error handling,Michael S. Tsirkin
+36617792b45b,https://github.com/qemu/qemu/commit/36617792b45b,ivshmem: improve error handling,Marc-André Lureau
+e3fce97cf500,https://github.com/qemu/qemu/commit/e3fce97cf500,piix: fix resource leak reported by Coverity,zhanghailiang
+7e39d3a2dd34,https://github.com/qemu/qemu/commit/7e39d3a2dd34,blkverify: Fix BDS leak in .bdrv_open error path,Kevin Wolf
+5d555030ba10,https://github.com/qemu/qemu/commit/5d555030ba10,raw-win32: Fix write request error handling,Kevin Wolf
+b359bd6a424b,https://github.com/qemu/qemu/commit/b359bd6a424b,"spapr: Make ibm, change-msi respect 3 return values",Sam Bobroff
+0bdaa3a429c6,https://github.com/qemu/qemu/commit/0bdaa3a429c6,memory: Fix bad error handling in memory_region_init_ram_ptr(),Markus Armbruster
+df8abec8cb48,https://github.com/qemu/qemu/commit/df8abec8cb48,loader: Fix memory_region_init_resizeable_ram() error handling,Markus Armbruster
+c1344ded70cf,https://github.com/qemu/qemu/commit/c1344ded70cf,qcow2: Fix memory leak in qcow2_update_options() error path,Kevin Wolf
+123fdbac9b8f,https://github.com/qemu/qemu/commit/123fdbac9b8f,seqlock: add missing 'inline' to seqlock_read_retry,Emilio G. Cota
+60928458e5ee,https://github.com/qemu/qemu/commit/60928458e5ee,vnc: fix memory leak,Gonglei
+57b73090e041,https://github.com/qemu/qemu/commit/57b73090e041,disas/arm-a64: Add missing compiler attribute GCC_FMT_ATTR,Stefan Weil
+5348c62cab30,https://github.com/qemu/qemu/commit/5348c62cab30,arm/xlnx-zynqmp: fix memory leak,Gonglei
+586d2142a9f1,https://github.com/qemu/qemu/commit/586d2142a9f1,ppc/spapr_drc: fix memory leak,Gonglei
+672558d2ea8d,https://github.com/qemu/qemu/commit/672558d2ea8d,numa: Fix memory leak in numa_set_mem_node_id(),Bharata B Rao
+2828a307232f,https://github.com/qemu/qemu/commit/2828a307232f,ossaudio: fix memory leak,Gonglei
+728470bea15b,https://github.com/qemu/qemu/commit/728470bea15b,rdma: fix memory leak,Gonglei
+f211fcd75fec,https://github.com/qemu/qemu/commit/f211fcd75fec,rocker: fix missing break statements,Scott Feldman
+ec50dd4634ae,https://github.com/qemu/qemu/commit/ec50dd4634ae,rocker: fix memory leak,Gonglei
+8684e85ca911,https://github.com/qemu/qemu/commit/8684e85ca911,hw/display/tcx.c: Fix memory leak,Shannon Zhao
+22b2aeb82c81,https://github.com/qemu/qemu/commit/22b2aeb82c81,hw/display/cg3.c: Fix memory leak,Shannon Zhao
+25940fa7e57f,https://github.com/qemu/qemu/commit/25940fa7e57f,nvme: Fix memleak in nvme_dma_read_prp,Lu Lina
+49dd6d0d33e1,https://github.com/qemu/qemu/commit/49dd6d0d33e1,paaudio: fix possible resource leak,"Kővágó, Zoltán"
+6b5166f8a828,https://github.com/qemu/qemu/commit/6b5166f8a828,xen_backend: Remove unused error handling of qemu_set_fd_handler,Fam Zheng
+9ff7f5bddbe5,https://github.com/qemu/qemu/commit/9ff7f5bddbe5,hw/intc/exynos4210_gic.c: Fix memory leak by adjusting order,Shannon Zhao
+9f9b026dc603,https://github.com/qemu/qemu/commit/9f9b026dc603,hw/arm/omap_sx1.c: Fix memory leak spotted by valgrind,Shannon Zhao
+f19377bf234a,https://github.com/qemu/qemu/commit/f19377bf234a,hw/ppc/e500.c: Fix memory leak,Shannon Zhao
+c18f855697ab,https://github.com/qemu/qemu/commit/c18f855697ab,hw/alpha/dp264.c: Fix memory leak spotted by valgrind,Shannon Zhao
+bd4baf6eebff,https://github.com/qemu/qemu/commit/bd4baf6eebff,vl: fix memory leak spotted by valgrind,Shannon Zhao
+6e38a4ba7889,https://github.com/qemu/qemu/commit/6e38a4ba7889,hw/ide/pci: Fix memory leak,Shannon Zhao
+2ba154cf4eb8,https://github.com/qemu/qemu/commit/2ba154cf4eb8,hw/i386/pc_piix: Fix memory leak,Shannon Zhao
+afcf905cff79,https://github.com/qemu/qemu/commit/afcf905cff79,hw/acpi/aml-build: Fix memory leak,Shannon Zhao
+973a8529c54f,https://github.com/qemu/qemu/commit/973a8529c54f,sheepdog: fix resource leak with sd_snapshot_create,zhanghailiang
+4d850406a859,https://github.com/qemu/qemu/commit/4d850406a859,microblaze: fix memory leak,Gonglei
+c6d231e2fd37,https://github.com/qemu/qemu/commit/c6d231e2fd37,vfio-pci: Fix error path sign,Alex Williamson
+d07063e46047,https://github.com/qemu/qemu/commit/d07063e46047,m25p80: add missing blk_attach_dev_nofail,Paolo Bonzini
+4de9a883be65,https://github.com/qemu/qemu/commit/4de9a883be65,hw/arm/virt: Fix memory leak reported by Coverity,Stefan Weil
+db25a15817f9,https://github.com/qemu/qemu/commit/db25a15817f9,hw/arm/vexpress: Fix memory leak reported by Coverity,Stefan Weil
+60ff4e63e2ea,https://github.com/qemu/qemu/commit/60ff4e63e2ea,hw/arm/highbank: Fix resource leak and wrong image loading,Stefan Weil
+4020db0475b3,https://github.com/qemu/qemu/commit/4020db0475b3,virtio-scsi-dataplane: fix memory leak for VirtIOSCSIVring,Ting Wang
+4c56440d6754,https://github.com/qemu/qemu/commit/4c56440d6754,spapr: Add missing checks for NULL pointers and report failures,Stefan Weil
+8ce1ee4618f4,https://github.com/qemu/qemu/commit/8ce1ee4618f4,qga/commands-posix: Fix resource leak,Shannon Zhao
+23bf2e768063,https://github.com/qemu/qemu/commit/23bf2e768063,elf-loader: Add missing error handling for call of lseek,Stefan Weil
+636a30a890c5,https://github.com/qemu/qemu/commit/636a30a890c5,vl: fix resource leak with monitor_fdset_add_fd,Paolo Bonzini
+196d4fc56d82,https://github.com/qemu/qemu/commit/196d4fc56d82,virtio-scsi-dataplane: fix memory leak in virtio_scsi_vring_init,Bo Su
+892f5a5270f9,https://github.com/qemu/qemu/commit/892f5a5270f9,nbd: Pass return value from nbd_handle_list(),Max Reitz
+2b1f13b996c3,https://github.com/qemu/qemu/commit/2b1f13b996c3,nbd: Fix nbd_establish_connection()'s return value,Max Reitz
+8b2f0abfd612,https://github.com/qemu/qemu/commit/8b2f0abfd612,nbd: Fix overflow return value,Yik Fang
+988e0f06621f,https://github.com/qemu/qemu/commit/988e0f06621f,monitor: Plug memory leak in monitor_read_bdrv_key_start(),Markus Armbruster
+b3c33f91732e,https://github.com/qemu/qemu/commit/b3c33f91732e,vnc: avoid possible file handler leak,Gonglei
+0458b7b5b87b,https://github.com/qemu/qemu/commit/0458b7b5b87b,target-arm: Add missing compatible property to A57,Ryota Ozaki
+a209f4615c68,https://github.com/qemu/qemu/commit/a209f4615c68,virtio-blk: Check return value of blk_aio_ioctl,Fam Zheng
+2343dd11a673,https://github.com/qemu/qemu/commit/2343dd11a673,e500: fix memory leak,Michael Tokarev
+84b5d556dc29,https://github.com/qemu/qemu/commit/84b5d556dc29,sysbus: fix memory leak,Gonglei
+c2c17a245127,https://github.com/qemu/qemu/commit/c2c17a245127,milkymist.c: fix memory leak,Gonglei
+6c5819c4d685,https://github.com/qemu/qemu/commit/6c5819c4d685,macio: fix possible memory leak,Gonglei
+d71cdbfd540d,https://github.com/qemu/qemu/commit/d71cdbfd540d,sparc/leon3.c: fix memory leak,Gonglei
+9d0b65e6e8f2,https://github.com/qemu/qemu/commit/9d0b65e6e8f2,nbd: fix resource leak,Gonglei
+cc5d0e04ee31,https://github.com/qemu/qemu/commit/cc5d0e04ee31,cutils: refine strtol error handling in parse_debug_env,Paolo Bonzini
+16771613a898,https://github.com/qemu/qemu/commit/16771613a898,acpi-build: fix memory leak with bridge hp off,Michael S. Tsirkin
+606ee8f5eadd,https://github.com/qemu/qemu/commit/606ee8f5eadd,monitor: Fix missing err = NULL in client_migrate_info(),Gonglei
+4b3be73006d5,https://github.com/qemu/qemu/commit/4b3be73006d5,"vnc: g_realloc() can't fail, bury dead error handling",Markus Armbruster
+e75bef035a80,https://github.com/qemu/qemu/commit/e75bef035a80,"rdma: g_malloc0() can't fail, bury dead error handling",Markus Armbruster
+9834fe02b005,https://github.com/qemu/qemu/commit/9834fe02b005,"kvm: g_malloc() can't fail, bury dead error handling",Markus Armbruster
+6b0126f94099,https://github.com/qemu/qemu/commit/6b0126f94099,"onenand: g_malloc() can't fail, bury dead error handling",Markus Armbruster
+02f292d9051f,https://github.com/qemu/qemu/commit/02f292d9051f,vl.c: fix memory leak spotted by valgrind,Christian Borntraeger
+88ea8ed74cb6,https://github.com/qemu/qemu/commit/88ea8ed74cb6,virtfs-proxy-helper: Fix possible socket leak.,Gonglei
+3a4dbe6aa934,https://github.com/qemu/qemu/commit/3a4dbe6aa934,vfio-pci: Fix missing unparent of dynamically allocated MemoryRegion,Alex Williamson
+b7022d9ac613,https://github.com/qemu/qemu/commit/b7022d9ac613,s390: Plug memory leak on s390_pci_generate_event() error path,Markus Armbruster
+452e3d49d871,https://github.com/qemu/qemu/commit/452e3d49d871,target-tricore: Add missing ULL suffix on 64 bit constant,Peter Maydell
+04636dc410b1,https://github.com/qemu/qemu/commit/04636dc410b1,migration/block: fix pending() return value,Vladimir Sementsov-Ogievskiy
+2bf9febc95e5,https://github.com/qemu/qemu/commit/2bf9febc95e5,device-tree: fix memory leak,Sergey Fedorov
+a41642708a5d,https://github.com/qemu/qemu/commit/a41642708a5d,spice: fix memory leak,Gonglei
+9281dbe6535d,https://github.com/qemu/qemu/commit/9281dbe6535d,block/rbd: fix memory leak,Gonglei
+ebd9fbd7e102,https://github.com/qemu/qemu/commit/ebd9fbd7e102,block migration: fix return value,Gary R Hook
+b1ab03af890b,https://github.com/qemu/qemu/commit/b1ab03af890b,hw/arm/realview.c: Fix memory leak in realview_init(),Nikita Belov
+771b6ed37e3a,https://github.com/qemu/qemu/commit/771b6ed37e3a,virtio-net: fix unmap leak,Jason Wang
+7a8919dc29a9,https://github.com/qemu/qemu/commit/7a8919dc29a9,net/slirp: fix memory leak,Gonglei
+8a0f9b5263bb,https://github.com/qemu/qemu/commit/8a0f9b5263bb,gtk: fix possible memory leak about local_err,zhanghailiang
+a9be76576e37,https://github.com/qemu/qemu/commit/a9be76576e37,hcd-musb: fix dereference null return value,Paolo Bonzini
+6cfcd864a468,https://github.com/qemu/qemu/commit/6cfcd864a468,acl: fix memory leak,Gonglei
+d4754a953196,https://github.com/qemu/qemu/commit/d4754a953196,l2tpv3: fix fd leak,Gonglei
+5bbebf622897,https://github.com/qemu/qemu/commit/5bbebf622897,libcacard: fix resource leak,zhanghailiang
+b2f27e4438bb,https://github.com/qemu/qemu/commit/b2f27e4438bb,qemu-img: Fix insignificant memleak,Max Reitz
+ac369a77967d,https://github.com/qemu/qemu/commit/ac369a77967d,hw/i386/acpi-build.c: Fix memory leak in acpi_build_tables_cleanup(),Nikita Belov
+84f8f3dace8c,https://github.com/qemu/qemu/commit/84f8f3dace8c,tap: fix possible fd leak in net_init_tap,Gonglei
+660edd4eda90,https://github.com/qemu/qemu/commit/660edd4eda90,virtio-9p-proxy: Fix sockfd leak,Michael Tokarev
+8ef2b256b946,https://github.com/qemu/qemu/commit/8ef2b256b946,target-tricore: check return value before using it,zhanghailiang
+3a31cff11203,https://github.com/qemu/qemu/commit/3a31cff11203,ivshmem: Fix fd leak on error,Andreas Färber
+93bd49aff908,https://github.com/qemu/qemu/commit/93bd49aff908,virtio-scsi: Fix memory leak when realize failed,Fam Zheng
+5b84106bd91b,https://github.com/qemu/qemu/commit/5b84106bd91b,qcow2: Fix leaks in dirty images,Max Reitz
+d8bb71b62273,https://github.com/qemu/qemu/commit/d8bb71b62273,qcow2: fix leak of Qcow2DiscardRegion in update_refcount_discard,Zhang Haoyu
+84961407a50b,https://github.com/qemu/qemu/commit/84961407a50b,gtk.c: Fix memory leak in gd_set_keycode_type(),Chen Fan
+f0bc7fe3b75d,https://github.com/qemu/qemu/commit/f0bc7fe3b75d,usb-storage: fix possible memory leak and missing error message,Gonglei
+032f8b8158ea,https://github.com/qemu/qemu/commit/032f8b8158ea,vring: Better error handling if num is too large,Fam Zheng
+7b17ce60cc58,https://github.com/qemu/qemu/commit/7b17ce60cc58,qcow2: Fix leak of QemuOpts in qcow2_open(),Max Reitz
+93bb1315250d,https://github.com/qemu/qemu/commit/93bb1315250d,hmp: fix memory leak at hmp_info_block_jobs(),Gonglei
+745a9bb9cdcd,https://github.com/qemu/qemu/commit/745a9bb9cdcd,dataplane: fix virtio_blk_data_plane_create() op blocker error path,Stefan Hajnoczi
+a21a7a701252,https://github.com/qemu/qemu/commit/a21a7a701252,spapr: fix possible memory leak,Gonglei
+b6b1d31f098e,https://github.com/qemu/qemu/commit/b6b1d31f098e,vmdk: fix buf leak in vmdk_parse_extents(),Stefan Hajnoczi
+ff74f33c3108,https://github.com/qemu/qemu/commit/ff74f33c3108,vmdk: fix vmdk_parse_extents() extent_file leaks,Stefan Hajnoczi
+b0e90181e4d7,https://github.com/qemu/qemu/commit/b0e90181e4d7,query-memdev: fix potential memory leaks,Chen Fan
+8df3abfceef5,https://github.com/qemu/qemu/commit/8df3abfceef5,quorum: Fix leak of opts in quorum_open,Fam Zheng
+315859312628,https://github.com/qemu/qemu/commit/315859312628,blkverify: Fix leak of opts in blkverify_open,Fam Zheng
+810f4f86b7eb,https://github.com/qemu/qemu/commit/810f4f86b7eb,nfs: Fix leak of opts in nfs_file_open,Fam Zheng
+80be63df5a19,https://github.com/qemu/qemu/commit/80be63df5a19,usb-ohci: Fix memory leak for ohci timer,Gonglei
+38890b246d7c,https://github.com/qemu/qemu/commit/38890b246d7c,sheepdog: improve error handling for a case of failed lock,Hitoshi Mitake
+40ed35a3c4f7,https://github.com/qemu/qemu/commit/40ed35a3c4f7,qemu-img: always goto out in img_snapshot() error paths,Stefan Hajnoczi
+cbda016d9401,https://github.com/qemu/qemu/commit/cbda016d9401,qemu-img: fix img_compare() flags error path,Stefan Hajnoczi
+a3981eb978b7,https://github.com/qemu/qemu/commit/a3981eb978b7,qemu-img: fix img_commit() error return value,Stefan Hajnoczi
+680dfde91981,https://github.com/qemu/qemu/commit/680dfde91981,linux-user: fix file descriptor leaks,zhanghailiang
+29e03fcb62d4,https://github.com/qemu/qemu/commit/29e03fcb62d4,linux-user: check return value of malloc(),zhanghailiang
+08193dd52ba9,https://github.com/qemu/qemu/commit/08193dd52ba9,"qemu-io-cmds: g_renew() can't fail, bury dead error handling",Markus Armbruster
+e42de189e8ea,https://github.com/qemu/qemu/commit/e42de189e8ea,qtest/ide: Fix small memory leak,John Snow
+a7afc6b8c13c,https://github.com/qemu/qemu/commit/a7afc6b8c13c,libqtest: Correct small memory leak.,John Snow
+f3cdcbaee16d,https://github.com/qemu/qemu/commit/f3cdcbaee16d,libqos: Correct memory leak,John Snow
+fdcf6e65bce1,https://github.com/qemu/qemu/commit/fdcf6e65bce1,qemu-img: Check getchar() return value in read_password() for WIN32,Chen Gang
+1efd6e072cb1,https://github.com/qemu/qemu/commit/1efd6e072cb1,virtio-rng: Move error-checking forward to prevent memory leak,John Snow
+a1abf40d6be2,https://github.com/qemu/qemu/commit/a1abf40d6be2,linux-aio: Fix laio resource leak,Gonglei
+01fb2705bd19,https://github.com/qemu/qemu/commit/01fb2705bd19,block: Fix bdrv_is_allocated() return value,Kevin Wolf
+6764579f8949,https://github.com/qemu/qemu/commit/6764579f8949,block/cow: Avoid use of uninitialized cow_bs in error path,Peter Maydell
+eb3f45c5af26,https://github.com/qemu/qemu/commit/eb3f45c5af26,qemu-bridge-helper: Fix fd leak in main(),Gonglei
+d2fc39b42087,https://github.com/qemu/qemu/commit/d2fc39b42087,qemu-char: avoid leaking unused fds in tcp_get_msgfds(),Stefan Hajnoczi
+8617343faae6,https://github.com/qemu/qemu/commit/8617343faae6,vhost: fix resource leak in error handling,Michael S. Tsirkin
+cac124d17c5c,https://github.com/qemu/qemu/commit/cac124d17c5c,tests: fix memory leak in test of string input visitor,Hu Tao
+a9e8f4e7df38,https://github.com/qemu/qemu/commit/a9e8f4e7df38,target-ppc: Fix Temporary Variable Leak in bctar,Tom Musta
+3de31797825e,https://github.com/qemu/qemu/commit/3de31797825e,PPC: Fail on leaking temporaries,Alexander Graf
+405a27640b33,https://github.com/qemu/qemu/commit/405a27640b33,rbd: Fix leaks in rbd_start_aio() error path,Kevin Wolf
+374044f08fe1,https://github.com/qemu/qemu/commit/374044f08fe1,qga: Fix handle fd leak in acquire_privilege(),Gonglei
+0e1dac6c41f3,https://github.com/qemu/qemu/commit/0e1dac6c41f3,kvm: Ensure negative return value on kvm_init() error handling path,Eduardo Habkost
+bb9cd2ee99f6,https://github.com/qemu/qemu/commit/bb9cd2ee99f6,qemu-img: Plug memory leak in convert command,Markus Armbruster
+2df5fee2dbd5,https://github.com/qemu/qemu/commit/2df5fee2dbd5,block/sheepdog: Plug memory leak in sd_snapshot_create(),Markus Armbruster
+b122c3b6d020,https://github.com/qemu/qemu/commit/b122c3b6d020,block/vvfat: Plug memory leak in read_directory(),Markus Armbruster
+6262bbd363b5,https://github.com/qemu/qemu/commit/6262bbd363b5,block/vvfat: Plug memory leak in check_directory_consistency(),Markus Armbruster
+f25391c2a6ef,https://github.com/qemu/qemu/commit/f25391c2a6ef,block/qapi: Plug memory leak in dump_qobject() case QTYPE_QERROR,Markus Armbruster
+3cb0e25c4b41,https://github.com/qemu/qemu/commit/3cb0e25c4b41,blockdev: Plug memory leak in drive_init(),Markus Armbruster
+6376f9522372,https://github.com/qemu/qemu/commit/6376f9522372,blockdev: Plug memory leak in blockdev_init(),Markus Armbruster
+29f2601aa605,https://github.com/qemu/qemu/commit/29f2601aa605,qemu-io: Plug memory leak in open command,Markus Armbruster
+b20e61e0d52e,https://github.com/qemu/qemu/commit/b20e61e0d52e,block: Plug memory leak on brv_open_image() error path,Markus Armbruster
+a1904e48c4a9,https://github.com/qemu/qemu/commit/a1904e48c4a9,qcow2: Plug memory leak on qcow2_invalidate_cache() error paths,Markus Armbruster
+75e347d66ab8,https://github.com/qemu/qemu/commit/75e347d66ab8,block/vvfat: Plug memory leak in enable_write_target(),Markus Armbruster
+ebee92b4fef9,https://github.com/qemu/qemu/commit/ebee92b4fef9,qemu-img: Plug memory leak on block option help error path,Markus Armbruster
+bd60436936ec,https://github.com/qemu/qemu/commit/bd60436936ec,qcow2: Fix memory leak in COW error path,Kevin Wolf
+e35f29ded360,https://github.com/qemu/qemu/commit/e35f29ded360,jazz_led: Add missing break in switch case,Saravanakumar
+3894c78764e1,https://github.com/qemu/qemu/commit/3894c78764e1,char: Explain qmp_chardev_add()'s unusual error handling,Markus Armbruster
+91e7fcca4743,https://github.com/qemu/qemu/commit/91e7fcca4743,virtio-scsi: Plug memory leak on virtio_scsi_push_event() error path,Markus Armbruster
+654039b42a7f,https://github.com/qemu/qemu/commit/654039b42a7f,hw/intc/allwinner-a10-pic: Add missing 'break',Peter Maydell
+6075137d949e,https://github.com/qemu/qemu/commit/6075137d949e,ui: Add missing 'static' attribute,Stefan Weil
+2dc7fdf33d28,https://github.com/qemu/qemu/commit/2dc7fdf33d28,usb: mtp: fix error path memory leak,Gerd Hoffmann
+373df5b135b4,https://github.com/qemu/qemu/commit/373df5b135b4,mirror: Fix resource leak when bdrv_getlength fails,Fam Zheng
+00a9cacaea9a,https://github.com/qemu/qemu/commit/00a9cacaea9a,init_paths: fix minor memory leak,Kirill Batuzov
+92de9012904c,https://github.com/qemu/qemu/commit/92de9012904c,nbd: Use return values instead of error_is_set(errp),Markus Armbruster
+0b9f0e2fd7c5,https://github.com/qemu/qemu/commit/0b9f0e2fd7c5,monitor: fix qmp_getfd() fd leak in error case,Stefan Hajnoczi
+acd7fdc6d807,https://github.com/qemu/qemu/commit/acd7fdc6d807,curl: Replaced old error handling with error reporting API.,Maria Kustova
+9ce10c0bdcdd,https://github.com/qemu/qemu/commit/9ce10c0bdcdd,block: Check bdrv_getlength() return value in bdrv_make_zero(),Kevin Wolf
+28ec11bc8823,https://github.com/qemu/qemu/commit/28ec11bc8823,bochs: Fix memory leak in bochs_open() error path,Kevin Wolf
+f187743acd39,https://github.com/qemu/qemu/commit/f187743acd39,block: Check bdrv_getlength() return value in bdrv_append_temp_snapshot(),Kevin Wolf
+c5a33ee9eee0,https://github.com/qemu/qemu/commit/c5a33ee9eee0,qcow2: fix two memory leaks in qcow2_open error code path,Prasad Joshi
+ecb4e01e3449,https://github.com/qemu/qemu/commit/ecb4e01e3449,target-s390x: Add missing 'static' and 'const' attributes,Stefan Weil
+abdffd1fb78c,https://github.com/qemu/qemu/commit/abdffd1fb78c,virtio-rng: Avoid default_backend refcount leak,Stefan Hajnoczi
+f5946dbab388,https://github.com/qemu/qemu/commit/f5946dbab388,vl.c: Fix memory leak in qemu_register_machine(),Christian Borntraeger
+7b53f2940e3b,https://github.com/qemu/qemu/commit/7b53f2940e3b,s390x/cpu hotplug: Fix memory leak,Christian Borntraeger
+0a1bec8a4e1c,https://github.com/qemu/qemu/commit/0a1bec8a4e1c,s390/ipl: Fix error path on BIOS loading,Christian Borntraeger
+7f72cd235fa3,https://github.com/qemu/qemu/commit/7f72cd235fa3,linux-user/signal.c: Correct error path for AArch64 do_rt_sigreturn,Peter Maydell
+f55ea6297cc0,https://github.com/qemu/qemu/commit/f55ea6297cc0,block/gluster: Add missing argument to qemu_gluster_init() call,Andreas Färber
+b774539743c5,https://github.com/qemu/qemu/commit/b774539743c5,qapi: Add missing null check to opts_start_struct(),Markus Armbruster
+f9a49dfa0202,https://github.com/qemu/qemu/commit/f9a49dfa0202,"file_ram_alloc: unify mem-path,mem-prealloc error handling",Marcelo Tosatti
+521f438e36b0,https://github.com/qemu/qemu/commit/521f438e36b0,KVM: Use return value for error print,Alexander Graf
+69d4c703a549,https://github.com/qemu/qemu/commit/69d4c703a549,linux-user: Fix error handling in target_to_host_semarray(),Peter Maydell
+501bb4b0cb1d,https://github.com/qemu/qemu/commit/501bb4b0cb1d,linux-user: Fix error handling in lock_iovec(),Peter Maydell
+933b19ea9784,https://github.com/qemu/qemu/commit/933b19ea9784,PPC: KVM: Add missing address space to ldl_phys helper,Alexander Graf
+eaf944a43835,https://github.com/qemu/qemu/commit/eaf944a43835,blkdebug: Don't leak bs->file on failure,Kevin Wolf
+99c4a85ce658,https://github.com/qemu/qemu/commit/99c4a85ce658,block: Fix memory leaks in bdrv_co_do_pwritev(),Kevin Wolf
+69252c046741,https://github.com/qemu/qemu/commit/69252c046741,object_add: consolidate error handling,Igor Mammedov
+4dd72e04c2c4,https://github.com/qemu/qemu/commit/4dd72e04c2c4,virtio: Fix return value for dummy function vhost_net_virtqueue_pending,Stefan Weil
+dabfa6cc2e2a,https://github.com/qemu/qemu/commit/dabfa6cc2e2a,block: Fix bdrv_commit return value,Kevin Wolf
+6df3bf8eb3ed,https://github.com/qemu/qemu/commit/6df3bf8eb3ed,drive mirror:fix memory leak,Zhang Min
+385c04d0b669,https://github.com/qemu/qemu/commit/385c04d0b669,dataplane: fix shadowed return value,Stefan Hajnoczi
+589bfb688838,https://github.com/qemu/qemu/commit/589bfb688838,char/cadence_uart: Add missing uart_update_state,Peter Crosthwaite
+362f65687834,https://github.com/qemu/qemu/commit/362f65687834,char/cadence_uart: Add missing uart_update_state,Peter Crosthwaite
+28ec2598ff7d,https://github.com/qemu/qemu/commit/28ec2598ff7d,qom: fix leak for objects created with -object,Paolo Bonzini
+f46e720a82cc,https://github.com/qemu/qemu/commit/f46e720a82cc,qemu_opts_parse(): always check return value,Laszlo Ersek
+6273d1136af9,https://github.com/qemu/qemu/commit/6273d1136af9,qdict: Fix memory leak in qdict_do_flatten(),Kevin Wolf
+2d3aa28cc2cf,https://github.com/qemu/qemu/commit/2d3aa28cc2cf,qom: Fix memory leak in object_property_set_link(),Vlad Yasevich
+96e35046e4a9,https://github.com/qemu/qemu/commit/96e35046e4a9,virtio-net: fix the memory leak in rxfilter_notify(),Amos Kong
+8aa15b6e527f,https://github.com/qemu/qemu/commit/8aa15b6e527f,tests: fix memleak in error path test for input visitor,Wenchao Xia
+bb6b684363e8,https://github.com/qemu/qemu/commit/bb6b684363e8,dump-guest-memory: Check for the correct return value,Aneesh Kumar K.V
+9e3f08923a14,https://github.com/qemu/qemu/commit/9e3f08923a14,qcow2: Add missing space in error message,Max Reitz
+37d41f0a04e5,https://github.com/qemu/qemu/commit/37d41f0a04e5,qcow2: Always use error path on writing snapshots,Max Reitz
+4b351a0f2127,https://github.com/qemu/qemu/commit/4b351a0f2127,pci-ohci: Add missing 'break' in ohci_service_td,Ján Veselý
+be0b742ee320,https://github.com/qemu/qemu/commit/be0b742ee320,qcow2: Always use error path in l2_allocate,Max Reitz
+9e6337d08186,https://github.com/qemu/qemu/commit/9e6337d08186,rbd: avoid qemu_rbd_snap_list() memory leaks,Stefan Hajnoczi
+7454d600457f,https://github.com/qemu/qemu/commit/7454d600457f,qcow2: Don't shadow return value,Max Reitz
+0ca6db4f3b3d,https://github.com/qemu/qemu/commit/0ca6db4f3b3d,usb: Fix iovec memleak on combined-packet free,Hans de Goede
+b21da4e504fb,https://github.com/qemu/qemu/commit/b21da4e504fb,xhci: Fix memory leak on xhci_disable_ep,Hans de Goede
+9c3175cc15fb,https://github.com/qemu/qemu/commit/9c3175cc15fb,monitor: Add missing attributes to local function,Stefan Weil
+e1d0fb378ae3,https://github.com/qemu/qemu/commit/e1d0fb378ae3,rdma: memory leak RDMAContext::host,Isaku Yamahata
+80cba1b71eb9,https://github.com/qemu/qemu/commit/80cba1b71eb9,hw/9pfs: Fix potential memory leak and avoid reuse of freed memory,Stefan Weil
+d312bbe1051f,https://github.com/qemu/qemu/commit/d312bbe1051f,linux-user: Add missing 'break' in i386 get_thread_area syscall,Peter Maydell
+fdd26fca3ce6,https://github.com/qemu/qemu/commit/fdd26fca3ce6,libqtest: Plug fd and memory leaks in qtest_quit(),Markus Armbruster
+8f91ad8a1b47,https://github.com/qemu/qemu/commit/8f91ad8a1b47,qapi: qapi-commands: fix possible leaks on visitor dealloc,Luiz Capitulino
+b58c86e1e4cd,https://github.com/qemu/qemu/commit/b58c86e1e4cd,fsdev: Fix potential memory leak,Stefan Weil
+7a5b6af13a45,https://github.com/qemu/qemu/commit/7a5b6af13a45,qemu-socket: don't leak opts on error,Gerd Hoffmann
+e668287d4413,https://github.com/qemu/qemu/commit/e668287d4413,qemu-char: don't leak opts on error,Gerd Hoffmann
+4f080057767a,https://github.com/qemu/qemu/commit/4f080057767a,savevm: Fix potential memory leak,Stefan Weil
+90527d2a8bb0,https://github.com/qemu/qemu/commit/90527d2a8bb0,kvm: Fix potential resource leak (missing fclose),Stefan Weil
+7c30f65703fc,https://github.com/qemu/qemu/commit/7c30f65703fc,qemu-img: Add missing GCC_FMT_ATTR,Stefan Weil
+d836f8d35dc4,https://github.com/qemu/qemu/commit/d836f8d35dc4,scsi-generic: check the return value of bdrv_aio_ioctl in execute_command,Pavel Hrdina
+581fe784c3ad,https://github.com/qemu/qemu/commit/581fe784c3ad,libcacard/vscclient: fix leakage of socket on error paths,Alon Levy
+baefb8bf8e4a,https://github.com/qemu/qemu/commit/baefb8bf8e4a,ivshmem: add missing error exit(2),Stefan Hajnoczi
+ad7f375df681,https://github.com/qemu/qemu/commit/ad7f375df681,qapi: fix leak in unit tests,Michael Roth
+536f25e4c775,https://github.com/qemu/qemu/commit/536f25e4c775,target-arm: Fix incorrect check of kvm_vcpu_ioctl return value,Peter Maydell
+6760c47aa42c,https://github.com/qemu/qemu/commit/6760c47aa42c,nbd: unlock mutex in nbd_co_send_request() error path,Stefan Hajnoczi
+c2b6ff51e4a3,https://github.com/qemu/qemu/commit/c2b6ff51e4a3,qcow2: Fix L1 write error handling in qcow2_update_snapshot_refcount,Kevin Wolf
+c31bc98e3bcf,https://github.com/qemu/qemu/commit/c31bc98e3bcf,"hw/milkymist-softusb: set buffer in softusb_read_{dmem, pmem} error path",Peter Maydell
+32a1c08b60a8,https://github.com/qemu/qemu/commit/32a1c08b60a8,page_cache: fix memory leak,Peter Lieven
+0db65d624e02,https://github.com/qemu/qemu/commit/0db65d624e02,Fix page_cache leak in cache_resize,Orit Wasserman
+5e95acc8ff2a,https://github.com/qemu/qemu/commit/5e95acc8ff2a,target-ppc: Update error handling in ppc_cpu_realize(),Andreas Färber
+c9fc50839863,https://github.com/qemu/qemu/commit/c9fc50839863,qemu-img: fix missing space in qemu-img check output,Stefan Hajnoczi
+9db7c41419e8,https://github.com/qemu/qemu/commit/9db7c41419e8,usb-storage: use scsi_req_enqueue return value,Gerd Hoffmann
+2c5a7f201126,https://github.com/qemu/qemu/commit/2c5a7f201126,block-migration: fix block_save_iterate() return value,Stefan Hajnoczi
+9ee0cb201e6b,https://github.com/qemu/qemu/commit/9ee0cb201e6b,block-migration: fix blk_mig_save_dirty_block() return value checking,Stefan Hajnoczi
+13289fb5a716,https://github.com/qemu/qemu/commit/13289fb5a716,"qmp: Plug memory leaks in memchar-write, memchar-read",Markus Armbruster
+e4c1cfa5cb8f,https://github.com/qemu/qemu/commit/e4c1cfa5cb8f,target-arm: Fix TCG temp leaks for WI and UNDEF VFP sysreg writes,Peter Maydell
+40a50b0a73d1,https://github.com/qemu/qemu/commit/40a50b0a73d1,qemu-log: Plug trivial memory leak in cpu_set_log_filename(),Markus Armbruster
+10a2158f5279,https://github.com/qemu/qemu/commit/10a2158f5279,qemu-ga: Plug leaks on qmp_guest_network_get_interfaces() error paths,Markus Armbruster
+6f6867493cc0,https://github.com/qemu/qemu/commit/6f6867493cc0,qemu-ga: Plug memory leak in guest_fsfreeze_cleanup(),Markus Armbruster
+bf4229d3cb09,https://github.com/qemu/qemu/commit/bf4229d3cb09,hw/arm_sysctl.c: Add missing 'break' statements,Peter Maydell
+7fa96d738937,https://github.com/qemu/qemu/commit/7fa96d738937,ohci: add missing break,Gerd Hoffmann
+5256a7208a7c,https://github.com/qemu/qemu/commit/5256a7208a7c,tcg/target-arm: Add missing parens to assertions,Peter Maydell
+f7b67be36d01,https://github.com/qemu/qemu/commit/f7b67be36d01,migration: Add buffered_flush error handling,Juan Quintela
+e8bccad5ac60,https://github.com/qemu/qemu/commit/e8bccad5ac60,win32-aio: Fix memory leak,Kevin Wolf
+53510bfc1256,https://github.com/qemu/qemu/commit/53510bfc1256,virtio-pci: build for uninitialized return value in vq_vector_unmask,Michael Roth
+d4f4a3efdf0a,https://github.com/qemu/qemu/commit/d4f4a3efdf0a,qemu-ga: Plug fd leak on ga_channel_open() error paths,Markus Armbruster
+32c16620dda8,https://github.com/qemu/qemu/commit/32c16620dda8,qemu-ga: Plug fd leak on ga_channel_listen_accept() error path,Markus Armbruster
+a6fc23e5dc76,https://github.com/qemu/qemu/commit/a6fc23e5dc76,hw/pc.c: add ULL suffix in ioport80_read and ioportF0_read return value,Julien Grall
+063eb0f30384,https://github.com/qemu/qemu/commit/063eb0f30384,target-s390: Add missing temp_free in gen_op_calc_cc,Richard Henderson
+244eaa7514a9,https://github.com/qemu/qemu/commit/244eaa7514a9,migration: fix migration_bitmap leak,Paolo Bonzini
+654598c944aa,https://github.com/qemu/qemu/commit/654598c944aa,pc_sysfw: Plug memory leak on pc_fw_add_pflash_drv() error path,Markus Armbruster
+f0cc4aa84503,https://github.com/qemu/qemu/commit/f0cc4aa84503,PPC: Fix missing TRACE exception,Julio Guerra
+80168bff4376,https://github.com/qemu/qemu/commit/80168bff4376,block: bdrv_create(): don't leak cco.filename on error,Luiz Capitulino
+ef37a699a06f,https://github.com/qemu/qemu/commit/ef37a699a06f,arch_init.c: add missing '%' symbols before PRIu64 in debug printfs,Igor Mitsyanko
+eb7faf0e3a45,https://github.com/qemu/qemu/commit/eb7faf0e3a45,slirp: Remove unused return value of tftp_send_next_block,Jan Kiszka
+c29b1bee4b02,https://github.com/qemu/qemu/commit/c29b1bee4b02,target-xtensa: fix missing errno codes for mingw32,Max Filippov
+396bef4b3846,https://github.com/qemu/qemu/commit/396bef4b3846,arm-semi: don't leak 1KB user string lock buffer upon TARGET_SYS_OPEN,Jim Meyering
+a7e47d4bfcbf,https://github.com/qemu/qemu/commit/a7e47d4bfcbf,sheepdog: don't leak socket file descriptor upon connection failure,Jim Meyering
+0d07fe47d498,https://github.com/qemu/qemu/commit/0d07fe47d498,linux-user: do_msgrcv: don't leak host_mb upon TARGET_EFAULT failure,Jim Meyering
+e36c87667aa2,https://github.com/qemu/qemu/commit/e36c87667aa2,qapi: Fix memory leak,Stefan Weil
+0ff1f9f58571,https://github.com/qemu/qemu/commit/0ff1f9f58571,Add missing check for host_from_stream_offset return value for RAM_SAVE_FLAG_PAGE,Orit Wasserman
+7de3abe505e3,https://github.com/qemu/qemu/commit/7de3abe505e3,qdev: fix use-after-free in the error path of qdev_init_nofail,Anthony Liguori
+a4d8e8daee32,https://github.com/qemu/qemu/commit/a4d8e8daee32,spapr_vscsi: Error handling fixes,Benjamin Herrenschmidt
+9063825538ad,https://github.com/qemu/qemu/commit/9063825538ad,ppc: Add missing break,Blue Swirl
+160c31f78fb4,https://github.com/qemu/qemu/commit/160c31f78fb4,ui/spice-display.c: add missing initialization for valgrind,Alon Levy
+7618be6230ef,https://github.com/qemu/qemu/commit/7618be6230ef,monitor: Fix memory leak with readline completion,Stefan Weil
+fc9fa4bd0a29,https://github.com/qemu/qemu/commit/fc9fa4bd0a29,monitor: Fix memory leak with readline completion,Stefan Weil
+80aa796bf38b,https://github.com/qemu/qemu/commit/80aa796bf38b,pci_bridge_dev: fix error path in pci_bridge_dev_initfn(),Jason Baron
+6f3c714eb773,https://github.com/qemu/qemu/commit/6f3c714eb773,sheepdog: fix return value of do_load_save_vm_state,MORITA Kazutaka
+b6c147622d31,https://github.com/qemu/qemu/commit/b6c147622d31,qcow2: don't leak buffer for unexpected qcow_version in header,Jim Meyering
+a34004661464,https://github.com/qemu/qemu/commit/a34004661464,qdev: Fix memory leak,dunrong huang
+f156f2385ff7,https://github.com/qemu/qemu/commit/f156f2385ff7,qom: Fix memory leak in function container_get,Stefan Weil
+9cf1f002d776,https://github.com/qemu/qemu/commit/9cf1f002d776,hw/pc_sysfw: Fix memory leak,Stefan Weil
+5c878008ddc1,https://github.com/qemu/qemu/commit/5c878008ddc1,qdev: Fix memory leak in function set_pci_devfn,Stefan Weil
+647cc4722326,https://github.com/qemu/qemu/commit/647cc4722326,qcow2: fix the return value -ENOENT -> -EEXIST,Zhi Yong Wu
+b9531b6eed93,https://github.com/qemu/qemu/commit/b9531b6eed93,block/qcow2: Add missing GCC_FMT_ATTR to function report_unsupported(),Stefan Weil
+92045d80badc,https://github.com/qemu/qemu/commit/92045d80badc,virtio: add missing mb() on enable notification,Michael S. Tsirkin
+0ed6dc1a982f,https://github.com/qemu/qemu/commit/0ed6dc1a982f,error.c: don't return value for void function,Amos Kong
+2795ecf68110,https://github.com/qemu/qemu/commit/2795ecf68110,qcow2: Fix return value of alloc_refcount_block,Kevin Wolf
+8dc0a5e7a06c,https://github.com/qemu/qemu/commit/8dc0a5e7a06c,qcow2: Fix error handling in qcow2_alloc_cluster_offset,Kevin Wolf
+b8aba8d7e303,https://github.com/qemu/qemu/commit/b8aba8d7e303,scsi: add missing test for cancelled request,Paolo Bonzini
+b7c8c35f0afb,https://github.com/qemu/qemu/commit/b7c8c35f0afb,scsi: fix memory leak,Paolo Bonzini
+3f97fd851cf7,https://github.com/qemu/qemu/commit/3f97fd851cf7,qtest: Add missing GCC_FMT_ATTR,Stefan Weil
+a3b6181e42ef,https://github.com/qemu/qemu/commit/a3b6181e42ef,milkymist-vgafb: add missing register,Michael Walle
+8b714d3747e6,https://github.com/qemu/qemu/commit/8b714d3747e6,qapi: fix memory leak on error,Paolo Bonzini
+2c7ff93359e8,https://github.com/qemu/qemu/commit/2c7ff93359e8,qapi: fail hard on stack imbalance,Paolo Bonzini
+6ec5dae5a49f,https://github.com/qemu/qemu/commit/6ec5dae5a49f,monitor: fix client_migrate_info error handling,Yonit Halperin
+b71706d12283,https://github.com/qemu/qemu/commit/b71706d12283,"qemu-ga: for w32, fix leaked handle ov.hEvent in ga_channel_write()",Jeff Cody
+fbac6a7d35d1,https://github.com/qemu/qemu/commit/fbac6a7d35d1,ds1338: Add missing break statement,Stefan Weil
+d86b8853e1f0,https://github.com/qemu/qemu/commit/d86b8853e1f0,usb-redir: Limit return values returned by iso packets,Hans de Goede
+673641504780,https://github.com/qemu/qemu/commit/673641504780,exec: add missing breaks to the watch_mem_write,Max Filippov
+2c9732dbc0df,https://github.com/qemu/qemu/commit/2c9732dbc0df,PPC: e500mc: add missing IVORs to bitmap,Alexander Graf
+aba2107a2649,https://github.com/qemu/qemu/commit/aba2107a2649,qmp: Add missing gcc format attribute and fix format string,Stefan Weil
+f7253270fc66,https://github.com/qemu/qemu/commit/f7253270fc66,bt-host: add missing break statement,Stefan Hajnoczi
+c5c7d3f0a79a,https://github.com/qemu/qemu/commit/c5c7d3f0a79a,virtfs-proxy-helper: Add missing printf format attribute,Stefan Weil
+8d98734651a8,https://github.com/qemu/qemu/commit/8d98734651a8,vvfat: avoid leaking file descriptor in commit_one_file(),Stefan Hajnoczi
+a46667ea2921,https://github.com/qemu/qemu/commit/a46667ea2921,net/socket.c: Fix fd leak in net_socket_listen_init() error paths,Peter Maydell
+bb16172c52ac,https://github.com/qemu/qemu/commit/bb16172c52ac,gdbstub: Fix fd leak in gdbserver_open() error path,Peter Maydell
+db3a5ed7e442,https://github.com/qemu/qemu/commit/db3a5ed7e442,usb: fix usb_qdev_init() error handling again,Stefan Hajnoczi
+91a9ecefb6d7,https://github.com/qemu/qemu/commit/91a9ecefb6d7,win32: fix memory leak,Zhi Hui Li
+c7ee8f683d93,https://github.com/qemu/qemu/commit/c7ee8f683d93,net/socket.c : fix memory leak,Zhi Hui Li
+5bb1cbac4fdb,https://github.com/qemu/qemu/commit/5bb1cbac4fdb,vpc: Add missing error handling in alloc_block,Kevin Wolf
+6ac5f3881fd9,https://github.com/qemu/qemu/commit/6ac5f3881fd9,vdi: Fix memory leak,Kevin Wolf
+c3fecea50dc0,https://github.com/qemu/qemu/commit/c3fecea50dc0,sheepdog: Avoid deadlock in error path,Dong Xu Wang
+9643c25f8d67,https://github.com/qemu/qemu/commit/9643c25f8d67,gdbstub: Fix memory leak,Stefan Weil
+1bbd1592c89a,https://github.com/qemu/qemu/commit/1bbd1592c89a,os-posix: Plug fd leak in qemu_create_pidfile(),Markus Armbruster
+095ed5be7b61,https://github.com/qemu/qemu/commit/095ed5be7b61,posix-aio-compat: Plug memory leak on paio_init() error path,Markus Armbruster
+9d9474726274,https://github.com/qemu/qemu/commit/9d9474726274,qemu-sockets: Plug fd leak on unix_connect_opts() error path,Markus Armbruster
+f2d3476eba17,https://github.com/qemu/qemu/commit/f2d3476eba17,ui: Plug memory leaks on parse_keyboard_layout() error path,Markus Armbruster
+a4e26048526d,https://github.com/qemu/qemu/commit/a4e26048526d,qemu-char: Plug memory leak on qemu_chr_open_pty() error path,Markus Armbruster
+0e3b800e71cb,https://github.com/qemu/qemu/commit/0e3b800e71cb,hw/lan9118.c: Add missing 'break' to fix buffer overrun,Peter Maydell
+99e1dec06f34,https://github.com/qemu/qemu/commit/99e1dec06f34,x86/cpuid: Plug memory leak in cpudef_setfield(),Markus Armbruster
+c0465d1a1d4c,https://github.com/qemu/qemu/commit/c0465d1a1d4c,hw/omap_gpmc.c: Add missing 'break's to fix 8 bit NAND writes,Peter Maydell
+47e8dd8fe9d8,https://github.com/qemu/qemu/commit/47e8dd8fe9d8,cmd: Fix potential memory leak,Pavel Borzenkov
+67403dbba76f,https://github.com/qemu/qemu/commit/67403dbba76f,qemu-io: Fix multiwrite_f error handling,Kevin Wolf
+db9eae1c49fe,https://github.com/qemu/qemu/commit/db9eae1c49fe,kvm_init didn't set return value after create vm failed,Xu He Jie
+17b1971f631a,https://github.com/qemu/qemu/commit/17b1971f631a,hw/9pfs: Fix error handling in local_mknod,Aneesh Kumar K.V
+bff39b6360ee,https://github.com/qemu/qemu/commit/bff39b6360ee,device_tree: Fix potential memory leak,Stefan Weil
+e7c5e8931894,https://github.com/qemu/qemu/commit/e7c5e8931894,libcacard/vscclient: fix error paths for socket creation,Alon Levy
+588b65a37abf,https://github.com/qemu/qemu/commit/588b65a37abf,vmdk: fix return values of vmdk_parent_open,Paolo Bonzini
+b1b1dad31f3a,https://github.com/qemu/qemu/commit/b1b1dad31f3a,fix memory leak in aio_write_f,Alex Jia
+2350e13c93c2,https://github.com/qemu/qemu/commit/2350e13c93c2,migration: add error handling to migrate_fd_put_notify().,Yoshiaki Tamura
+449c184ed23c,https://github.com/qemu/qemu/commit/449c184ed23c,linux-aio: Fix laio_submit error handling,Kevin Wolf
+27f930c5f0c2,https://github.com/qemu/qemu/commit/27f930c5f0c2,lm32: add missing qemu_init_vcpu() call,Michael Walle
+b3c0bfb6f949,https://github.com/qemu/qemu/commit/b3c0bfb6f949,VMDK: fix leak of extent_file,Fam Zheng
+074abad3264b,https://github.com/qemu/qemu/commit/074abad3264b,raw-posix: Fix bdrv_flush error return values,Kevin Wolf
+10e72295bd33,https://github.com/qemu/qemu/commit/10e72295bd33,hw/9pfs: Fix memleaks in some 9p operation,Aneesh Kumar K.V
+ab0997e0afdc,https://github.com/qemu/qemu/commit/ab0997e0afdc,qcow2: remove memory leak,Frediano Ziglio
+927d721777e7,https://github.com/qemu/qemu/commit/927d721777e7,microblaze: Add missing call to qemu_init_vcpu.,Peter A. G. Crosthwaite
+63efb1d9c414,https://github.com/qemu/qemu/commit/63efb1d9c414,onenand: Add missing brace.,Andrzej Zaborowski
+c7f4111a0620,https://github.com/qemu/qemu/commit/c7f4111a0620,Add missing trace call to oslib-posix.c:qemu_vmalloc(),Jes Sorensen
+845f85fa1597,https://github.com/qemu/qemu/commit/845f85fa1597,virtio: Plug memleak by freeing vdev,Amit Shah
+d92551f28eff,https://github.com/qemu/qemu/commit/d92551f28eff,virtio-blk: Fix memleak on exit,Amit Shah
+ee83d41466ab,https://github.com/qemu/qemu/commit/ee83d41466ab,libcacard: don't leak vcard_emul_alloc_arrays mem,Christophe Fergeau
+b7d69dc233ce,https://github.com/qemu/qemu/commit/b7d69dc233ce,SPARC64: add missing break on fmovdcc,Tsuneo Saito
+5e6b701aba86,https://github.com/qemu/qemu/commit/5e6b701aba86,xen_console: fix memory leak,Stefano Stabellini
+2497a67fed5d,https://github.com/qemu/qemu/commit/2497a67fed5d,target-s390x: Add missing tcg_temp_free_i32(),Stefan Weil
+bbf9f3b4d432,https://github.com/qemu/qemu/commit/bbf9f3b4d432,"target-s390x: Add missing tcg_temp_free_i64() in disas_s390_insn(), opc == 0x90",Stefan Weil
+225b6af7cd50,https://github.com/qemu/qemu/commit/225b6af7cd50,"target-s390x: Add missing tcg_temp_free_i64() in disas_s390_insn(), opc == 0x8e",Stefan Weil
+e32a18320a48,https://github.com/qemu/qemu/commit/e32a18320a48,target-s390x: Add missing tcg_temp_free_i64() in disas_b2(),Stefan Weil
+21de37a77866,https://github.com/qemu/qemu/commit/21de37a77866,target-s390x: Add missing tcg_temp_free_i64() in do_mh(),Stefan Weil
+a825aefbc2ad,https://github.com/qemu/qemu/commit/a825aefbc2ad,target-s390x: Add missing tcg_temp_free_i64() in gen_jcc(),Stefan Weil
+0225e254ae81,https://github.com/qemu/qemu/commit/0225e254ae81,usb-linux: Add missing break statement,Stefan Weil
+14da8345b2f7,https://github.com/qemu/qemu/commit/14da8345b2f7,Make spice dummy functions inline to fix calls not checking return values,Jes Sorensen
+d2d979c628e4,https://github.com/qemu/qemu/commit/d2d979c628e4,NBD: Avoid leaking a couple of strings when the NBD device is closed,Nick Thomas
+420b6c317de8,https://github.com/qemu/qemu/commit/420b6c317de8,tests/test-mmap.c: Check mmap() return value before using it,Peter Maydell
+e318a60b94b1,https://github.com/qemu/qemu/commit/e318a60b94b1,target-arm: Don't leak TCG temp for UNDEFs in Neon load/store space,Peter Maydell
+d6e58090fed2,https://github.com/qemu/qemu/commit/d6e58090fed2,severe memory leak caused by broken palette_destroy() function,Ulrich Obergfell
+7d2aabe26284,https://github.com/qemu/qemu/commit/7d2aabe26284,target-arm: Fix TCG temporary leaks for scalar VMULL,Peter Maydell
+dc77d341d2dc,https://github.com/qemu/qemu/commit/dc77d341d2dc,kvm: Reorder error handling of KVM_RUN,Jan Kiszka
+7cbb533f92f0,https://github.com/qemu/qemu/commit/7cbb533f92f0,kvm: Keep KVM_RUN return value in separate variable,Jan Kiszka
+3849902cd852,https://github.com/qemu/qemu/commit/3849902cd852,target-arm: Use TCG temporary leak debugging facilities,Peter Maydell
+c53af37f375c,https://github.com/qemu/qemu/commit/c53af37f375c,vnc: fix a memory leak in threaded vnc server,Corentin Chary
+fb1ba03ab064,https://github.com/qemu/qemu/commit/fb1ba03ab064,"hw/sd.c: Add missing state change for SD_STATUS, SEND_NUM_WR_BLOCKS",Peter Maydell
+8da91fffeaff,https://github.com/qemu/qemu/commit/8da91fffeaff,tests: Fix two memory leaks,Stefan Weil
+9f953ca0b8ae,https://github.com/qemu/qemu/commit/9f953ca0b8ae,s390: Fix memory leak,Stefan Weil
+e98ccb3fbba9,https://github.com/qemu/qemu/commit/e98ccb3fbba9,ppc405: Fix memory leak,Stefan Weil
+386bbf45720b,https://github.com/qemu/qemu/commit/386bbf45720b,pci: Fix memory leak,Stefan Weil
+a9ae2bffea62,https://github.com/qemu/qemu/commit/a9ae2bffea62,blockdev: Plug memory leak in drive_init() error paths,Markus Armbruster
+2753d4a5fa44,https://github.com/qemu/qemu/commit/2753d4a5fa44,blockdev: Plug memory leak in drive_uninit(),Markus Armbruster
+3ab4c7e92d39,https://github.com/qemu/qemu/commit/3ab4c7e92d39,qcow2: Fix error handling for immediate backing file read failure,Kevin Wolf
+8d79de6e4294,https://github.com/qemu/qemu/commit/8d79de6e4294,linux-user: Fix possible realloc memory leak,Stefan Weil
+363f8cb9bcd3,https://github.com/qemu/qemu/commit/363f8cb9bcd3,fix QemuOpts leak,Paolo Bonzini
+1b40bbd13a2d,https://github.com/qemu/qemu/commit/1b40bbd13a2d,raw-win32: Fix bdrv_flush return value,Kevin Wolf
+be7052c2a8f6,https://github.com/qemu/qemu/commit/be7052c2a8f6,pci: memory leak of PCIDevice::rom_file,Isaku Yamahata
+1afec9138f84,https://github.com/qemu/qemu/commit/1afec9138f84,qemu-io: fix a memory leak,Blue Swirl
+08089edcd25b,https://github.com/qemu/qemu/commit/08089edcd25b,vvfat: fix a file descriptor leak,Blue Swirl
+cedf9a6f4549,https://github.com/qemu/qemu/commit/cedf9a6f4549,loader: fix a file descriptor leak,Blue Swirl
+8ce7d3527335,https://github.com/qemu/qemu/commit/8ce7d3527335,vnc-auth-sasl: fix a memory leak,Blue Swirl
+236e23768182,https://github.com/qemu/qemu/commit/236e23768182,Add missing tracing to qemu_mallocz(),Jes Sorensen
+85882c71a946,https://github.com/qemu/qemu/commit/85882c71a946,noaudio: fix return value for read(),Michael Walle
+0562c6743299,https://github.com/qemu/qemu/commit/0562c6743299,virtio-9p: Check the return value of llistxattr.,Kusanagi Kouichi
+0f53994f7ad4,https://github.com/qemu/qemu/commit/0f53994f7ad4,Fix memory leak in register save load due to xsave support,Marcelo Tosatti
+6b37c87c96a5,https://github.com/qemu/qemu/commit/6b37c87c96a5,vhost: fix infinite loop on error path,Michael S. Tsirkin
+e301b13d6a72,https://github.com/qemu/qemu/commit/e301b13d6a72,Respect return value from nbd_client(),Jes Sorensen
+f143efa60c44,https://github.com/qemu/qemu/commit/f143efa60c44,Remove useless NULL check for qemu_strdup return value,Blue Swirl
+69e58af92cf9,https://github.com/qemu/qemu/commit/69e58af92cf9,savevm: Fix memory leak of compat struct,Alex Williamson
+d01f95954007,https://github.com/qemu/qemu/commit/d01f95954007,vnc: add missing lock for vnc_cursor_define(),Corentin Chary
+b5469b1104a4,https://github.com/qemu/qemu/commit/b5469b1104a4,vnc: fix tight png memory leak,Corentin Chary
+d9c18c24b9c8,https://github.com/qemu/qemu/commit/d9c18c24b9c8,vnc: tight: remove a memleak in send_jpeg_rect(),Corentin Chary
+b02bea3a85cc,https://github.com/qemu/qemu/commit/b02bea3a85cc,block migration: propagate return value when bdrv_write() returns < 0,Yoshiaki Tamura
+a213ff63ead4,https://github.com/qemu/qemu/commit/a213ff63ead4,pci hotplug: make pci hotplug return value to caller,Isaku Yamahata
+19dbcbf7cc18,https://github.com/qemu/qemu/commit/19dbcbf7cc18,qcow2: Fix error handling during metadata preallocation,Kevin Wolf
+4972d592113c,https://github.com/qemu/qemu/commit/4972d592113c,win32: Add missing function ffs,Stefan Weil
+e163ae7b8f80,https://github.com/qemu/qemu/commit/e163ae7b8f80,qbus: fix memory leak in qbus_free(),Isaku Yamahata
+1a396859105c,https://github.com/qemu/qemu/commit/1a396859105c,block: Add missing bdrv_delete() for SG_IO BlockDriver in find_image_format(),Nicholas A. Bellinger
+4cbd40cec0e5,https://github.com/qemu/qemu/commit/4cbd40cec0e5,darwin-user: Add missing static attribute,Stefan Weil
+d510c5cf343e,https://github.com/qemu/qemu/commit/d510c5cf343e,Fix tiny leak in qemu_opts_parse,Jan Kiszka
+ace22f691784,https://github.com/qemu/qemu/commit/ace22f691784,"Fix missing '|' in '|=', spotted by clang analyzer",Blue Swirl
+9fad3eb7fa27,https://github.com/qemu/qemu/commit/9fad3eb7fa27,"ppc: add missing 'break', spotted by clang analyzer",Blue Swirl
+b2c58871c9fd,https://github.com/qemu/qemu/commit/b2c58871c9fd,"alpha: add missing 'break', spotted by clang analyzer",Blue Swirl
+655feed5d988,https://github.com/qemu/qemu/commit/655feed5d988,tcg: Add missing static qualifier,malc
+7eb58a6c556c,https://github.com/qemu/qemu/commit/7eb58a6c556c,block: Fix multiwrite memory leak in error case,Kevin Wolf
+cb6d3ca07b8f,https://github.com/qemu/qemu/commit/cb6d3ca07b8f,block: Fix multiwrite error handling,Kevin Wolf
+d99688270320,https://github.com/qemu/qemu/commit/d99688270320,target-arm: resource leak fixes for iwmmxt disassemble,Lars Munch
+06b611c48edb,https://github.com/qemu/qemu/commit/06b611c48edb,qemu-io: Fix return value handling of bdrv_open,Ryota Ozaki
+a16c174c51e7,https://github.com/qemu/qemu/commit/a16c174c51e7,qemu-nbd: Fix return value handling of bdrv_open,Ryota Ozaki
+57e69b7d4e27,https://github.com/qemu/qemu/commit/57e69b7d4e27,raw-posix: Better error return values for hdev_create,Kevin Wolf
+4d067ed7a778,https://github.com/qemu/qemu/commit/4d067ed7a778,x86/cpuid: fix missing feature set bits,Andre Przywara
+a990f58feda5,https://github.com/qemu/qemu/commit/a990f58feda5,target-arm: Fix missing 'return' in SRS handling.,Adam Lackorzynski
+0908bba1577d,https://github.com/qemu/qemu/commit/0908bba1577d,eepro100: Add missing SCB register names,Stefan Weil
+47116d1c90cd,https://github.com/qemu/qemu/commit/47116d1c90cd,QMP: Don't leak on connection close,Luiz Capitulino
+4a2594ddd35d,https://github.com/qemu/qemu/commit/4a2594ddd35d,qemu-option: Make qemu_opts_foreach() accumulate return values,Markus Armbruster
+acdc3f0c59d0,https://github.com/qemu/qemu/commit/acdc3f0c59d0,check pipe() return value,Juan Quintela
+f2b7c8b37045,https://github.com/qemu/qemu/commit/f2b7c8b37045,qcow2: Fix error handling in grow_refcount_table,Kevin Wolf
+1d36e3aae338,https://github.com/qemu/qemu/commit/1d36e3aae338,qcow2: Fix error handling in qcow_save_vmstate,Kevin Wolf
+fb8fa77ce143,https://github.com/qemu/qemu/commit/fb8fa77ce143,qcow2: Fix error handling in qcow2_grow_l1_table,Kevin Wolf
+40a0d7c395f4,https://github.com/qemu/qemu/commit/40a0d7c395f4,qemu-io: Fix memory leak,Kevin Wolf
+be5e8349862d,https://github.com/qemu/qemu/commit/be5e8349862d,microblaze: Add missing cpu_reset.,Edgar E. Iglesias
+7078dead94a2,https://github.com/qemu/qemu/commit/7078dead94a2,qemu-img: Fix memory leak,Kevin Wolf
+8595387e3e08,https://github.com/qemu/qemu/commit/8595387e3e08,vmstate: fix missing ARRAY_OF_POINTERS support on save state,Juan Quintela
+e92734555f50,https://github.com/qemu/qemu/commit/e92734555f50,Add missing break.,Paul Brook
+718b8aec624f,https://github.com/qemu/qemu/commit/718b8aec624f,serial: Add missing bit,Stefan Weil
+c5baaa489f55,https://github.com/qemu/qemu/commit/c5baaa489f55,qcow2: Fix grow_refcount_table error handling,Kevin Wolf
+7dc3fa0913dc,https://github.com/qemu/qemu/commit/7dc3fa0913dc,Add missing linefeed in error message,Stefan Weil
+34d5e948e8a0,https://github.com/qemu/qemu/commit/34d5e948e8a0,cpu_unregister_map_client: fix memory leak.,Isaku Yamahata
+94c6d6d815c0,https://github.com/qemu/qemu/commit/94c6d6d815c0,fix raw_pread_aligned return value,Christoph Hellwig
+838ab728bfd2,https://github.com/qemu/qemu/commit/838ab728bfd2,qemu-io: Fix handling of bdrv_is_allocated() return value (Kevin Wolf),aliguori
+8707eccac83b,https://github.com/qemu/qemu/commit/8707eccac83b,pci_add storage: fix error handling for 'if' parameter (Eduardo Habkost),aliguori
+f8de16605cf9,https://github.com/qemu/qemu/commit/f8de16605cf9,Fix (at least one cause of) qcow2 corruption. (Nolan Leake),aliguori
+bbeea539aa7b,https://github.com/qemu/qemu/commit/bbeea539aa7b,Fix wrong return value,blueswir1
+40a4539e2041,https://github.com/qemu/qemu/commit/40a4539e2041,qemu-img: Fix type of getopt return value (Kevin Wolf),aliguori
+f4a5a5ba926e,https://github.com/qemu/qemu/commit/f4a5a5ba926e,"Add missing ""static""",blueswir1
+371bc573e53e,https://github.com/qemu/qemu/commit/371bc573e53e,Add missing static qualifier,malc
+265ca29a7162,https://github.com/qemu/qemu/commit/265ca29a7162,uImage: don't leak file data or file descriptor (Hollis Blanchard),aliguori
+6223246ad9d6,https://github.com/qemu/qemu/commit/6223246ad9d6,target-alpha: fix the return value of stl_c/stq_c,aurel32
+44696296d5c2,https://github.com/qemu/qemu/commit/44696296d5c2,CRIS: Plug more temp leaks.,edgar_igl
+00b229ac6ad1,https://github.com/qemu/qemu/commit/00b229ac6ad1,Add missing return statement (fixes compiler warning).,aurel32
+674a24acf77b,https://github.com/qemu/qemu/commit/674a24acf77b,Fix warning about missing return value,blueswir1
+012a70458f7e,https://github.com/qemu/qemu/commit/012a70458f7e,Add missing parenthesis in qemu_ram_alloc(),ths
+547012f495f5,https://github.com/qemu/qemu/commit/547012f495f5,pflash: Add missing parenthesis in error message.,ths
+6f9e38017c6a,https://github.com/qemu/qemu/commit/6f9e38017c6a,"Add missing ""static""",blueswir1
+d94888e35b06,https://github.com/qemu/qemu/commit/d94888e35b06,Add missing return,malc
+a982b5310de5,https://github.com/qemu/qemu/commit/a982b5310de5,"Add missing return in arm-semi, by Laurent Desnogues.",ths
+d50997f9144e,https://github.com/qemu/qemu/commit/d50997f9144e,Add missing [SU]32,malc
+477afee37ca2,https://github.com/qemu/qemu/commit/477afee37ca2,Add missing initial values for PIIX3 function 0 (PIRQRC),aurel32
+fca743f30752,https://github.com/qemu/qemu/commit/fca743f30752,"SH4 Fix missing 6th arg of syscall, by ""takasi-y"".",ths
+46ea33974d96,https://github.com/qemu/qemu/commit/46ea33974d96,"Fix set_error return value, by Pierre d'Herbemont.",ths
+04d4b0c33f92,https://github.com/qemu/qemu/commit/04d4b0c33f92,Simplify error handling again.,ths
+6b21b973ab9a,https://github.com/qemu/qemu/commit/6b21b973ab9a,fixed error handling,bellard
+243a273ee016,https://github.com/qemu/qemu/commit/243a273ee016,fd leak fix (Igor Kovalenko),bellard
+3aee288bc8e1,https://github.com/qemu/qemu/commit/3aee288bc8e1,fixed memory leak,bellard
+d80cfb3f705e,https://github.com/qemu/qemu/commit/d80cfb3f705e,Add missing break statement.,pbrook
+e10c2bfb73d7,https://github.com/qemu/qemu/commit/e10c2bfb73d7,Add missing return statement.,pbrook
+c9a621176e47,https://github.com/qemu/qemu/commit/c9a621176e47,memory leak fix (Juergen Keil),bellard

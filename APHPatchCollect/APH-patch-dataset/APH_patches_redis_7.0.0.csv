@@ -1,0 +1,160 @@
+hexsha,patch,summary,author
+4a7a4e42db8f,https://github.com/redis/redis/commit/4a7a4e42db8f,Fix memory leak in streamGetEdgeID (#10753),Yuuoniy
+b8eb2a73408f,https://github.com/redis/redis/commit/b8eb2a73408f,Fix failing moduleconfigs tests and memory leak (#10501),sundb
+dff153ff2474,https://github.com/redis/redis/commit/dff153ff2474,Fix memory leak in RM_StreamIteratorStop and moduleFreeKeyIterator (#10353),Vitah Lin
+beb94c901e81,https://github.com/redis/redis/commit/beb94c901e81,Fix INFO SENTINEL memory leak (#10268),Binbin
+91cc2059f556,https://github.com/redis/redis/commit/91cc2059f556,Fix file descriptor leak in memtest_test_linux_anonymous_maps (#4241),footpatch
+9f9c78578f87,https://github.com/redis/redis/commit/9f9c78578f87,fixed mem leak on rdb load error (#9860),OfirMos
+b567d3694c64,https://github.com/redis/redis/commit/b567d3694c64,fix memory leak in example module hellocluster (#9813),RuiliF
+2ce29e032b6d,https://github.com/redis/redis/commit/2ce29e032b6d,Sentinel tls memory leak (#9753),Wen Hui
+734cde7e3885,https://github.com/redis/redis/commit/734cde7e3885,Fix memory leak when there's a read error of module aux data from rdb. (#9705),Rafi Einstein
+9e3dca8bef87,https://github.com/redis/redis/commit/9e3dca8bef87,"Fix mem leak in loading AOF, introduced by #9528 (#9582)",Oran Agra
+1376d83363cf,https://github.com/redis/redis/commit/1376d83363cf,Fix memory leak due to missing freeCallback in blockonbackground moduleapi test (#9499),sundb
+1895e134a77e,https://github.com/redis/redis/commit/1895e134a77e,Fix missing separator in module info line (usedby and using lists) (#9241),Huang Zhw
+d0f36eeda013,https://github.com/redis/redis/commit/d0f36eeda013,Add missing comma in memory/xgroup command help message. (#9210),Binbin
+eae0983d2d5f,https://github.com/redis/redis/commit/eae0983d2d5f,Fix leak and double free issues in datatype2 module test (#9102),sundb
+bb671d901655,https://github.com/redis/redis/commit/bb671d901655,Add missing zuiClearIterator in zrandmemberWithCountCommand. (#8979),Binbin
+46d9f31e9435,https://github.com/redis/redis/commit/46d9f31e9435,sinterstore: add missing keyspace del event when any source set not exists. (#8949),patpatbear
+611e11734c4e,https://github.com/redis/redis/commit/611e11734c4e,Add missing NOLOOP tracking flag in help (#8892),Wen Hui
+5100ef9f8246,https://github.com/redis/redis/commit/5100ef9f8246,Fix memory leak in moduleDefragGlobals (#8853),sundb
+6bf81eb7b102,https://github.com/redis/redis/commit/6bf81eb7b102,add missing flags in sentinel instance info (#8682),Wen Hui
+a4f03bd7eb44,https://github.com/redis/redis/commit/a4f03bd7eb44,Fix some memory leaks in propagagte.c (#8636),guybe7
+542455ce2afb,https://github.com/redis/redis/commit/542455ce2afb,Fix overflow of rdbWriteRaw return value (#8306),Bob Li
+cfcd0fa6f71a,https://github.com/redis/redis/commit/cfcd0fa6f71a,fix memory leak in processInlineBuffer error handling code (#8295),Wen Hui
+781d7b0d9b51,https://github.com/redis/redis/commit/781d7b0d9b51,Sentinel: add missing calls for sentinelflushconfig when config master at runtime (#8229),Wen Hui
+8a23ca0b28f4,https://github.com/redis/redis/commit/8a23ca0b28f4,add missing raxStop calls in aof stream rewrite (#8162),Wen Hui
+9812e88959a3,https://github.com/redis/redis/commit/9812e88959a3,Fix memory leaks in newly added ZDIFF (#8056),Oran Agra
+8ea131fc8053,https://github.com/redis/redis/commit/8ea131fc8053,Fix leak in new blockedclient module API test (#7780),Oran Agra
+3f67b0337833,https://github.com/redis/redis/commit/3f67b0337833,fix memory leak in ACLLoadFromFile error handling (#7623),Wen Hui
+c69a9b2f61e0,https://github.com/redis/redis/commit/c69a9b2f61e0,fix leak in error handling of debug populate command (#7062),Wen Hui
+2fbd0271f6fc,https://github.com/redis/redis/commit/2fbd0271f6fc,add missing caching command in client help (#7399),Wen Hui
+6a814501448c,https://github.com/redis/redis/commit/6a814501448c,RESTORE ABSTTL skip expired keys - leak (#7511),Oran Agra
+1bfa2d27a637,https://github.com/redis/redis/commit/1bfa2d27a637,fix memory leak in sentinel connection sharing,hwware
+07e1417ef015,https://github.com/redis/redis/commit/07e1417ef015,Redis-Benchmark: avoid potentical memmory leaking,hwware
+93bb42a0b568,https://github.com/redis/redis/commit/93bb42a0b568,add missing commands in cluster help,hwware
+86691ccff51b,https://github.com/redis/redis/commit/86691ccff51b,fix potentical memory leak in redis-cli,hwware
+7d4ebe114fbf,https://github.com/redis/redis/commit/7d4ebe114fbf,add missing subcommand description for debug oom,hwware
+5c73a6e2067f,https://github.com/redis/redis/commit/5c73a6e2067f,Fix memory leak in test_ld_conv,Guy Benoish
+7e1d5954e59a,https://github.com/redis/redis/commit/7e1d5954e59a,Memory leak when bind config is provided twice,Oran Agra
+eb2196f5ce68,https://github.com/redis/redis/commit/eb2196f5ce68,Fix lua related memory leak.,WuYunlong
+93edb3ff3a80,https://github.com/redis/redis/commit/93edb3ff3a80,TLS: Fix missing initialization in redis-cli.,Yossi Gottlieb
+3f6d00d387b8,https://github.com/redis/redis/commit/3f6d00d387b8,fix potentical memory leaks,hwware
+d6a13f444003,https://github.com/redis/redis/commit/d6a13f444003,Free allocated sds in pfdebugCommand() to avoid memory leak.,WuYunlong
+2f8134a7ff9d,https://github.com/redis/redis/commit/2f8134a7ff9d,Fix potential memory leak of rioWriteBulkStreamID().,WuYunlong
+02f21113ab6c,https://github.com/redis/redis/commit/02f21113ab6c,fix leak in module api rdb test,Oran Agra
+aded138a591f,https://github.com/redis/redis/commit/aded138a591f,return value between 0 to 100 instead of 0 to 1.,meir@redislabs.com
+dddfde85efb9,https://github.com/redis/redis/commit/dddfde85efb9,Modules hooks: fix memory leak in example module.,antirez
+747be463d2f8,https://github.com/redis/redis/commit/747be463d2f8,Cluster: fix memory leak of cached master.,antirez
+8b5848a4f50f,https://github.com/redis/redis/commit/8b5848a4f50f,Fix memory leak in moduleLoadFromQueue().,antirez
+b394817754ad,https://github.com/redis/redis/commit/b394817754ad,Fix memory leak in RM_UnregisterCommandFilter().,antirez
+1026d2caf89e,https://github.com/redis/redis/commit/1026d2caf89e,fix error handling on config parsing of repl-diskless-load,Oran Agra
+d490752d58ec,https://github.com/redis/redis/commit/d490752d58ec,Fix memleak in bitfieldCommand,yongman
+c24e32041b91,https://github.com/redis/redis/commit/c24e32041b91,ACL: Fix memory leak in ACLResetSubcommandsForCommand().,antirez
+121adc604b4c,https://github.com/redis/redis/commit/121adc604b4c,Cluster Manager: fix memory leaks in clusterManagerGetDisconnectedLinks,Artix
+b013d2c4dbea,https://github.com/redis/redis/commit/b013d2c4dbea,Cluster Manager: fix memory leak in clusterManagerWaitForClusterJoin,artix
+07473feaebd9,https://github.com/redis/redis/commit/07473feaebd9,ACL: fix ACLSaveToFile() return value.,antirez
+291e6bccf32e,https://github.com/redis/redis/commit/291e6bccf32e,ACL: remove leak in ACLLoadFromFile().,antirez
+9db2c8498473,https://github.com/redis/redis/commit/9db2c8498473,ACL: free memory leak when freeing subcommands array.,antirez
+9c2e64db9c09,https://github.com/redis/redis/commit/9c2e64db9c09,ACL: remove leak in ACLSetUser().,antirez
+4b9b128c4951,https://github.com/redis/redis/commit/4b9b128c4951,ACL: remove leak when removing passwords/patterns.,antirez
+0de83bcc62ce,https://github.com/redis/redis/commit/0de83bcc62ce,ACL: fix memory leak when key patterns no match,zhaozhao.zz
+cc29590188a2,https://github.com/redis/redis/commit/cc29590188a2,Fixed memory leak in clusterManagerCompareKeysValues.,artix
+11dd3f4b0345,https://github.com/redis/redis/commit/11dd3f4b0345,Fix writeCommandsDeniedByDiskError() inverted return value.,antirez
+35ca6700600f,https://github.com/redis/redis/commit/35ca6700600f,Fix cluster-announce-ip memory leak,shenlongxing
+eb0e5fe4e3b3,https://github.com/redis/redis/commit/eb0e5fe4e3b3,Streams: fix xdel memory leak,zhaozhao.zz
+46e241ac8e59,https://github.com/redis/redis/commit/46e241ac8e59,Fix redis-cli memory leak when sending set preference command.,dejun.xdj
+71c7477fd407,https://github.com/redis/redis/commit/71c7477fd407,fix memory leak for streamPropagateXCLAIM,charsyam
+b660fc2fbe54,https://github.com/redis/redis/commit/b660fc2fbe54,Fix zlexrangespec mem-leak in genericZrangebylexCommand,Guy Benoish
+51a03f635697,https://github.com/redis/redis/commit/51a03f635697,fix dlopen leak,charsyam
+0517ab8397d6,https://github.com/redis/redis/commit/0517ab8397d6,lazyfree: fix memory leak for lazyfree-lazy-server-del,zhaozhao.zz
+664bbfe7604a,https://github.com/redis/redis/commit/664bbfe7604a,quicklist: fix the return value of quicklistCount,zhaozhao.zz
+a4e6aae6b82a,https://github.com/redis/redis/commit/a4e6aae6b82a,Streams: fix memory leak in streamTrimByLength().,antirez
+8f00cf85a7ee,https://github.com/redis/redis/commit/8f00cf85a7ee,Streams: fixed memory leaks when blocking again for same stream.,antirez
+94af55c5ea55,https://github.com/redis/redis/commit/94af55c5ea55,Streams: fix memory leak in freeStream().,antirez
+7229fa8d6d8a,https://github.com/redis/redis/commit/7229fa8d6d8a,Modules: fix memory leak in RM_IsModuleNameBusy().,antirez
+6eb996540c66,https://github.com/redis/redis/commit/6eb996540c66,Fix file descriptor leak and error handling,rouzier
+269760edbbf6,https://github.com/redis/redis/commit/269760edbbf6,Lazyfree: avoid memory leak when free slowlog entry,zhaozhao.zz
+a8c08b9b7668,https://github.com/redis/redis/commit/a8c08b9b7668,Add missing fclose(),jybaek
+c9097393bf63,https://github.com/redis/redis/commit/c9097393bf63,Issue #4027: unify comment and modify return value in freeMemoryIfNeeded().,antirez
+238cebdd5eb0,https://github.com/redis/redis/commit/238cebdd5eb0,Check event loop creation return value. Fix #3951.,antirez
+da2f9cd18617,https://github.com/redis/redis/commit/da2f9cd18617,Fix descriptor leak. Close #3848.,antirez
+9b05aafb5034,https://github.com/redis/redis/commit/9b05aafb5034,"fix #2883, #2857 pipe fds leak when fork() failed on bg aof rw",John.Koepi
+76d87f47c707,https://github.com/redis/redis/commit/76d87f47c707,Don't leak file descriptor on syncWithMaster().,antirez
+0f72257049f7,https://github.com/redis/redis/commit/0f72257049f7,Geo: fix GEOHASH return value for consistency.,antirez
+6eb720ff2d20,https://github.com/redis/redis/commit/6eb720ff2d20,PSYNC2: Minor memory leak reading -NOMASTERLINK master reply fixed.,antirez
+a06d59b583e3,https://github.com/redis/redis/commit/a06d59b583e3,Add missing fclose(),jybaek
+24882e31f2fd,https://github.com/redis/redis/commit/24882e31f2fd,Fix redis_check_rdb() return value.,antirez
+a1f8e22b790c,https://github.com/redis/redis/commit/a1f8e22b790c,fixed return value of HashGet (and a slight error in the documentation),Dvir Volk
+0b4bb502a25f,https://github.com/redis/redis/commit/0b4bb502a25f,Fix ZINCRBY return value.,Damian Janowski
+d6c5922f7502,https://github.com/redis/redis/commit/d6c5922f7502,Cluster: fix missing ntohs() call to access gossip section port.,antirez
+bc1558622a2e,https://github.com/redis/redis/commit/bc1558622a2e,Fix memory leak in masterauth config option loading.,antirez
+d99ce09343a4,https://github.com/redis/redis/commit/d99ce09343a4,Lua debugger: ldbSendLogs() memory leak fixed.,antirez
+afc4b9241c37,https://github.com/redis/redis/commit/afc4b9241c37,DEBUG DIGEST Set type memory leak fixed.,antirez
+34e489cb8cee,https://github.com/redis/redis/commit/34e489cb8cee,SORT memory leak fixed.,antirez
+a83e79b176eb,https://github.com/redis/redis/commit/a83e79b176eb,Use mstime_t as return value of mstime().,antirez
+c806dd799bc8,https://github.com/redis/redis/commit/c806dd799bc8,Fix Sentinel memory leak (hiredis bug),antirez
+eff212ea959e,https://github.com/redis/redis/commit/eff212ea959e,fix sentinel memory leak,clark.kang
+414df143f51b,https://github.com/redis/redis/commit/414df143f51b,Add missing latency-dest legend symbol.,antirez
+051a43e03a4d,https://github.com/redis/redis/commit/051a43e03a4d,Fix cluster migrate memory leak,Matt Stancliff
+30152554eab1,https://github.com/redis/redis/commit/30152554eab1,Fix cluster reset memory leak,Matt Stancliff
+eb7d67a3ab1e,https://github.com/redis/redis/commit/eb7d67a3ab1e,Remove RDB AUX memory leaks,Matt Stancliff
+14b04c062efd,https://github.com/redis/redis/commit/14b04c062efd,Fixed memory leaks in rdbSaveToSlavesSockets(),Alon Diamant
+0ae65bec6054,https://github.com/redis/redis/commit/0ae65bec6054,fix benchmark memleak in loop mode,Matthias Petschick
+a8f9a989a786,https://github.com/redis/redis/commit/a8f9a989a786,Avoid valgrind memory leak false positive in processInlineBuffer().,antirez
+fd112f52dce7,https://github.com/redis/redis/commit/fd112f52dce7,rio.c fdset write() method fixed: wrong type for return value.,antirez
+93eed9ae0163,https://github.com/redis/redis/commit/93eed9ae0163,redis-cli: add missing newline in error message.,antirez
+678df67501ba,https://github.com/redis/redis/commit/678df67501ba,Add missing 'by',Matt Stancliff
+56c1f8805e72,https://github.com/redis/redis/commit/56c1f8805e72,Fix hiredis getaddrinfo leak,Matt Stancliff
+879e18b7ec97,https://github.com/redis/redis/commit/879e18b7ec97,Fix memory leak in cluster config parsing,Matt Stancliff
+f510cfb4ef72,https://github.com/redis/redis/commit/f510cfb4ef72,memtest: Add missing free(),Xian Li
+1a5e5b6bd44e,https://github.com/redis/redis/commit/1a5e5b6bd44e,cluster: fix node connection memory leak,kingsumos
+ab3afe2f4d37,https://github.com/redis/redis/commit/ab3afe2f4d37,ZREMRANGEBYLEX memory leak removed calling zslFreeLexRange().,antirez
+c138631cd16e,https://github.com/redis/redis/commit/c138631cd16e,Fix maxclients error handling,Matt Stancliff
+6d5790d68289,https://github.com/redis/redis/commit/6d5790d68289,Fix OBJECT IDLETIME return value converting to seconds.,antirez
+8caecc9ab466,https://github.com/redis/redis/commit/8caecc9ab466,Fixed memory leak in SORT LIMIT option argument parsing on error.,antirez
+59cf0b1902f2,https://github.com/redis/redis/commit/59cf0b1902f2,Fix return value check for anetTcpAccept,Matt Stancliff
+489d889726cf,https://github.com/redis/redis/commit/489d889726cf,Sentinel: removed mem leak and useless code.,antirez
+d3588dc19432,https://github.com/redis/redis/commit/d3588dc19432,Fix broken rdbWriteRaw() return value check in rdb.c.,antirez
+41d3147344da,https://github.com/redis/redis/commit/41d3147344da,Fixed critical memory leak from EVAL.,antirez
+36a094718597,https://github.com/redis/redis/commit/36a094718597,redis-benchmark: fix memory leak introduced by 346256f,antirez
+3ccc17a4a5d0,https://github.com/redis/redis/commit/3ccc17a4a5d0,Ignore sdsrange return value.,antirez
+dd0adbb777f3,https://github.com/redis/redis/commit/dd0adbb777f3,Make sure that REPLCONF ACK really has no return value.,antirez
+deb1f4d841d4,https://github.com/redis/redis/commit/deb1f4d841d4,setproctitle.c: declar tmp as static so valgrind will not detect a leak.,antirez
+04bdb3a2a448,https://github.com/redis/redis/commit/04bdb3a2a448,Add missing bracket removed for error after rebase of PSYNC.,antirez
+562b2bd6a7d6,https://github.com/redis/redis/commit/562b2bd6a7d6,Keyspace notifications: fixed a leak and a bug introduced in the latest commit.,antirez
+ab2924cff353,https://github.com/redis/redis/commit/ab2924cff353,Memory leak fixed: release client's bpop->keys dictionary.,antirez
+578c94597fda,https://github.com/redis/redis/commit/578c94597fda,SRANDMEMBER <count> leak fixed.,antirez
+0b913c650dae,https://github.com/redis/redis/commit/0b913c650dae,"Check write(2) return value to avoid warnings, because in this context failing write is not critical.",antirez
+58e34e6cb149,https://github.com/redis/redis/commit/58e34e6cb149,Fixed memory leak in hash loading.,antirez
+cd8bdea31bdd,https://github.com/redis/redis/commit/cd8bdea31bdd,lpush arguments vector rewrite modified for more speed and to memory leak removal.,antirez
+59132e42125c,https://github.com/redis/redis/commit/59132e42125c,fix redis-benchmark memory leak,Premysl Hruby
+06b3dced9937,https://github.com/redis/redis/commit/06b3dced9937,asyncCloseClientOnOutputBufferLimitReached() now ignores clients with REDIS_CLOSE_ASAP flag already set. Return value of the function changed from int to void since it is not used. Fixed logging of the client scheduled to be closed.,antirez
+0a466a754226,https://github.com/redis/redis/commit/0a466a754226,"Fixed memleak in CLIENT INFO, added simple test that will work as regression test on mac os x and in the CI when running over valgrind. This fixes issue #256",antirez
+18d0ef4bf010,https://github.com/redis/redis/commit/18d0ef4bf010,ae.c: solved a memory leak with no practical effects (since the event,antirez
+fb293ccbddb4,https://github.com/redis/redis/commit/fb293ccbddb4,"Fixed a theoretical memory leak with no practical effects in ae_kqueue.c and ae_epoll.c, thanks to magicyang87 for reporting it.",antirez
+db6a2e7f78f9,https://github.com/redis/redis/commit/db6a2e7f78f9,Fixed a memory leak in redis-cli.c,antirez
+046f70f758a2,https://github.com/redis/redis/commit/046f70f758a2,Fixed a small memory leak I found with valgrind,smly
+f797c7dc176c,https://github.com/redis/redis/commit/f797c7dc176c,bad data on RESTORE can no longer crash the server but create a memory leak with some input string,antirez
+5b94b8ac5d10,https://github.com/redis/redis/commit/5b94b8ac5d10,fixed memory leak introduced with the previous commit. Many thanks to Pieter Noordhuis for spotting it in no time,antirez
+33753a732a49,https://github.com/redis/redis/commit/33753a732a49,Minor memory leak in redis-cli (issue #464),Pieter Noordhuis
+0b537972f48a,https://github.com/redis/redis/commit/0b537972f48a,Fixed return value of GETRANGE / SUBSTR,antirez
+4aec2ec8c422,https://github.com/redis/redis/commit/4aec2ec8c422,AOF file descriptor leak fixed,antirez
+09d2abdca2a4,https://github.com/redis/redis/commit/09d2abdca2a4,check return value of getcwd(),antirez
+bad7d097e95e,https://github.com/redis/redis/commit/bad7d097e95e,fixed a memory leak in the new Set code,antirez
+87c74dfaa81d,https://github.com/redis/redis/commit/87c74dfaa81d,Check if stroll return value was clamped,Pieter Noordhuis
+c25a5d3b1062,https://github.com/redis/redis/commit/c25a5d3b1062,memory leak removed from expire propagation code,antirez
+daf2049d0d62,https://github.com/redis/redis/commit/daf2049d0d62,fixed error code checking for *write operations and return value in AOF rewriting function,antirez
+cd627d4e7892,https://github.com/redis/redis/commit/cd627d4e7892,fixed two leaks for the dual encoded lists,Pieter Noordhuis
+4c8f23700b29,https://github.com/redis/redis/commit/4c8f23700b29,memory leak introduced in the latest big changes fixed,antirez
+10dea8dc1b65,https://github.com/redis/redis/commit/10dea8dc1b65,fix memory leak on 32-bit builds,Pieter Noordhuis
+9a22de8270fb,https://github.com/redis/redis/commit/9a22de8270fb,Fixed a tiny memory leak when loading the configuration file.,Alex McHale
+53476b82a1db,https://github.com/redis/redis/commit/53476b82a1db,removed unnecessary refcount increase that caused the HINCRBY memleak,Pieter Noordhuis
+2069d06a0bb8,https://github.com/redis/redis/commit/2069d06a0bb8,"Fixed a bug in HSET, a memory leak, and a theoretical bug in dict.c",antirez
+6d4fb107b24c,https://github.com/redis/redis/commit/6d4fb107b24c,Solved a memory leak with Hashes,antirez
+fefed5979816,https://github.com/redis/redis/commit/fefed5979816,fixed a minor memory leak in configuration file parsing,antirez
+ed5a857a6dc0,https://github.com/redis/redis/commit/ed5a857a6dc0,Fixed a SORT memory leak that should never happen in practice,antirez
+91d71bfc796c,https://github.com/redis/redis/commit/91d71bfc796c,ZINCRBY return value fixed,antirez
+060f6be6bf29,https://github.com/redis/redis/commit/060f6be6bf29,Fixed issue 92 in redis: redis-cli (nil) return value lacks CR/LF,antirez
+ad807e6fa3ce,https://github.com/redis/redis/commit/ad807e6fa3ce,"another leak fixed. Can't find more for now, but still a bug in ZSETs to fix",antirez
+599379dddaed,https://github.com/redis/redis/commit/599379dddaed,"ZSETs memory leak #1 solved, another one missing",antirez
+0aad7a1938c0,https://github.com/redis/redis/commit/0aad7a1938c0,zrange now starts to work. zadd still does not support update and will crash or leak or b000mmmmm,antirez
